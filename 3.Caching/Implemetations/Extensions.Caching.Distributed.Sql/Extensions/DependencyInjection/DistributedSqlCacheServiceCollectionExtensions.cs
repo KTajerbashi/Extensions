@@ -87,17 +87,26 @@ public static class DistributedSqlCacheServiceCollectionExtensions
 
         string createTable =
             $@"
-IF (NOT EXISTS (SELECT *  FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = '{schema}' AND  TABLE_NAME = '{table}' ))
-Begin
-CREATE TABLE [{schema}].[{table}](
-[Id][nvarchar](449) COLLATE SQL_Latin1_General_CP1_CS_AS NOT NULL,
-[Value] [varbinary](max)NOT NULL,
-[ExpiresAtTime] [datetimeoffset](7) NOT NULL,
-[SlidingExpirationInSeconds] [bigint] NULL,
-[AbsoluteExpiration] [datetimeoffset](7) NULL,
-PRIMARY KEY(Id),
-INDEX Index_ExpiresAtTime NONCLUSTERED (ExpiresAtTime))
-End;
+
+BEGIN
+	IF (SCHEMA_ID('{schema}') IS NULL) 
+		BEGIN
+		    EXEC ('CREATE SCHEMA [{schema}]')
+		END
+END
+BEGIN
+    IF (NOT EXISTS (SELECT *  FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = '{schema}' AND  TABLE_NAME = '{table}' ))
+    Begin
+    CREATE TABLE [{schema}].[{table}](
+    [Id][nvarchar](449) COLLATE SQL_Latin1_General_CP1_CS_AS NOT NULL,
+    [Value] [varbinary](max)NOT NULL,
+    [ExpiresAtTime] [datetimeoffset](7) NOT NULL,
+    [SlidingExpirationInSeconds] [bigint] NULL,
+    [AbsoluteExpiration] [datetimeoffset](7) NULL,
+    PRIMARY KEY(Id),
+    INDEX Index_ExpiresAtTime NONCLUSTERED (ExpiresAtTime))
+    End;
+END
 ";
 
         var dbConnection = new SqlConnection(options.ConnectionString);

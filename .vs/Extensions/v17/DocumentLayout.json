@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{57CAA5A5-9524-4674-B75B-C21D6D2FB738}|3.Caching\\Implemetations\\Extensions.Caching.InMemory\\Extensions.Caching.InMemory.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\3.caching\\implemetations\\extensions.caching.inmemory\\extensions\\dependencyinjection\\inmemorycachingservicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{57CAA5A5-9524-4674-B75B-C21D6D2FB738}|3.Caching\\Implemetations\\Extensions.Caching.InMemory\\Extensions.Caching.InMemory.csproj|solutionrelative:3.caching\\implemetations\\extensions.caching.inmemory\\extensions\\dependencyinjection\\inmemorycachingservicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\1.webapplication\\webapplication\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|solutionrelative:1.webapplication\\webapplication\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57CAA5A5-9524-4674-B75B-C21D6D2FB738}|3.Caching\\Implemetations\\Extensions.Caching.InMemory\\Extensions.Caching.InMemory.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\3.caching\\implemetations\\extensions.caching.inmemory\\extensions.caching.inmemory.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{57CAA5A5-9524-4674-B75B-C21D6D2FB738}|3.Caching\\Implemetations\\Extensions.Caching.InMemory\\Extensions.Caching.InMemory.csproj|solutionrelative:3.caching\\implemetations\\extensions.caching.inmemory\\extensions.caching.inmemory.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{538CC3E4-AEC8-41D4-815A-F8C9BA31C472}|3.Caching\\Implemetations\\Extensions.Caching.Distributed.Sql\\Extensions.Caching.Distributed.Sql.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\3.caching\\implemetations\\extensions.caching.distributed.sql\\extensions\\dependencyinjection\\distributedsqlcacheservicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{538CC3E4-AEC8-41D4-815A-F8C9BA31C472}|3.Caching\\Implemetations\\Extensions.Caching.Distributed.Sql\\Extensions.Caching.Distributed.Sql.csproj|solutionrelative:3.caching\\implemetations\\extensions.caching.distributed.sql\\extensions\\dependencyinjection\\distributedsqlcacheservicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5522115A-A52D-4B8F-AED1-B4F0BA85F491}|2.ChangeDataLog\\Implemetations\\Extensions.ChangeDataLog.Sql\\Extensions.ChangeDataLog.Sql.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\2.changedatalog\\implemetations\\extensions.changedatalog.sql\\dapperentitychageinterceptoritemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5522115A-A52D-4B8F-AED1-B4F0BA85F491}|2.ChangeDataLog\\Implemetations\\Extensions.ChangeDataLog.Sql\\Extensions.ChangeDataLog.Sql.csproj|solutionrelative:2.changedatalog\\implemetations\\extensions.changedatalog.sql\\dapperentitychageinterceptoritemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\1.webapplication\\webapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|solutionrelative:1.webapplication\\webapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\1.webapplication\\webapplication\\controllers\\caching\\inmemorycachingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|solutionrelative:1.webapplication\\webapplication\\controllers\\caching\\inmemorycachingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,21 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 9,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Extensions.Caching.InMemory",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\3.Caching\\Implemetations\\Extensions.Caching.InMemory\\Extensions.Caching.InMemory.csproj",
-              "RelativeDocumentMoniker": "3.Caching\\Implemetations\\Extensions.Caching.InMemory\\Extensions.Caching.InMemory.csproj",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\3.Caching\\Implemetations\\Extensions.Caching.InMemory\\Extensions.Caching.InMemory.csproj",
-              "RelativeToolTip": "3.Caching\\Implemetations\\Extensions.Caching.InMemory\\Extensions.Caching.InMemory.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-27T15:45:17.166Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -80,40 +67,59 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "InMemoryCachingServiceCollectionExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\3.Caching\\Implemetations\\Extensions.Caching.InMemory\\Extensions\\DependencyInjection\\InMemoryCachingServiceCollectionExtensions.cs",
-              "RelativeDocumentMoniker": "3.Caching\\Implemetations\\Extensions.Caching.InMemory\\Extensions\\DependencyInjection\\InMemoryCachingServiceCollectionExtensions.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\3.Caching\\Implemetations\\Extensions.Caching.InMemory\\Extensions\\DependencyInjection\\InMemoryCachingServiceCollectionExtensions.cs",
-              "RelativeToolTip": "3.Caching\\Implemetations\\Extensions.Caching.InMemory\\Extensions\\DependencyInjection\\InMemoryCachingServiceCollectionExtensions.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T15:36:08.861Z",
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "1.WebApplication\\WebApplication\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\appsettings.Development.json",
+              "RelativeToolTip": "1.WebApplication\\WebApplication\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAACOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-27T16:12:26Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\Program.cs",
-              "RelativeDocumentMoniker": "1.WebApplication\\WebApplication\\Program.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\Program.cs",
-              "RelativeToolTip": "1.WebApplication\\WebApplication\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAPAAAA",
+              "DocumentIndex": 1,
+              "Title": "DistributedSqlCacheServiceCollectionExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\3.Caching\\Implemetations\\Extensions.Caching.Distributed.Sql\\Extensions\\DependencyInjection\\DistributedSqlCacheServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "3.Caching\\Implemetations\\Extensions.Caching.Distributed.Sql\\Extensions\\DependencyInjection\\DistributedSqlCacheServiceCollectionExtensions.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\3.Caching\\Implemetations\\Extensions.Caching.Distributed.Sql\\Extensions\\DependencyInjection\\DistributedSqlCacheServiceCollectionExtensions.cs",
+              "RelativeToolTip": "3.Caching\\Implemetations\\Extensions.Caching.Distributed.Sql\\Extensions\\DependencyInjection\\DistributedSqlCacheServiceCollectionExtensions.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAcwHAAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T15:31:07.971Z",
+              "WhenOpened": "2024-06-27T16:05:08.308Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "InMemoryCachingController.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\Controllers\\Caching\\InMemoryCachingController.cs",
-              "RelativeDocumentMoniker": "1.WebApplication\\WebApplication\\Controllers\\Caching\\InMemoryCachingController.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\Controllers\\Caching\\InMemoryCachingController.cs",
-              "RelativeToolTip": "1.WebApplication\\WebApplication\\Controllers\\Caching\\InMemoryCachingController.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAgwCAAAAAJAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\Program.cs",
+              "RelativeDocumentMoniker": "1.WebApplication\\WebApplication\\Program.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\Program.cs",
+              "RelativeToolTip": "1.WebApplication\\WebApplication\\Program.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA4AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T15:26:53.257Z",
+              "WhenOpened": "2024-06-27T16:04:23.637Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DapperEntityChageInterceptorItemRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\2.ChangeDataLog\\Implemetations\\Extensions.ChangeDataLog.Sql\\DapperEntityChageInterceptorItemRepository.cs",
+              "RelativeDocumentMoniker": "2.ChangeDataLog\\Implemetations\\Extensions.ChangeDataLog.Sql\\DapperEntityChageInterceptorItemRepository.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\2.ChangeDataLog\\Implemetations\\Extensions.ChangeDataLog.Sql\\DapperEntityChageInterceptorItemRepository.cs",
+              "RelativeToolTip": "2.ChangeDataLog\\Implemetations\\Extensions.ChangeDataLog.Sql\\DapperEntityChageInterceptorItemRepository.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAowEwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T15:41:06.165Z",
               "EditorCaption": ""
             }
           ]

@@ -1,8 +1,6 @@
-﻿using Extensions.Caching.InMemory.Services;
+﻿using Extensions.Caching.Abstractions;
+using Extensions.Caching.InMemory.Services;
 using Microsoft.Extensions.DependencyInjection;
-using Extensions.Caching.Abstractions;
-using Extensions.Serializers.Abstractions;
-using Extensions.Serializers.NewtonSoft.Services;
 
 namespace Extensions.Caching.InMemory.Extensions.DependencyInjection;
 
@@ -16,8 +14,5 @@ public static class InMemoryCachingServiceCollectionExtensions
         => services
         .AddMemoryCache()
         .AddTransient<ICacheAdapter, InMemoryCacheAdapter>()
-        .AddSNewtonSoftSerializer();
-
-    public static IServiceCollection AddSNewtonSoftSerializer(this IServiceCollection services)
-        => services.AddSingleton<IJsonSerializer, NewtonSoftSerializer>();
+        ;
 }
