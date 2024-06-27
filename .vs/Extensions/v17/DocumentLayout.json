@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\1.webapplication\\webapplication\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|solutionrelative:1.webapplication\\webapplication\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{538CC3E4-AEC8-41D4-815A-F8C9BA31C472}|3.Caching\\Implemetations\\Extensions.Caching.Distributed.Sql\\Extensions.Caching.Distributed.Sql.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\3.caching\\implemetations\\extensions.caching.distributed.sql\\extensions\\dependencyinjection\\distributedsqlcacheservicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{538CC3E4-AEC8-41D4-815A-F8C9BA31C472}|3.Caching\\Implemetations\\Extensions.Caching.Distributed.Sql\\Extensions.Caching.Distributed.Sql.csproj|solutionrelative:3.caching\\implemetations\\extensions.caching.distributed.sql\\extensions\\dependencyinjection\\distributedsqlcacheservicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\1.webapplication\\webapplication\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|solutionrelative:1.webapplication\\webapplication\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5522115A-A52D-4B8F-AED1-B4F0BA85F491}|2.ChangeDataLog\\Implemetations\\Extensions.ChangeDataLog.Sql\\Extensions.ChangeDataLog.Sql.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\2.changedatalog\\implemetations\\extensions.changedatalog.sql\\dapperentitychageinterceptoritemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,7 +66,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\appsettings.Development.json",
               "RelativeDocumentMoniker": "1.WebApplication\\WebApplication\\appsettings.Development.json",
@@ -79,13 +79,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "DistributedSqlCacheServiceCollectionExtensions.cs",
               "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\3.Caching\\Implemetations\\Extensions.Caching.Distributed.Sql\\Extensions\\DependencyInjection\\DistributedSqlCacheServiceCollectionExtensions.cs",
               "RelativeDocumentMoniker": "3.Caching\\Implemetations\\Extensions.Caching.Distributed.Sql\\Extensions\\DependencyInjection\\DistributedSqlCacheServiceCollectionExtensions.cs",
               "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\3.Caching\\Implemetations\\Extensions.Caching.Distributed.Sql\\Extensions\\DependencyInjection\\DistributedSqlCacheServiceCollectionExtensions.cs",
               "RelativeToolTip": "3.Caching\\Implemetations\\Extensions.Caching.Distributed.Sql\\Extensions\\DependencyInjection\\DistributedSqlCacheServiceCollectionExtensions.cs",
-              "ViewState": "AQIAAFAAAAAAAAAAAAAcwHAAAAAIAAAA",
+              "ViewState": "AQIAADEAAAAAAAAAAAAYwFMAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-27T16:05:08.308Z",
               "EditorCaption": ""
