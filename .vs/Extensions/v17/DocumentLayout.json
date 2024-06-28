@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8E3FAAEF-7240-43C6-A81C-594E1545E35C}|0.Utilities\\SerilogRegistration\\SerilogRegistration\\SerilogRegistration.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\0.utilities\\serilogregistration\\serilogregistration\\enrichers\\applicaitonenricher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E3FAAEF-7240-43C6-A81C-594E1545E35C}|0.Utilities\\SerilogRegistration\\SerilogRegistration\\SerilogRegistration.csproj|solutionrelative:0.utilities\\serilogregistration\\serilogregistration\\enrichers\\applicaitonenricher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E3FAAEF-7240-43C6-A81C-594E1545E35C}|0.Utilities\\SerilogRegistration\\SerilogRegistration\\SerilogRegistration.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\0.utilities\\serilogregistration\\serilogregistration\\extensions\\dependencyinjection\\serilogservicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E3FAAEF-7240-43C6-A81C-594E1545E35C}|0.Utilities\\SerilogRegistration\\SerilogRegistration\\SerilogRegistration.csproj|solutionrelative:0.utilities\\serilogregistration\\serilogregistration\\extensions\\dependencyinjection\\serilogservicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E3FAAEF-7240-43C6-A81C-594E1545E35C}|0.Utilities\\SerilogRegistration\\SerilogRegistration\\SerilogRegistration.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\0.utilities\\serilogregistration\\serilogregistration\\extensions\\serilogextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E3FAAEF-7240-43C6-A81C-594E1545E35C}|0.Utilities\\SerilogRegistration\\SerilogRegistration\\SerilogRegistration.csproj|solutionrelative:0.utilities\\serilogregistration\\serilogregistration\\extensions\\serilogextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E3FAAEF-7240-43C6-A81C-594E1545E35C}|0.Utilities\\SerilogRegistration\\SerilogRegistration\\SerilogRegistration.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\0.utilities\\serilogregistration\\serilogregistration\\options\\serilogapplicationenricheroptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E3FAAEF-7240-43C6-A81C-594E1545E35C}|0.Utilities\\SerilogRegistration\\SerilogRegistration\\SerilogRegistration.csproj|solutionrelative:0.utilities\\serilogregistration\\serilogregistration\\options\\serilogapplicationenricheroptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ECC043D5-BE45-42AF-AD01-9E736EBB8A33}|1.WebApplication\\WebApplication.Event\\WebApplicationAPI.Event.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\1.webapplication\\webapplication.event\\controllers\\personeventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ECC043D5-BE45-42AF-AD01-9E736EBB8A33}|1.WebApplication\\WebApplication.Event\\WebApplicationAPI.Event.csproj|solutionrelative:1.webapplication\\webapplication.event\\controllers\\personeventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F80A417-10A9-4D6B-9924-6780FD4A6807}|1.WebApplication\\Application.Layer\\Application.Layer.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\1.webapplication\\application.layer\\mediater\\queries\\getpersonbyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F80A417-10A9-4D6B-9924-6780FD4A6807}|1.WebApplication\\Application.Layer\\Application.Layer.csproj|solutionrelative:1.webapplication\\application.layer\\mediater\\queries\\getpersonbyidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C5339B5A-B776-4B1C-91C8-0BED6CC2ECAE}|1.WebApplication\\WebApplication.ChangeDataLog\\WebApplicationAPI.ChangeDataLog.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\1.webapplication\\webapplication.changedatalog\\controllers\\changedatalogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,8 +42,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SerilogServiceCollectionExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\0.Utilities\\SerilogRegistration\\SerilogRegistration\\Extensions\\DependencyInjection\\SerilogServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "0.Utilities\\SerilogRegistration\\SerilogRegistration\\Extensions\\DependencyInjection\\SerilogServiceCollectionExtensions.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\0.Utilities\\SerilogRegistration\\SerilogRegistration\\Extensions\\DependencyInjection\\SerilogServiceCollectionExtensions.cs",
+              "RelativeToolTip": "0.Utilities\\SerilogRegistration\\SerilogRegistration\\Extensions\\DependencyInjection\\SerilogServiceCollectionExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T15:53:32.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicaitonEnricher.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\0.Utilities\\SerilogRegistration\\SerilogRegistration\\Enrichers\\ApplicaitonEnricher.cs",
+              "RelativeDocumentMoniker": "0.Utilities\\SerilogRegistration\\SerilogRegistration\\Enrichers\\ApplicaitonEnricher.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\0.Utilities\\SerilogRegistration\\SerilogRegistration\\Enrichers\\ApplicaitonEnricher.cs",
+              "RelativeToolTip": "0.Utilities\\SerilogRegistration\\SerilogRegistration\\Enrichers\\ApplicaitonEnricher.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA1wBcAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T15:52:57.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SerilogExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\0.Utilities\\SerilogRegistration\\SerilogRegistration\\Extensions\\SerilogExtensions.cs",
+              "RelativeDocumentMoniker": "0.Utilities\\SerilogRegistration\\SerilogRegistration\\Extensions\\SerilogExtensions.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\0.Utilities\\SerilogRegistration\\SerilogRegistration\\Extensions\\SerilogExtensions.cs",
+              "RelativeToolTip": "0.Utilities\\SerilogRegistration\\SerilogRegistration\\Extensions\\SerilogExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T15:53:58.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SerilogApplicationEnricherOptions.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\0.Utilities\\SerilogRegistration\\SerilogRegistration\\Options\\SerilogApplicationEnricherOptions.cs",
+              "RelativeDocumentMoniker": "0.Utilities\\SerilogRegistration\\SerilogRegistration\\Options\\SerilogApplicationEnricherOptions.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\0.Utilities\\SerilogRegistration\\SerilogRegistration\\Options\\SerilogApplicationEnricherOptions.cs",
+              "RelativeToolTip": "0.Utilities\\SerilogRegistration\\SerilogRegistration\\Options\\SerilogApplicationEnricherOptions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T15:52:35.64Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -62,20 +134,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "PersonEventController.cs",
               "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication.Event\\Controllers\\PersonEventController.cs",
               "RelativeDocumentMoniker": "1.WebApplication\\WebApplication.Event\\Controllers\\PersonEventController.cs",
               "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication.Event\\Controllers\\PersonEventController.cs",
               "RelativeToolTip": "1.WebApplication\\WebApplication.Event\\Controllers\\PersonEventController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAqAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAowB4AAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-28T15:48:24.593Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
+              "Title": "GetPersonByIdModel.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\Application.Layer\\MediateR\\Queries\\GetPersonByIdModel.cs",
+              "RelativeDocumentMoniker": "1.WebApplication\\Application.Layer\\MediateR\\Queries\\GetPersonByIdModel.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\Application.Layer\\MediateR\\Queries\\GetPersonByIdModel.cs",
+              "RelativeToolTip": "1.WebApplication\\Application.Layer\\MediateR\\Queries\\GetPersonByIdModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T15:46:41.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ChangeDataLogController.cs",
               "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication.ChangeDataLog\\Controllers\\ChangeDataLogController.cs",
               "RelativeDocumentMoniker": "1.WebApplication\\WebApplication.ChangeDataLog\\Controllers\\ChangeDataLogController.cs",
@@ -88,7 +173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication.Caching\\Program.cs",
               "RelativeDocumentMoniker": "1.WebApplication\\WebApplication.Caching\\Program.cs",

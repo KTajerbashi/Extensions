@@ -1,20 +1,8 @@
 ﻿using Serilog;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SerilogRegistration.Extensions;
 public class SerilogExtensions
 {
-    /// <summary>
-    /// اولین مرحله اجرا شدن نرم افزار با این کلاس شروع میشود
-    /// </summary>
-    /// <param name="action"></param>
-    /// <param name="startUpMessage"></param>
-    /// <param name="exceptionMessage"></param>
-    /// <param name="shutdownMessage"></param>
     public static void RunWithSerilogExceptionHandling(
         Action action,
         string startUpMessage = "Starting up",
