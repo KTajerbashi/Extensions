@@ -7,81 +7,80 @@ using Extensions.Events.Abstractions;
 using Extensions.Events.PollingPublisher.Options;
 using Extensions.MessageBus.Abstractions;
 
-namespace Extensions.Events.PollingPublisher
+namespace Extensions.Events.PollingPublisher;
+
+public class PoolingPublisherBackgroundService : BackgroundService
 {
-    public class PoolingPublisherBackgroundService : BackgroundService
+    private readonly ISendMessageBus _sendMessageBus;
+    private readonly IOutBoxEventItemRepository _outBoxEventItemRepository;
+    private readonly ILogger<PoolingPublisherBackgroundService> _logger;
+    private readonly PollingPublisherOptions _options;
+
+    public PoolingPublisherBackgroundService(IOutBoxEventItemRepository outBoxEventItemRepository, IOptions<PollingPublisherOptions> options, ILogger<PoolingPublisherBackgroundService> logger, IServiceProvider serviceProvider)
     {
-        private readonly ISendMessageBus _sendMessageBus;
-        private readonly IOutBoxEventItemRepository _outBoxEventItemRepository;
-        private readonly ILogger<PoolingPublisherBackgroundService> _logger;
-        private readonly PollingPublisherOptions _options;
+        var scope = serviceProvider.CreateScope();
 
-        public PoolingPublisherBackgroundService(IOutBoxEventItemRepository outBoxEventItemRepository, IOptions<PollingPublisherOptions> options, ILogger<PoolingPublisherBackgroundService> logger, IServiceProvider serviceProvider)
+        _options = options.Value;
+        _sendMessageBus = scope.ServiceProvider.GetRequiredService<ISendMessageBus>();
+        _outBoxEventItemRepository = outBoxEventItemRepository;
+        _logger = logger;
+        _logger.LogInformation("PoolingPublisherBackgroundService start working for {ApplicationName} at {DateTime}", _options.ApplicationName, DateTime.Now);
+    }
+    protected override async Task ExecuteAsync(CancellationToken stoppingToken)
+    {
+        while (!stoppingToken.IsCancellationRequested)
         {
-            var scope = serviceProvider.CreateScope();
-
-            _options = options.Value;
-            _sendMessageBus = scope.ServiceProvider.GetRequiredService<ISendMessageBus>();
-            _outBoxEventItemRepository = outBoxEventItemRepository;
-            _logger = logger;
-            _logger.LogInformation("PoolingPublisherBackgroundService start working for {ApplicationName} at {DateTime}", _options.ApplicationName, DateTime.Now);
-        }
-        protected override async Task ExecuteAsync(CancellationToken stoppingToken)
-        {
-            while (!stoppingToken.IsCancellationRequested)
+            try
             {
-                try
+                var outboxItems = _outBoxEventItemRepository.GetOutBoxEventItemsForPublish(_options.SendCount);
+                foreach (var item in outboxItems)
                 {
-                    var outboxItems = _outBoxEventItemRepository.GetOutBoxEventItemsForPublish(_options.SendCount);
-                    foreach (var item in outboxItems)
+                    using Activity trace = StartChildActivity(item);
+                    _sendMessageBus.Send(new Parcel
                     {
-                        using Activity trace = StartChildActivity(item);
-                        _sendMessageBus.Send(new Parcel
+                        CorrelationId = item.AggregateId,
+                        MessageBody = item.EventPayload,
+                        MessageId = item.EventId.ToString(),
+                        MessageName = item.EventName,
+                        Route = $"{_options.ApplicationName}.event.{item.EventName}",
+                        Headers = new Dictionary<string, object>
                         {
-                            CorrelationId = item.AggregateId,
-                            MessageBody = item.EventPayload,
-                            MessageId = item.EventId.ToString(),
-                            MessageName = item.EventName,
-                            Route = $"{_options.ApplicationName}.event.{item.EventName}",
-                            Headers = new Dictionary<string, object>
-                            {
-                                ["AccruedByUserId"] = item.AccruedByUserId,
-                                ["AccruedOn"] = item.AccruedOn.ToString(),
-                                ["AggregateName"] = item.AggregateName,
-                                ["AggregateTypeName"] = item.AggregateTypeName,
-                                ["EventTypeName"] = item.EventTypeName,
-                            }
-                        });
-                        item.IsProcessed = true;
-                        _logger.LogDebug("event {eventName} with {EventId} sent from {ApplicaotinName} at {DateTime}", item.EventName, item.EventId, _options.ApplicationName, DateTime.Now);
-                    }
-                    _outBoxEventItemRepository.MarkAsRead(outboxItems);
-                    if (outboxItems.Any())
-                    {
-                        _logger.LogInformation("{Count} events {ApplicaotinName} at {DateTime} with id {Ids}", outboxItems.Count, _options.ApplicationName, DateTime.Now, string.Join(',', outboxItems.Select(c => c.EventId)));
-                    }
-                    await Task.Delay(_options.SendInterval, stoppingToken);
+                            ["AccruedByUserId"] = item.AccruedByUserId,
+                            ["AccruedOn"] = item.AccruedOn.ToString(),
+                            ["AggregateName"] = item.AggregateName,
+                            ["AggregateTypeName"] = item.AggregateTypeName,
+                            ["EventTypeName"] = item.EventTypeName,
+                        }
+                    });
+                    item.IsProcessed = true;
+                    _logger.LogDebug("event {eventName} with {EventId} sent from {ApplicaotinName} at {DateTime}", item.EventName, item.EventId, _options.ApplicationName, DateTime.Now);
                 }
-                catch (Exception ex)
+                _outBoxEventItemRepository.MarkAsRead(outboxItems);
+                if (outboxItems.Any())
                 {
-                    _logger.LogError(ex, "Exception acquired in PoolingPublisherBackgroundService for application {ApplicaitonName}", _options.ApplicationName);
-                    await Task.Delay(_options.ExceptionInterval, stoppingToken);
-
+                    _logger.LogInformation("{Count} events {ApplicaotinName} at {DateTime} with id {Ids}", outboxItems.Count, _options.ApplicationName, DateTime.Now, string.Join(',', outboxItems.Select(c => c.EventId)));
                 }
-
+                await Task.Delay(_options.SendInterval, stoppingToken);
             }
-            _logger.LogInformation("PoolingPublisherBackgroundService stop working for {ApplicationName} at {DateTime}", _options.ApplicationName, DateTime.Now);
-        }
-
-        private static Activity StartChildActivity(OutBoxEventItem item)
-        {
-            var trace = new Activity("PublishUsingPoolingPublisher");
-            if (item.TraceId != null && item.SpanId != null)
+            catch (Exception ex)
             {
-                trace.SetParentId($"00-{item.TraceId}-{item.SpanId}-00");
+                _logger.LogError(ex, "Exception acquired in PoolingPublisherBackgroundService for application {ApplicaitonName}", _options.ApplicationName);
+                await Task.Delay(_options.ExceptionInterval, stoppingToken);
+
             }
-            trace.Start();
-            return trace;
+
         }
+        _logger.LogInformation("PoolingPublisherBackgroundService stop working for {ApplicationName} at {DateTime}", _options.ApplicationName, DateTime.Now);
+    }
+
+    private static Activity StartChildActivity(OutBoxEventItem item)
+    {
+        var trace = new Activity("PublishUsingPoolingPublisher");
+        if (item.TraceId != null && item.SpanId != null)
+        {
+            trace.SetParentId($"00-{item.TraceId}-{item.SpanId}-00");
+        }
+        trace.Start();
+        return trace;
     }
 }

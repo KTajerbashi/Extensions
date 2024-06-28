@@ -83,7 +83,6 @@ builder.Services.AddMessageInboxDalSql(config =>
 #endregion
 
 
-builder.Services.AddServiceWebApplication();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

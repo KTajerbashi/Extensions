@@ -155,6 +155,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationAPI.Event", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationAPI.Logger", "1.WebApplication\WebApplication.Logger\WebApplicationAPI.Logger.csproj", "{84FE37A9-C188-4979-AB4D-63CE849D208F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationAPI.RabbitMQ", "1.WebApplication\WebApplicationAPI.RabbitMQ\WebApplicationAPI.RabbitMQ.csproj", "{D2C5F0F5-3FAB-484E-8DC8-DEE29BB43518}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -317,6 +319,10 @@ Global
 		{84FE37A9-C188-4979-AB4D-63CE849D208F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84FE37A9-C188-4979-AB4D-63CE849D208F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84FE37A9-C188-4979-AB4D-63CE849D208F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2C5F0F5-3FAB-484E-8DC8-DEE29BB43518}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2C5F0F5-3FAB-484E-8DC8-DEE29BB43518}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2C5F0F5-3FAB-484E-8DC8-DEE29BB43518}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2C5F0F5-3FAB-484E-8DC8-DEE29BB43518}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -386,6 +392,7 @@ Global
 		{C5339B5A-B776-4B1C-91C8-0BED6CC2ECAE} = {64492523-0B5B-4E78-89A8-65D21773AB6A}
 		{ECC043D5-BE45-42AF-AD01-9E736EBB8A33} = {64492523-0B5B-4E78-89A8-65D21773AB6A}
 		{84FE37A9-C188-4979-AB4D-63CE849D208F} = {64492523-0B5B-4E78-89A8-65D21773AB6A}
+		{D2C5F0F5-3FAB-484E-8DC8-DEE29BB43518} = {64492523-0B5B-4E78-89A8-65D21773AB6A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {43DDE49A-8B5E-423A-AC4B-4A082846460E}

@@ -26,6 +26,8 @@
   <ItemGroup>
     <ProjectReference Include="..\..\10.Translations\Abstraction\Extensions.Translations.Abstractions\Extensions.Translations.Abstractions.csproj" />
     <ProjectReference Include="..\..\4.DependencyInjection\Abstraction\Extensions.DependencyInjection.Abstractions\Extensions.DependencyInjection.Abstractions.csproj" />
+    <ProjectReference Include="..\..\9.Serializers\Abstraction\Extensions.Serializers.Abstractions\Extensions.Serializers.Abstractions.csproj" />
+    <ProjectReference Include="..\..\9.Serializers\Implemetations\Extensions.Serializers.NewtonSoft\Extensions.Serializers.NewtonSoft.csproj" />
   </ItemGroup>
   
   
