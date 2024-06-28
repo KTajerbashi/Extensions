@@ -1,7 +1,7 @@
-﻿using Extensions.Caching.Abstractions;
+﻿using Application.Layer.DataAccess.ChangeDataLog;
+using Extensions.Caching.Abstractions;
 using Microsoft.AspNetCore.Mvc;
 using WebApplicationAPI.Controllers.Bases;
-using WebApplicationAPI.DataAccess.ChangeDataLog;
 
 namespace WebApplicationAPI.Controllers.Caching
 {

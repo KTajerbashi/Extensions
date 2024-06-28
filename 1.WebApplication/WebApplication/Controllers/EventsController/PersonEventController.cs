@@ -1,9 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Application.Layer.DataAccess.ChangeDataLog;
+using Application.Layer.Model.ChangeDataLog;
+using Application.Layer.Services.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 using WebApplicationAPI.Controllers.Bases;
-using WebApplicationAPI.DataAccess.ChangeDataLog;
-using WebApplicationAPI.Model.ChangeDataLog;
-using WebApplicationAPI.Services.Interfaces;
-using WebApplicationAPI.Services.Repositories;
 
 namespace WebApplicationAPI.Controllers.EventsController
 {

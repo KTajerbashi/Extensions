@@ -11,7 +11,7 @@
   </ItemGroup>
   
   <ItemGroup>
-    <ProjectReference Include="..\..\..\1.WebApplication\WebApplication\WebApplicationAPI.csproj" />
+    <ProjectReference Include="..\..\..\1.WebApplication\Application.Layer\Application.Layer.csproj" />
     <ProjectReference Include="..\..\..\11.UsersManagement\Abstraction\Extensions.UsersManagement.Abstractions\Extensions.UsersManagement.Abstractions.csproj" />
     <ProjectReference Include="..\..\..\9.Serializers\Abstraction\Extensions.Serializers.Abstractions\Extensions.Serializers.Abstractions.csproj" />
     <ProjectReference Include="..\..\Abstraction\Extensions.Events.Abstractions\Extensions.Events.Abstractions.csproj" />

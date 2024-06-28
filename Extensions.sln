@@ -117,6 +117,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.Events.PollingPu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.Events.PollingPublisher.Dal.Dapper", "5.Events\Implemetations\Extensions.Events.PollingPublisher.Dal.Dapper\Extensions.Events.PollingPublisher.Dal.Dapper.csproj", "{FD5F5A95-6DFA-4478-A337-11AF97416D5C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Layer", "1.WebApplication\Application.Layer\Application.Layer.csproj", "{6F80A417-10A9-4D6B-9924-6780FD4A6807}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -227,6 +229,10 @@ Global
 		{FD5F5A95-6DFA-4478-A337-11AF97416D5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD5F5A95-6DFA-4478-A337-11AF97416D5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD5F5A95-6DFA-4478-A337-11AF97416D5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F80A417-10A9-4D6B-9924-6780FD4A6807}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F80A417-10A9-4D6B-9924-6780FD4A6807}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F80A417-10A9-4D6B-9924-6780FD4A6807}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F80A417-10A9-4D6B-9924-6780FD4A6807}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -278,6 +284,7 @@ Global
 		{A7C02BC2-A9AC-4354-BEF9-BB70E3B5559C} = {9A98FC46-43A2-465C-A718-51E86EE06A16}
 		{47FEE746-79B7-4885-97A8-2FE541A5B1BE} = {9A98FC46-43A2-465C-A718-51E86EE06A16}
 		{FD5F5A95-6DFA-4478-A337-11AF97416D5C} = {9A98FC46-43A2-465C-A718-51E86EE06A16}
+		{6F80A417-10A9-4D6B-9924-6780FD4A6807} = {64492523-0B5B-4E78-89A8-65D21773AB6A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {43DDE49A-8B5E-423A-AC4B-4A082846460E}

@@ -12,10 +12,9 @@ using Extensions.Caching.Distributed.Redis.Extensions.DependencyInjection;
 using Extensions.Serializers.Abstractions;
 using Extensions.Serializers.NewtonSoft.Services;
 using Extensions.Caching.Distributed.Sql.Extensions.DependencyInjection;
-using WebApplicationAPI.DataAccess.ChangeDataLog;
-using WebApplicationAPI.Services.Interfaces;
-using WebApplicationAPI.Services.Repositories;
-using WebApplicationAPI.Services.Bases;
+using Application.Layer.Services.Interfaces;
+using Application.Layer.Services.Repositories;
+using Application.Layer.DataAccess.ChangeDataLog;
 
 var builder = WebApplication.CreateBuilder(args);
 IConfiguration configuration = builder.Configuration;
@@ -43,6 +42,7 @@ builder.Services.AddDbContext<DatabaseContext>(config =>
     config.UseSqlServer(configuration.GetConnectionString("DefaultConnectionString"))
     .AddInterceptors(new AddChangeDataLogInterceptor());
 });
+
 #endregion
 
 #region Services

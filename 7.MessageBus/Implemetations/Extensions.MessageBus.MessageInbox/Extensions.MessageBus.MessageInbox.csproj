@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\1.WebApplication\WebApplication\WebApplicationAPI.csproj" />
+    <ProjectReference Include="..\..\..\1.WebApplication\Application.Layer\Application.Layer.csproj" />
     <ProjectReference Include="..\..\..\9.Serializers\Abstraction\Extensions.Serializers.Abstractions\Extensions.Serializers.Abstractions.csproj" />
     <ProjectReference Include="..\..\Abstraction\Extensions.MessageBus.Abstractions\Extensions.MessageBus.Abstractions.csproj" />
   </ItemGroup>

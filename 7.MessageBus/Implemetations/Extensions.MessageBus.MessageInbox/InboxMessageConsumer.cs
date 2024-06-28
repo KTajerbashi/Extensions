@@ -1,9 +1,9 @@
-﻿using Extensions.MessageBus.Abstractions;
+﻿using Application.Layer.Model.Base;
+using Extensions.MessageBus.Abstractions;
 using Extensions.MessageBus.MessageInbox.Options;
 using Extensions.Serializers.Abstractions;
 using Microsoft.Extensions.Options;
 using System.Reflection;
-using WebApplicationAPI.Model.Base;
 
 namespace Extensions.MessageBus.MessageInbox;
 public class InboxMessageConsumer : IMessageConsumer

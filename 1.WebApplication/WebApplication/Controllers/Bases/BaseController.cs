@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Application.Layer.DataAccess.ChangeDataLog;
+using Microsoft.AspNetCore.Mvc;
 using System.Formats.Tar;
-using WebApplicationAPI.DataAccess.ChangeDataLog;
 
 namespace WebApplicationAPI.Controllers.Bases
 {

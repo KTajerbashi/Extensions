@@ -30,6 +30,7 @@
     <ProjectReference Include="..\..\3.Caching\Implemetations\Extensions.Caching.Distributed.Redis\Extensions.Caching.Distributed.Redis.csproj" />
     <ProjectReference Include="..\..\3.Caching\Implemetations\Extensions.Caching.Distributed.Sql\Extensions.Caching.Distributed.Sql.csproj" />
     <ProjectReference Include="..\..\3.Caching\Implemetations\Extensions.Caching.InMemory\Extensions.Caching.InMemory.csproj" />
+    <ProjectReference Include="..\Application.Layer\Application.Layer.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,11 +1,11 @@
-﻿using Extensions.Events.Abstractions;
+﻿using Application.Layer.Model.Base;
+using Extensions.Events.Abstractions;
 using Extensions.Serializers.Abstractions;
 using Extensions.UsersManagement.Abstractions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using System.Diagnostics;
-using WebApplicationAPI.Model.Base;
 
 namespace Extensions.Events.Outbox.Extensions.Events.Outbox.Dal.EF.Interceptors;
 

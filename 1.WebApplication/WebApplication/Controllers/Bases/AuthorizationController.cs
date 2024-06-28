@@ -1,5 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using WebApplicationAPI.DataAccess.ChangeDataLog;
+﻿using Application.Layer.DataAccess.ChangeDataLog;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WebApplicationAPI.Controllers.Bases
 {
