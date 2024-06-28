@@ -30,6 +30,9 @@
     <ProjectReference Include="..\..\3.Caching\Implemetations\Extensions.Caching.Distributed.Redis\Extensions.Caching.Distributed.Redis.csproj" />
     <ProjectReference Include="..\..\3.Caching\Implemetations\Extensions.Caching.Distributed.Sql\Extensions.Caching.Distributed.Sql.csproj" />
     <ProjectReference Include="..\..\3.Caching\Implemetations\Extensions.Caching.InMemory\Extensions.Caching.InMemory.csproj" />
+    <ProjectReference Include="..\..\7.MessageBus\Implemetations\Extensions.MessageBus.MessageInbox.Dal.Dapper\Extensions.MessageBus.MessageInbox.Dal.Dapper.csproj" />
+    <ProjectReference Include="..\..\7.MessageBus\Implemetations\Extensions.MessageBus.MessageInbox\Extensions.MessageBus.MessageInbox.csproj" />
+    <ProjectReference Include="..\..\7.MessageBus\Implemetations\Extensions.MessageBus.RabbitMQ\Extensions.MessageBus.RabbitMQ.csproj" />
     <ProjectReference Include="..\Application.Layer\Application.Layer.csproj" />
   </ItemGroup>
 

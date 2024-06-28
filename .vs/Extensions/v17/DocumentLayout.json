@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\1.webapplication\\webapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|solutionrelative:1.webapplication\\webapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F80A417-10A9-4D6B-9924-6780FD4A6807}|1.WebApplication\\Application.Layer\\Application.Layer.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\1.webapplication\\application.layer\\mediater\\events\\blogcreatedeventmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F80A417-10A9-4D6B-9924-6780FD4A6807}|1.WebApplication\\Application.Layer\\Application.Layer.csproj|solutionrelative:1.webapplication\\application.layer\\mediater\\events\\blogcreatedeventmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\Application.Layer\\Migrations\\20240628120240_Initial_Database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:1.WebApplication\\Application.Layer\\Migrations\\20240628120240_Initial_Database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F80A417-10A9-4D6B-9924-6780FD4A6807}|1.WebApplication\\Application.Layer\\Application.Layer.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\1.webapplication\\application.layer\\model\\base\\events\\eventdispatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F80A417-10A9-4D6B-9924-6780FD4A6807}|1.WebApplication\\Application.Layer\\Application.Layer.csproj|solutionrelative:1.webapplication\\application.layer\\model\\base\\events\\eventdispatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F80A417-10A9-4D6B-9924-6780FD4A6807}|1.WebApplication\\Application.Layer\\Application.Layer.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\1.webapplication\\application.layer\\model\\base\\events\\eventdispatcherdomainexceptionhandlerdecorator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F80A417-10A9-4D6B-9924-6780FD4A6807}|1.WebApplication\\Application.Layer\\Application.Layer.csproj|solutionrelative:1.webapplication\\application.layer\\model\\base\\events\\eventdispatcherdomainexceptionhandlerdecorator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F80A417-10A9-4D6B-9924-6780FD4A6807}|1.WebApplication\\Application.Layer\\Application.Layer.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\1.webapplication\\application.layer\\model\\base\\events\\idomaineventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F80A417-10A9-4D6B-9924-6780FD4A6807}|1.WebApplication\\Application.Layer\\Application.Layer.csproj|solutionrelative:1.webapplication\\application.layer\\model\\base\\events\\idomaineventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F80A417-10A9-4D6B-9924-6780FD4A6807}|1.WebApplication\\Application.Layer\\Application.Layer.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\1.webapplication\\application.layer\\model\\changedatalog\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F80A417-10A9-4D6B-9924-6780FD4A6807}|1.WebApplication\\Application.Layer\\Application.Layer.csproj|solutionrelative:1.webapplication\\application.layer\\model\\changedatalog\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +30,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 13,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EventDispatcherDomainExceptionHandlerDecorator.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\Application.Layer\\Model\\Base\\Events\\EventDispatcherDomainExceptionHandlerDecorator.cs",
+              "RelativeDocumentMoniker": "1.WebApplication\\Application.Layer\\Model\\Base\\Events\\EventDispatcherDomainExceptionHandlerDecorator.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\Application.Layer\\Model\\Base\\Events\\EventDispatcherDomainExceptionHandlerDecorator.cs",
+              "RelativeToolTip": "1.WebApplication\\Application.Layer\\Model\\Base\\Events\\EventDispatcherDomainExceptionHandlerDecorator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T14:55:46.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EventDispatcher.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\Application.Layer\\Model\\Base\\Events\\EventDispatcher.cs",
+              "RelativeDocumentMoniker": "1.WebApplication\\Application.Layer\\Model\\Base\\Events\\EventDispatcher.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\Application.Layer\\Model\\Base\\Events\\EventDispatcher.cs",
+              "RelativeToolTip": "1.WebApplication\\Application.Layer\\Model\\Base\\Events\\EventDispatcher.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAUwD8AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T14:53:21.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\Application.Layer\\Model\\ChangeDataLog\\Person.cs",
+              "RelativeDocumentMoniker": "1.WebApplication\\Application.Layer\\Model\\ChangeDataLog\\Person.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\Application.Layer\\Model\\ChangeDataLog\\Person.cs",
+              "RelativeToolTip": "1.WebApplication\\Application.Layer\\Model\\ChangeDataLog\\Person.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T14:51:31.551Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -58,28 +109,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\Program.cs",
-              "RelativeDocumentMoniker": "1.WebApplication\\WebApplication\\Program.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\Program.cs",
-              "RelativeToolTip": "1.WebApplication\\WebApplication\\Program.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAADsAAABOAAAA",
+              "DocumentIndex": 3,
+              "Title": "IDomainEventHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\Application.Layer\\Model\\Base\\Events\\IDomainEventHandler.cs",
+              "RelativeDocumentMoniker": "1.WebApplication\\Application.Layer\\Model\\Base\\Events\\IDomainEventHandler.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\Application.Layer\\Model\\Base\\Events\\IDomainEventHandler.cs",
+              "RelativeToolTip": "1.WebApplication\\Application.Layer\\Model\\Base\\Events\\IDomainEventHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T12:03:22.983Z",
+              "WhenOpened": "2024-06-28T14:48:32.807Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "20240628120240_Initial_Database.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\Application.Layer\\Migrations\\20240628120240_Initial_Database.cs",
-              "RelativeDocumentMoniker": "1.WebApplication\\Application.Layer\\Migrations\\20240628120240_Initial_Database.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\Application.Layer\\Migrations\\20240628120240_Initial_Database.cs",
-              "RelativeToolTip": "1.WebApplication\\Application.Layer\\Migrations\\20240628120240_Initial_Database.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "BlogCreatedEventModel.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\Application.Layer\\MediateR\\Events\\BlogCreatedEventModel.cs",
+              "RelativeDocumentMoniker": "1.WebApplication\\Application.Layer\\MediateR\\Events\\BlogCreatedEventModel.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\Application.Layer\\MediateR\\Events\\BlogCreatedEventModel.cs",
+              "RelativeToolTip": "1.WebApplication\\Application.Layer\\MediateR\\Events\\BlogCreatedEventModel.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAYwCEAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T12:02:40.336Z",
+              "WhenOpened": "2024-06-28T14:46:13.284Z",
               "EditorCaption": ""
             }
           ]

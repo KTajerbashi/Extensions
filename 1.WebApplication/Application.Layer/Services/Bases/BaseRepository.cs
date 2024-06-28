@@ -1,5 +1,5 @@
 ﻿using Application.Layer.DataAccess.ChangeDataLog;
-using Application.Layer.Model.Base;
+using Application.Layer.Model.Base.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace Application.Layer.Services.Bases;

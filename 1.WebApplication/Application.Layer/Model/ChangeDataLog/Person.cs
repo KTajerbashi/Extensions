@@ -1,4 +1,4 @@
-﻿using Application.Layer.Model.Base;
+﻿using Application.Layer.Model.Base.Entities;
 using Application.Layer.Model.ChangeDataLog.Events;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -8,13 +8,15 @@ namespace Application.Layer.Model.ChangeDataLog;
 public class Person : AggregateRoot<long>
 {
     #region Properties
-    public int Id { get; set; }
     public string FirstName { get; set; }
     public string LastName { get; set; }
     public string Email { get; set; }
     #endregion
-
-    public Person(int id,
+    public Person()
+    {
+        
+    }
+    public Person(long id,
         string firstName,
         string lastName)
     {

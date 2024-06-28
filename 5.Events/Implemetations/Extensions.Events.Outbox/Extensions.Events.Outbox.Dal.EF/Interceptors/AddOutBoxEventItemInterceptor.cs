@@ -1,4 +1,4 @@
-﻿using Application.Layer.Model.Base;
+﻿using Application.Layer.Model.Base.Entities;
 using Extensions.Events.Abstractions;
 using Extensions.Serializers.Abstractions;
 using Extensions.UsersManagement.Abstractions;

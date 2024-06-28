@@ -1,4 +1,4 @@
-﻿using Application.Layer.Model.Base;
+﻿using Application.Layer.Model.Base.Events;
 
 namespace Application.Layer.Model.ChangeDataLog.Events
 {

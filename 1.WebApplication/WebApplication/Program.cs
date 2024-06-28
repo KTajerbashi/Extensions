@@ -15,6 +15,9 @@ using Extensions.Caching.Distributed.Sql.Extensions.DependencyInjection;
 using Application.Layer.Services.Interfaces;
 using Application.Layer.Services.Repositories;
 using Application.Layer.DataAccess.ChangeDataLog;
+using Extensions.MessageBus.MessageInbox.Extensions.DependencyInjection;
+using Extensions.MessageBus.MessageInbox.Dal.Dapper.Extensions.DependencyInjection;
+using Extensions.MessageBus.RabbitMQ.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 IConfiguration configuration = builder.Configuration;
@@ -59,6 +62,27 @@ builder.Services.AddScoped<IPersonRepository, PersonRepository>();
 //});
 builder.Services.AddKernelSqlDistributedCache(builder.Configuration, "Cache");
 #endregion
+
+#region Message Inbox
+builder.Services.AddRabbitMqMessageBus(c =>
+{
+    c.PerssistMessage = true;
+    c.ExchangeName = "ExtensionsExchange";
+    c.ServiceName = "ExtensionsService";
+    c.Url = @"amqp://guest:guest@localhost:5672/";
+});
+builder.Services.AddMessageInbox(config =>
+{
+    config.ApplicationName = "WebApplicationAPI";
+});
+builder.Services.AddMessageInboxDalSql(config =>
+{
+    config.SchemaName = "Message";
+    config.ConnectionString = configuration.GetSection("MessageInbox:ConnectionString").Value;
+});
+#endregion
+
+
 builder.Services.AddServiceWebApplication();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -77,7 +101,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.Services.ReceiveEventFromRabbitMqMessageBus(new KeyValuePair<string, string>("MiniBlog", "BlogCreated"));
 app.UseAuthorization();
 
 app.MapControllers();

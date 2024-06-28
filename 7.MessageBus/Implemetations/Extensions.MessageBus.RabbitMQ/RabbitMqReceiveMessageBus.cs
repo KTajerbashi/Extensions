@@ -10,6 +10,7 @@ using System.Diagnostics;
 using System;
 using Extensions.MessageBus.RabbitMQ.Options;
 using Extensions.MessageBus.RabbitMQ.Extensions;
+using System.Data.Common;
 
 namespace Extensions.MessageBus.RabbitMQ;
 public class RabbitMqReceiveMessageBus : IReceiveMessageBus, IDisposable
@@ -27,7 +28,7 @@ public class RabbitMqReceiveMessageBus : IReceiveMessageBus, IDisposable
                                      IOptions<RabbitMqOptions> rabbitMqOptions,
                                      IServiceScopeFactory serviceScopeFactory)
     {
-        _logger = logger;
+         _logger = logger;
         _rabbitMqOptions = rabbitMqOptions.Value;
         _serviceScopeFactory = serviceScopeFactory;
         _connection = connection;

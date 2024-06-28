@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Application.Layer.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20240628120240_Initial_Database")]
+    [Migration("20240628142211_Initial_Database")]
     partial class Initial_Database
     {
         /// <inheritdoc />
@@ -26,11 +26,11 @@ namespace Application.Layer.Migrations
 
             modelBuilder.Entity("Application.Layer.Model.ChangeDataLog.Person", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("bigint");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
                     b.Property<string>("Email")
                         .IsRequired()

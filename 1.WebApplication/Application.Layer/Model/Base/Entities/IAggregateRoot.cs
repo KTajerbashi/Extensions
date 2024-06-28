@@ -1,7 +1,8 @@
 ﻿using System.Reflection;
 using System.Windows.Input;
+using Application.Layer.Model.Base.Events;
 
-namespace Application.Layer.Model.Base;
+namespace Application.Layer.Model.Base.Entities;
 public enum ApplicationServiceStatus
 {
     Ok = 1,

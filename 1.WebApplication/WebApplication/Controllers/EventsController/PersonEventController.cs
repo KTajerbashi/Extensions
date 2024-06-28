@@ -1,6 +1,7 @@
 ﻿using Application.Layer.DataAccess.ChangeDataLog;
+using Application.Layer.MediateR.Commands;
+using Application.Layer.MediateR.Queries;
 using Application.Layer.Model.ChangeDataLog;
-using Application.Layer.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using WebApplicationAPI.Controllers.Bases;
 
@@ -8,48 +9,43 @@ namespace WebApplicationAPI.Controllers.EventsController
 {
     public class PersonEventController : BaseController
     {
-        private readonly IPersonRepository personRepository;
-        public PersonEventController(DatabaseContext context, IPersonRepository personRepository) : base(context)
+        public PersonEventController(DatabaseContext context) : base(context)
         {
-            this.personRepository = personRepository;
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(Person person)
+        public async Task<IActionResult> Create(CreatePersonModel person)
         {
-            Person entity = new Person(person.Id,person.FirstName,person.LastName);
-            entity.ChangeFirstName(person.FirstName);
-            personRepository.Insert(entity);
-            await personRepository.SaveChangesAsync();
+            await Create<CreatePersonModel, long>(person);
             return Ok(person);
         }
 
         [HttpGet]
-        public async Task<IActionResult> Read()
+        public async Task<IActionResult> Read(GetAllPersonModel getPerson)
         {
             await Task.CompletedTask;
-            return Ok(personRepository.GetAll());
+            return Ok(QueryDispatcher.Execute<GetAllPersonModel, List<PersonModel>>(getPerson));
         }
 
         [HttpGet("ReadById")]
-        public async Task<IActionResult> Read(Person person)
+        public async Task<IActionResult> Read(GetPersonByIdModel getPerson)
         {
             await Task.CompletedTask;
-            return Ok(personRepository.Get(person));
+            return Ok(QueryDispatcher.Execute<GetPersonByIdModel, PersonModel>(getPerson));
         }
 
         [HttpPut]
-        public async Task<IActionResult> Update(Person person)
+        public async Task<IActionResult> Update(UpdatePersonModel person)
         {
             await Task.CompletedTask;
-            return Ok(personRepository.Update(person));
+            return Ok(CommandDispatcher.Send<UpdatePersonModel, Person>(person));
         }
 
         [HttpDelete]
-        public async Task<IActionResult> Delete(Person person)
+        public async Task<IActionResult> Delete(DeletePersonModel person)
         {
             await Task.CompletedTask;
-            return Ok(personRepository.Delete(person));
+            return Ok(CommandDispatcher.Send<DeletePersonModel, bool>(person));
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿using Application.Layer.Model.Base;
+﻿using Application.Layer.Model.Base.Entities;
 
 namespace Application.Layer.Services.Bases;
 

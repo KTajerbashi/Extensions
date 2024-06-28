@@ -1,4 +1,5 @@
-﻿using Application.Layer.Model.Base;
+﻿using Application.Layer.Model.Base.Commands;
+using Application.Layer.Model.Base.Events;
 using Extensions.MessageBus.Abstractions;
 using Extensions.MessageBus.MessageInbox.Options;
 using Extensions.Serializers.Abstractions;
