@@ -11,7 +11,7 @@ using WebApplicationAPI.DataAccess.ChangeDataLog;
 namespace WebApplicationAPI.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20240627142851_Initial_Database")]
+    [Migration("20240628105943_Initial_Database")]
     partial class Initial_Database
     {
         /// <inheritdoc />
@@ -20,8 +20,7 @@ namespace WebApplicationAPI.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "8.0.6")
-                .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("SqlServer:SequenceSchema", "Log");
+                .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
@@ -33,11 +32,15 @@ namespace WebApplicationAPI.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("FullName")
+                    b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

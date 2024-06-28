@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{538CC3E4-AEC8-41D4-815A-F8C9BA31C472}|3.Caching\\Implemetations\\Extensions.Caching.Distributed.Sql\\Extensions.Caching.Distributed.Sql.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\3.caching\\implemetations\\extensions.caching.distributed.sql\\extensions\\dependencyinjection\\distributedsqlcacheservicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{538CC3E4-AEC8-41D4-815A-F8C9BA31C472}|3.Caching\\Implemetations\\Extensions.Caching.Distributed.Sql\\Extensions.Caching.Distributed.Sql.csproj|solutionrelative:3.caching\\implemetations\\extensions.caching.distributed.sql\\extensions\\dependencyinjection\\distributedsqlcacheservicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\1.webapplication\\webapplication\\services\\repositories\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|solutionrelative:1.webapplication\\webapplication\\services\\repositories\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\1.webapplication\\webapplication\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|solutionrelative:1.webapplication\\webapplication\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\1.webapplication\\webapplication\\services\\bases\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|solutionrelative:1.webapplication\\webapplication\\services\\bases\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5522115A-A52D-4B8F-AED1-B4F0BA85F491}|2.ChangeDataLog\\Implemetations\\Extensions.ChangeDataLog.Sql\\Extensions.ChangeDataLog.Sql.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\2.changedatalog\\implemetations\\extensions.changedatalog.sql\\dapperentitychageinterceptoritemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5522115A-A52D-4B8F-AED1-B4F0BA85F491}|2.ChangeDataLog\\Implemetations\\Extensions.ChangeDataLog.Sql\\Extensions.ChangeDataLog.Sql.csproj|solutionrelative:2.changedatalog\\implemetations\\extensions.changedatalog.sql\\dapperentitychageinterceptoritemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\1.webapplication\\webapplication\\controllers\\eventscontroller\\personeventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|solutionrelative:1.webapplication\\webapplication\\controllers\\eventscontroller\\personeventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\1.webapplication\\webapplication\\model\\changedatalog\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|solutionrelative:1.webapplication\\webapplication\\model\\changedatalog\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\1.webapplication\\webapplication\\model\\changedatalog\\events\\personcreated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|solutionrelative:1.webapplication\\webapplication\\model\\changedatalog\\events\\personcreated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\1.webapplication\\webapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|solutionrelative:1.webapplication\\webapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\1.webapplication\\webapplication\\dependencyinjections\\dicontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|solutionrelative:1.webapplication\\webapplication\\dependencyinjections\\dicontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +38,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PersonRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\Services\\Repositories\\PersonRepository.cs",
+              "RelativeDocumentMoniker": "1.WebApplication\\WebApplication\\Services\\Repositories\\PersonRepository.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\Services\\Repositories\\PersonRepository.cs",
+              "RelativeToolTip": "1.WebApplication\\WebApplication\\Services\\Repositories\\PersonRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T11:24:31.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\Services\\Bases\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "1.WebApplication\\WebApplication\\Services\\Bases\\BaseRepository.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\Services\\Bases\\BaseRepository.cs",
+              "RelativeToolTip": "1.WebApplication\\WebApplication\\Services\\Bases\\BaseRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T11:22:24.192Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -66,60 +104,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "1.WebApplication\\WebApplication\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\appsettings.Development.json",
-              "RelativeToolTip": "1.WebApplication\\WebApplication\\appsettings.Development.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAACOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-27T16:12:26Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DistributedSqlCacheServiceCollectionExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\3.Caching\\Implemetations\\Extensions.Caching.Distributed.Sql\\Extensions\\DependencyInjection\\DistributedSqlCacheServiceCollectionExtensions.cs",
-              "RelativeDocumentMoniker": "3.Caching\\Implemetations\\Extensions.Caching.Distributed.Sql\\Extensions\\DependencyInjection\\DistributedSqlCacheServiceCollectionExtensions.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\3.Caching\\Implemetations\\Extensions.Caching.Distributed.Sql\\Extensions\\DependencyInjection\\DistributedSqlCacheServiceCollectionExtensions.cs",
-              "RelativeToolTip": "3.Caching\\Implemetations\\Extensions.Caching.Distributed.Sql\\Extensions\\DependencyInjection\\DistributedSqlCacheServiceCollectionExtensions.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAYwFMAAAAEAAAA",
+              "DocumentIndex": 4,
+              "Title": "PersonCreated.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\Model\\ChangeDataLog\\Events\\PersonCreated.cs",
+              "RelativeDocumentMoniker": "1.WebApplication\\WebApplication\\Model\\ChangeDataLog\\Events\\PersonCreated.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\Model\\ChangeDataLog\\Events\\PersonCreated.cs",
+              "RelativeToolTip": "1.WebApplication\\WebApplication\\Model\\ChangeDataLog\\Events\\PersonCreated.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAABXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T16:05:08.308Z",
+              "WhenOpened": "2024-06-28T11:19:38.685Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\Model\\ChangeDataLog\\Person.cs",
+              "RelativeDocumentMoniker": "1.WebApplication\\WebApplication\\Model\\ChangeDataLog\\Person.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\Model\\ChangeDataLog\\Person.cs",
+              "RelativeToolTip": "1.WebApplication\\WebApplication\\Model\\ChangeDataLog\\Person.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA4AAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T11:18:09.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\Program.cs",
               "RelativeDocumentMoniker": "1.WebApplication\\WebApplication\\Program.cs",
               "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\Program.cs",
               "RelativeToolTip": "1.WebApplication\\WebApplication\\Program.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA4AAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD4AAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T16:04:23.637Z",
+              "WhenOpened": "2024-06-28T11:05:48.472Z",
               "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DIContainer.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\DependencyInjections\\DIContainer.cs",
+              "RelativeDocumentMoniker": "1.WebApplication\\WebApplication\\DependencyInjections\\DIContainer.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\DependencyInjections\\DIContainer.cs",
+              "RelativeToolTip": "1.WebApplication\\WebApplication\\DependencyInjections\\DIContainer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T11:05:29.191Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DapperEntityChageInterceptorItemRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\2.ChangeDataLog\\Implemetations\\Extensions.ChangeDataLog.Sql\\DapperEntityChageInterceptorItemRepository.cs",
-              "RelativeDocumentMoniker": "2.ChangeDataLog\\Implemetations\\Extensions.ChangeDataLog.Sql\\DapperEntityChageInterceptorItemRepository.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\2.ChangeDataLog\\Implemetations\\Extensions.ChangeDataLog.Sql\\DapperEntityChageInterceptorItemRepository.cs",
-              "RelativeToolTip": "2.ChangeDataLog\\Implemetations\\Extensions.ChangeDataLog.Sql\\DapperEntityChageInterceptorItemRepository.cs",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAowEwAAAAAAAAA",
+              "Title": "PersonEventController.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\Controllers\\EventsController\\PersonEventController.cs",
+              "RelativeDocumentMoniker": "1.WebApplication\\WebApplication\\Controllers\\EventsController\\PersonEventController.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\Controllers\\EventsController\\PersonEventController.cs",
+              "RelativeToolTip": "1.WebApplication\\WebApplication\\Controllers\\EventsController\\PersonEventController.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAawBYAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T15:41:06.165Z",
+              "WhenOpened": "2024-06-28T11:01:12.535Z",
               "EditorCaption": ""
             }
           ]

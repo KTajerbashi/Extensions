@@ -2,62 +2,56 @@
 using WebApplicationAPI.Controllers.Bases;
 using WebApplicationAPI.DataAccess.ChangeDataLog;
 using WebApplicationAPI.Model.ChangeDataLog;
+using WebApplicationAPI.Services.Interfaces;
 
 namespace WebApplicationAPI.Controllers.ChangeDataLog;
 
 public class ChangeDataLogController : BaseController
 {
-    public ChangeDataLogController(DatabaseContext context) : base(context)
+    private readonly IPersonRepository personRepository;
+    public ChangeDataLogController(DatabaseContext context, IPersonRepository personRepository) : base(context)
     {
+        this.personRepository = personRepository;
     }
 
     [HttpPost]
-    public IActionResult CreatePerson(Person person)
+    public IActionResult Create (Person person)
     {
         var items = context.People.ToList();
         foreach (var item in items)
         {
-            item.Name = item.Name + " " + DateTime.Now.Ticks;
+            item.FirstName = item.FirstName + " " + DateTime.Now.Ticks;
         }
-        context.Add(person);
-        context.SaveChanges();
+        personRepository.Insert(person);
+        personRepository.SaveChanges();
         return Ok(person);
     }
     [HttpPut]
-    public IActionResult UpdatePerson(Person person)
+    public IActionResult Update(Person person)
     {
         var items = context.People.Where(item => item.Id.Equals(person.Id)).Single();
-        items.FullName = person.FullName;
-        items.Name = person.Name;
-        context.Update(items);
-        context.SaveChanges();
+        items.FirstName = person.FirstName;
+        items.LastName = person.LastName;
+        items.Email = person.Email;
+        personRepository.Update(items);
+        personRepository.SaveChanges();
         return Ok(person);
     }
     [HttpDelete]
-    public IActionResult DeletePerson(Person person)
+    public IActionResult Delete(Person person)
     {
-        var items = context.People.Where(item =>
-        item.Id.Equals(person.Id) ||
-        item.Name.Equals(person.Name) ||
-        item.FullName.Equals(person.FullName)
-        ).FirstOrDefault();
-        context.Remove(items);
-        context.SaveChanges();
+        personRepository.Delete(personRepository.Get(person));
+        personRepository.SaveChanges();
         return Ok(context.People.ToList());
     }
     [HttpGet("Read")]
-    public IActionResult GetPerson(Person person)
+    public IActionResult Get(Person person)
     {
-        var items = context.People.Where(item => 
-        item.Id.Equals(person.Id) ||
-        item.Name.Equals(person.Name) ||
-        item.FullName.Equals(person.FullName) 
-        ).FirstOrDefault();
-        return Ok(items);
+        return Ok(personRepository.Get(person));
     }
     [HttpGet("ReadAll")]
-    public IActionResult GetPeople()
+    public IActionResult Get()
     {
-        return Ok(context.People.ToList());
+        return Ok(personRepository.GetAll());
     }
 }
