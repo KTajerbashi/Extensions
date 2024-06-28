@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ECC043D5-BE45-42AF-AD01-9E736EBB8A33}|1.WebApplication\\WebApplication.Event\\WebApplicationAPI.Event.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\1.webapplication\\webapplication.event\\controllers\\personeventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECC043D5-BE45-42AF-AD01-9E736EBB8A33}|1.WebApplication\\WebApplication.Event\\WebApplicationAPI.Event.csproj|solutionrelative:1.webapplication\\webapplication.event\\controllers\\personeventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5339B5A-B776-4B1C-91C8-0BED6CC2ECAE}|1.WebApplication\\WebApplication.ChangeDataLog\\WebApplicationAPI.ChangeDataLog.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\1.webapplication\\webapplication.changedatalog\\controllers\\changedatalogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5339B5A-B776-4B1C-91C8-0BED6CC2ECAE}|1.WebApplication\\WebApplication.ChangeDataLog\\WebApplicationAPI.ChangeDataLog.csproj|solutionrelative:1.webapplication\\webapplication.changedatalog\\controllers\\changedatalogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3FF5FF-61E9-48B0-A26E-0FB25752A261}|1.WebApplication\\WebApplication.Caching\\WebApplicationAPI.Caching.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\1.webapplication\\webapplication.caching\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E3FF5FF-61E9-48B0-A26E-0FB25752A261}|1.WebApplication\\WebApplication.Caching\\WebApplicationAPI.Caching.csproj|solutionrelative:1.webapplication\\webapplication.caching\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,6 +59,45 @@
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PersonEventController.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication.Event\\Controllers\\PersonEventController.cs",
+              "RelativeDocumentMoniker": "1.WebApplication\\WebApplication.Event\\Controllers\\PersonEventController.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication.Event\\Controllers\\PersonEventController.cs",
+              "RelativeToolTip": "1.WebApplication\\WebApplication.Event\\Controllers\\PersonEventController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T15:48:24.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChangeDataLogController.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication.ChangeDataLog\\Controllers\\ChangeDataLogController.cs",
+              "RelativeDocumentMoniker": "1.WebApplication\\WebApplication.ChangeDataLog\\Controllers\\ChangeDataLogController.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication.ChangeDataLog\\Controllers\\ChangeDataLogController.cs",
+              "RelativeToolTip": "1.WebApplication\\WebApplication.ChangeDataLog\\Controllers\\ChangeDataLogController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T15:47:43.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication.Caching\\Program.cs",
+              "RelativeDocumentMoniker": "1.WebApplication\\WebApplication.Caching\\Program.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication.Caching\\Program.cs",
+              "RelativeToolTip": "1.WebApplication\\WebApplication.Caching\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T15:45:59.328Z",
+              "EditorCaption": ""
             }
           ]
         }
