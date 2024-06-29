@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\MediatR\1.Abstraction\MediateR.Abstractions\MediateR.Abstractions.csproj" />
+    <ProjectReference Include="..\..\..\Serializers\1.Abstraction\Extensions.Serializers.Abstractions\Extensions.Serializers.Abstractions.csproj" />
+    <ProjectReference Include="..\..\..\UsersManagement\1.Abstraction\Extensions.UsersManagement.Abstractions\Extensions.UsersManagement.Abstractions.csproj" />
+    <ProjectReference Include="..\..\1.Abstraction\Extensions.Events.Abstractions\Extensions.Events.Abstractions.csproj" />
+  </ItemGroup>
+
+
+</Project>

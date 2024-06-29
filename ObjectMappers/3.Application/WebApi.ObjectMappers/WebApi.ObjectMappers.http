@@ -1,0 +1,6 @@
+@WebApi.ObjectMappers_HostAddress = http://localhost:5085
+
+GET {{WebApi.ObjectMappers_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

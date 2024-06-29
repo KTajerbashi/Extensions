@@ -1,0 +1,6 @@
+@WebApi.MessageBus_HostAddress = http://localhost:5159
+
+GET {{WebApi.MessageBus_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

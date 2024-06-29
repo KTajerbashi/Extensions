@@ -1,0 +1,6 @@
+@WebApi.Serializers_HostAddress = http://localhost:5008
+
+GET {{WebApi.Serializers_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

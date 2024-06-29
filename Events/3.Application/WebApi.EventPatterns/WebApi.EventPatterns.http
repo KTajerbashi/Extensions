@@ -1,0 +1,6 @@
+@WebApi.EventPatterns_HostAddress = http://localhost:5210
+
+GET {{WebApi.EventPatterns_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
