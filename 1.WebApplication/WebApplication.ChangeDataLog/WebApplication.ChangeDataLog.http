@@ -1,6 +1,0 @@
-@WebApplication.ChangeDataLog_HostAddress = http://localhost:5013
-
-GET {{WebApplication.ChangeDataLog_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

@@ -1,32 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{D2C5F0F5-3FAB-484E-8DC8-DEE29BB43518}|1.WebApplication\\WebApplicationAPI.RabbitMQ\\WebApplicationAPI.RabbitMQ.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\1.webapplication\\webapplicationapi.rabbitmq\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2C5F0F5-3FAB-484E-8DC8-DEE29BB43518}|1.WebApplication\\WebApplicationAPI.RabbitMQ\\WebApplicationAPI.RabbitMQ.csproj|solutionrelative:1.webapplication\\webapplicationapi.rabbitmq\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2C5F0F5-3FAB-484E-8DC8-DEE29BB43518}|1.WebApplication\\WebApplicationAPI.RabbitMQ\\WebApplicationAPI.RabbitMQ.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\1.webapplication\\webapplicationapi.rabbitmq\\models\\personevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2C5F0F5-3FAB-484E-8DC8-DEE29BB43518}|1.WebApplication\\WebApplicationAPI.RabbitMQ\\WebApplicationAPI.RabbitMQ.csproj|solutionrelative:1.webapplication\\webapplicationapi.rabbitmq\\models\\personevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2C5F0F5-3FAB-484E-8DC8-DEE29BB43518}|1.WebApplication\\WebApplicationAPI.RabbitMQ\\WebApplicationAPI.RabbitMQ.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\1.webapplication\\webapplicationapi.rabbitmq\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2C5F0F5-3FAB-484E-8DC8-DEE29BB43518}|1.WebApplication\\WebApplicationAPI.RabbitMQ\\WebApplicationAPI.RabbitMQ.csproj|solutionrelative:1.webapplication\\webapplicationapi.rabbitmq\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\1.webapplication\\webapplication\\dependencyinjections\\httpcontextextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|solutionrelative:1.webapplication\\webapplication\\dependencyinjections\\httpcontextextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\1.webapplication\\webapplication\\controllers\\bases\\authorizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|solutionrelative:1.webapplication\\webapplication\\controllers\\bases\\authorizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|c:\\users\\tajer\\desktop\\visual studio\\test project extensions\\extensions\\1.webapplication\\webapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{299252DF-C0DC-47A9-96AF-8806E11C71B2}|1.WebApplication\\WebApplication\\WebApplicationAPI.csproj|solutionrelative:1.webapplication\\webapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -34,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -71,84 +46,16 @@
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
+            }
+          ]
+        },
+        {
+          "DockedWidth": 484,
+          "SelectedChildIndex": -1,
+          "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PersonEvent.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplicationAPI.RabbitMQ\\Models\\PersonEvent.cs",
-              "RelativeDocumentMoniker": "1.WebApplication\\WebApplicationAPI.RabbitMQ\\Models\\PersonEvent.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplicationAPI.RabbitMQ\\Models\\PersonEvent.cs",
-              "RelativeToolTip": "1.WebApplication\\WebApplicationAPI.RabbitMQ\\Models\\PersonEvent.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAwA4AAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T19:18:20.005Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplicationAPI.RabbitMQ\\Program.cs",
-              "RelativeDocumentMoniker": "1.WebApplication\\WebApplicationAPI.RabbitMQ\\Program.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplicationAPI.RabbitMQ\\Program.cs",
-              "RelativeToolTip": "1.WebApplication\\WebApplicationAPI.RabbitMQ\\Program.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T19:13:08.971Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplicationAPI.RabbitMQ\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "1.WebApplication\\WebApplicationAPI.RabbitMQ\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplicationAPI.RabbitMQ\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "1.WebApplication\\WebApplicationAPI.RabbitMQ\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAswBoAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T19:10:51.193Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HttpContextExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\DependencyInjections\\HttpContextExtensions.cs",
-              "RelativeDocumentMoniker": "1.WebApplication\\WebApplication\\DependencyInjections\\HttpContextExtensions.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\DependencyInjections\\HttpContextExtensions.cs",
-              "RelativeToolTip": "1.WebApplication\\WebApplication\\DependencyInjections\\HttpContextExtensions.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T19:10:18.454Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AuthorizationController.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\Controllers\\Bases\\AuthorizationController.cs",
-              "RelativeDocumentMoniker": "1.WebApplication\\WebApplication\\Controllers\\Bases\\AuthorizationController.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\Controllers\\Bases\\AuthorizationController.cs",
-              "RelativeToolTip": "1.WebApplication\\WebApplication\\Controllers\\Bases\\AuthorizationController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T19:09:04.508Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\Program.cs",
-              "RelativeDocumentMoniker": "1.WebApplication\\WebApplication\\Program.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Test Project Extensions\\Extensions\\1.WebApplication\\WebApplication\\Program.cs",
-              "RelativeToolTip": "1.WebApplication\\WebApplication\\Program.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAMwFUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T19:06:46.893Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }

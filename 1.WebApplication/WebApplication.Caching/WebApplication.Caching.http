@@ -1,6 +1,0 @@
-@WebApplication.Caching_HostAddress = http://localhost:5241
-
-GET {{WebApplication.Caching_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
