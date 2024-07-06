@@ -4,6 +4,7 @@ using Extensions.Caching.Distributed.Redis.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Extensions.Caching.Abstractions;
+using Extensions.Serializers.Abstractions;
 
 namespace Extensions.Caching.Distributed.Redis.Extensions.DependencyInjection;
 

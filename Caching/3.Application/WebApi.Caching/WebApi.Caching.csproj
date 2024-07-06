@@ -10,4 +10,15 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Serializers\2.Implementations\Extensions.Serializers.NewtonSoft\Extensions.Serializers.NewtonSoft.csproj" />
+    <ProjectReference Include="..\..\2.Implementations\Extensions.Caching.Distributed.Redis\Extensions.Caching.Distributed.Redis.csproj" />
+    <ProjectReference Include="..\..\2.Implementations\Extensions.Caching.Distributed.Sql\Extensions.Caching.Distributed.Sql.csproj" />
+    <ProjectReference Include="..\..\2.Implementations\Extensions.Caching.InMemory\Extensions.Caching.InMemory.csproj" />
+  </ItemGroup>
+
 </Project>

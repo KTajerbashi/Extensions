@@ -2,6 +2,7 @@
 
 public class DistributedSqlCacheOptions
 {
+    public string DatabaseName { get; set; } = "";
     public bool AutoCreateTable { get; set; } = true;
     public string ConnectionString { get; set; } = string.Empty;
     public string SchemaName { get; set; } = "Cache";

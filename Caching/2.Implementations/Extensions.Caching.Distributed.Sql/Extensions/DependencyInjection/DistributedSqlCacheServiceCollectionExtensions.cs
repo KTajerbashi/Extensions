@@ -82,22 +82,40 @@ public static class DistributedSqlCacheServiceCollectionExtensions
     /// <param name="options"></param>
     private static void CreateTable(DistributedSqlCacheOptions options)
     {
+        string databaseName = options.DatabaseName;
         string table = options.TableName;
         string schema = options.SchemaName;
 
         string createTable =
-            $@"
-IF (NOT EXISTS (SELECT *  FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = '{schema}' AND  TABLE_NAME = '{table}' ))
-Begin
-CREATE TABLE [{schema}].[{table}](
-[Id][nvarchar](449) COLLATE SQL_Latin1_General_CP1_CS_AS NOT NULL,
-[Value] [varbinary](max)NOT NULL,
-[ExpiresAtTime] [datetimeoffset](7) NOT NULL,
-[SlidingExpirationInSeconds] [bigint] NULL,
-[AbsoluteExpiration] [datetimeoffset](7) NULL,
-PRIMARY KEY(Id),
-INDEX Index_ExpiresAtTime NONCLUSTERED (ExpiresAtTime))
-End;
+$@"
+BEGIN
+    IF DB_ID('{databaseName}') IS NULL
+        BEGIN
+	        EXEC('CREATE DATABASE {databaseName}')
+	    END
+END
+
+USE {databaseName};
+
+BEGIN
+IF (NOT EXISTS (SELECT *  FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = '{schema}' ))
+	BEGIN
+		EXEC('CREATE SCHEMA {schema}');
+	END
+END
+BEGIN
+    IF (NOT EXISTS (SELECT *  FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = '{table}' ))
+        BEGIN
+            CREATE TABLE [{schema}].[{table}](
+		    [Id][nvarchar](449) COLLATE SQL_Latin1_General_CP1_CS_AS NOT NULL,
+		    [Value] [varbinary](max)NOT NULL,
+		    [ExpiresAtTime] [datetimeoffset](7) NOT NULL,
+		    [SlidingExpirationInSeconds] [bigint] NULL,
+		    [AbsoluteExpiration] [datetimeoffset](7) NULL,
+		    PRIMARY KEY(Id),
+		    INDEX Index_ExpiresAtTime NONCLUSTERED (ExpiresAtTime))
+        END
+END
 ";
 
         var dbConnection = new SqlConnection(options.ConnectionString);
