@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\GitHub\\Git Tajerbashi\\Extensions\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2A7C8B09-D43B-41CE-9A43-9391D6974AD5}|Caching\\3.Application\\WebApi.Caching\\WebApi.Caching.csproj|c:\\users\\tajer\\desktop\\visual studio\\github\\git tajerbashi\\extensions\\caching\\3.application\\webapi.caching\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A7C8B09-D43B-41CE-9A43-9391D6974AD5}|Caching\\3.Application\\WebApi.Caching\\WebApi.Caching.csproj|solutionrelative:caching\\3.application\\webapi.caching\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AF5272E9-BA96-4FA1-BC4F-B6B7E498D720}|ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\WebApi.ChangeDataLog.csproj|c:\\users\\tajer\\desktop\\visual studio\\github\\git tajerbashi\\extensions\\changedatalog\\3.application\\webapi.changedatalog\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5272E9-BA96-4FA1-BC4F-B6B7E498D720}|ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\WebApi.ChangeDataLog.csproj|solutionrelative:changedatalog\\3.application\\webapi.changedatalog\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A7C8B09-D43B-41CE-9A43-9391D6974AD5}|Caching\\3.Application\\WebApi.Caching\\WebApi.Caching.csproj|c:\\users\\tajer\\desktop\\visual studio\\github\\git tajerbashi\\extensions\\caching\\3.application\\webapi.caching\\controllers\\cachecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A7C8B09-D43B-41CE-9A43-9391D6974AD5}|Caching\\3.Application\\WebApi.Caching\\WebApi.Caching.csproj|solutionrelative:caching\\3.application\\webapi.caching\\controllers\\cachecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AF5272E9-BA96-4FA1-BC4F-B6B7E498D720}|ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\WebApi.ChangeDataLog.csproj|c:\\users\\tajer\\desktop\\visual studio\\github\\git tajerbashi\\extensions\\changedatalog\\3.application\\webapi.changedatalog\\models\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5272E9-BA96-4FA1-BC4F-B6B7E498D720}|ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\WebApi.ChangeDataLog.csproj|solutionrelative:changedatalog\\3.application\\webapi.changedatalog\\models\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A7C8B09-D43B-41CE-9A43-9391D6974AD5}|Caching\\3.Application\\WebApi.Caching\\WebApi.Caching.csproj|c:\\users\\tajer\\desktop\\visual studio\\github\\git tajerbashi\\extensions\\caching\\3.application\\webapi.caching\\controllers\\sqlservercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A7C8B09-D43B-41CE-9A43-9391D6974AD5}|Caching\\3.Application\\WebApi.Caching\\WebApi.Caching.csproj|solutionrelative:caching\\3.application\\webapi.caching\\controllers\\sqlservercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AF5272E9-BA96-4FA1-BC4F-B6B7E498D720}|ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\WebApi.ChangeDataLog.csproj|c:\\users\\tajer\\desktop\\visual studio\\github\\git tajerbashi\\extensions\\changedatalog\\3.application\\webapi.changedatalog\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5272E9-BA96-4FA1-BC4F-B6B7E498D720}|ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\WebApi.ChangeDataLog.csproj|solutionrelative:changedatalog\\3.application\\webapi.changedatalog\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA2B53BA-A276-4655-8AC7-FB026AC71D56}|Caching\\2.Implementations\\Extensions.Caching.Distributed.Redis\\Extensions.Caching.Distributed.Redis.csproj|c:\\users\\tajer\\desktop\\visual studio\\github\\git tajerbashi\\extensions\\caching\\2.implementations\\extensions.caching.distributed.redis\\services\\distributedrediscacheadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA2B53BA-A276-4655-8AC7-FB026AC71D56}|Caching\\2.Implementations\\Extensions.Caching.Distributed.Redis\\Extensions.Caching.Distributed.Redis.csproj|solutionrelative:caching\\2.implementations\\extensions.caching.distributed.redis\\services\\distributedrediscacheadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AF5272E9-BA96-4FA1-BC4F-B6B7E498D720}|ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\WebApi.ChangeDataLog.csproj|c:\\users\\tajer\\desktop\\visual studio\\github\\git tajerbashi\\extensions\\changedatalog\\3.application\\webapi.changedatalog\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5272E9-BA96-4FA1-BC4F-B6B7E498D720}|ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\WebApi.ChangeDataLog.csproj|solutionrelative:changedatalog\\3.application\\webapi.changedatalog\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +26,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 313,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Result.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\GitHub\\Git Tajerbashi\\Extensions\\ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\Models\\Result.cs",
+              "RelativeDocumentMoniker": "ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\Models\\Result.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\GitHub\\Git Tajerbashi\\Extensions\\ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\Models\\Result.cs",
+              "RelativeToolTip": "ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\Models\\Result.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAQwAsAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T21:22:37.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegisterController.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\GitHub\\Git Tajerbashi\\Extensions\\ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\Controllers\\RegisterController.cs",
+              "RelativeDocumentMoniker": "ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\Controllers\\RegisterController.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\GitHub\\Git Tajerbashi\\Extensions\\ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\Controllers\\RegisterController.cs",
+              "RelativeToolTip": "ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\Controllers\\RegisterController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T21:11:10.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\GitHub\\Git Tajerbashi\\Extensions\\ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\Program.cs",
+              "RelativeDocumentMoniker": "ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\Program.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\GitHub\\Git Tajerbashi\\Extensions\\ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\Program.cs",
+              "RelativeToolTip": "ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T21:07:38.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\GitHub\\Git Tajerbashi\\Extensions\\ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\Controllers\\BaseController.cs",
+              "RelativeDocumentMoniker": "ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\Controllers\\BaseController.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\GitHub\\Git Tajerbashi\\Extensions\\ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\Controllers\\BaseController.cs",
+              "RelativeToolTip": "ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\Controllers\\BaseController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAApwBYAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T21:07:09.038Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -63,58 +115,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SqlServerController.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\GitHub\\Git Tajerbashi\\Extensions\\Caching\\3.Application\\WebApi.Caching\\Controllers\\SqlServerController.cs",
-              "RelativeDocumentMoniker": "Caching\\3.Application\\WebApi.Caching\\Controllers\\SqlServerController.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\GitHub\\Git Tajerbashi\\Extensions\\Caching\\3.Application\\WebApi.Caching\\Controllers\\SqlServerController.cs",
-              "RelativeToolTip": "Caching\\3.Application\\WebApi.Caching\\Controllers\\SqlServerController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAcwB0AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T21:02:13.212Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DistributedRedisCacheAdapter.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\GitHub\\Git Tajerbashi\\Extensions\\Caching\\2.Implementations\\Extensions.Caching.Distributed.Redis\\Services\\DistributedRedisCacheAdapter.cs",
-              "RelativeDocumentMoniker": "Caching\\2.Implementations\\Extensions.Caching.Distributed.Redis\\Services\\DistributedRedisCacheAdapter.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\GitHub\\Git Tajerbashi\\Extensions\\Caching\\2.Implementations\\Extensions.Caching.Distributed.Redis\\Services\\DistributedRedisCacheAdapter.cs",
-              "RelativeToolTip": "Caching\\2.Implementations\\Extensions.Caching.Distributed.Redis\\Services\\DistributedRedisCacheAdapter.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAuwCsAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T20:20:19.774Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\GitHub\\Git Tajerbashi\\Extensions\\Caching\\3.Application\\WebApi.Caching\\Program.cs",
-              "RelativeDocumentMoniker": "Caching\\3.Application\\WebApi.Caching\\Program.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\GitHub\\Git Tajerbashi\\Extensions\\Caching\\3.Application\\WebApi.Caching\\Program.cs",
-              "RelativeToolTip": "Caching\\3.Application\\WebApi.Caching\\Program.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAAB4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T20:19:25.954Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CacheController.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\GitHub\\Git Tajerbashi\\Extensions\\Caching\\3.Application\\WebApi.Caching\\Controllers\\CacheController.cs",
-              "RelativeDocumentMoniker": "Caching\\3.Application\\WebApi.Caching\\Controllers\\CacheController.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\GitHub\\Git Tajerbashi\\Extensions\\Caching\\3.Application\\WebApi.Caching\\Controllers\\CacheController.cs",
-              "RelativeToolTip": "Caching\\3.Application\\WebApi.Caching\\Controllers\\CacheController.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAgwBkAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T20:18:11.558Z",
-              "EditorCaption": ""
             }
           ]
         }
