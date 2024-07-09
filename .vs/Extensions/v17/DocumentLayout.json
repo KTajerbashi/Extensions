@@ -1,18 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Tajer\\Desktop\\File\\Visual Studio\\GitHub\\KTajerbashi\\Extensions\\",
+  "WorkspaceRootPath": "C:\\Users\\Tajer\\Desktop\\Extensions\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AF5272E9-BA96-4FA1-BC4F-B6B7E498D720}|ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\WebApi.ChangeDataLog.csproj|c:\\users\\tajer\\desktop\\file\\visual studio\\github\\ktajerbashi\\extensions\\changedatalog\\3.application\\webapi.changedatalog\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF5272E9-BA96-4FA1-BC4F-B6B7E498D720}|ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\WebApi.ChangeDataLog.csproj|solutionrelative:changedatalog\\3.application\\webapi.changedatalog\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8A111C12-3EC2-4540-B262-820334A5D1B4}|MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox.Dal.Dapper\\Extensions.MessageBus.MessageInbox.Dal.Dapper.csproj|c:\\users\\tajer\\desktop\\extensions\\messagebus\\2.implementations\\messageinbox\\extensions.messagebus.messageinbox.dal.dapper\\sqlmessageinboxitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A111C12-3EC2-4540-B262-820334A5D1B4}|MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox.Dal.Dapper\\Extensions.MessageBus.MessageInbox.Dal.Dapper.csproj|solutionrelative:messagebus\\2.implementations\\messageinbox\\extensions.messagebus.messageinbox.dal.dapper\\sqlmessageinboxitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF5272E9-BA96-4FA1-BC4F-B6B7E498D720}|ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\WebApi.ChangeDataLog.csproj|c:\\users\\tajer\\desktop\\file\\visual studio\\github\\ktajerbashi\\extensions\\changedatalog\\3.application\\webapi.changedatalog\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{AF5272E9-BA96-4FA1-BC4F-B6B7E498D720}|ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\WebApi.ChangeDataLog.csproj|solutionrelative:changedatalog\\3.application\\webapi.changedatalog\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF5272E9-BA96-4FA1-BC4F-B6B7E498D720}|ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\WebApi.ChangeDataLog.csproj|c:\\users\\tajer\\desktop\\file\\visual studio\\github\\ktajerbashi\\extensions\\changedatalog\\3.application\\webapi.changedatalog\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{AF5272E9-BA96-4FA1-BC4F-B6B7E498D720}|ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\WebApi.ChangeDataLog.csproj|solutionrelative:changedatalog\\3.application\\webapi.changedatalog\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{8A111C12-3EC2-4540-B262-820334A5D1B4}|MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox.Dal.Dapper\\Extensions.MessageBus.MessageInbox.Dal.Dapper.csproj|c:\\users\\tajer\\desktop\\extensions\\messagebus\\2.implementations\\messageinbox\\extensions.messagebus.messageinbox.dal.dapper\\extensions\\dependencyinjection\\messageinboxservicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A111C12-3EC2-4540-B262-820334A5D1B4}|MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox.Dal.Dapper\\Extensions.MessageBus.MessageInbox.Dal.Dapper.csproj|solutionrelative:messagebus\\2.implementations\\messageinbox\\extensions.messagebus.messageinbox.dal.dapper\\extensions\\dependencyinjection\\messageinboxservicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -63,40 +59,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RegisterController.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\File\\Visual Studio\\GitHub\\KTajerbashi\\Extensions\\ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\Controllers\\RegisterController.cs",
-              "RelativeDocumentMoniker": "ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\Controllers\\RegisterController.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\File\\Visual Studio\\GitHub\\KTajerbashi\\Extensions\\ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\Controllers\\RegisterController.cs",
-              "RelativeToolTip": "ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\Controllers\\RegisterController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAATAAAA",
+              "Title": "SqlMessageInboxItemRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Extensions\\MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox.Dal.Dapper\\SqlMessageInboxItemRepository.cs",
+              "RelativeDocumentMoniker": "MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox.Dal.Dapper\\SqlMessageInboxItemRepository.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Extensions\\MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox.Dal.Dapper\\SqlMessageInboxItemRepository.cs*",
+              "RelativeToolTip": "MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox.Dal.Dapper\\SqlMessageInboxItemRepository.cs*",
+              "ViewState": "AQIAABIAAAAAAAAAAAAQwCAAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T21:00:13.021Z",
+              "WhenOpened": "2024-07-09T21:26:36.623Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\File\\Visual Studio\\GitHub\\KTajerbashi\\Extensions\\ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\appsettings.json",
-              "RelativeDocumentMoniker": "ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\appsettings.json",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\File\\Visual Studio\\GitHub\\KTajerbashi\\Extensions\\ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\appsettings.json",
-              "RelativeToolTip": "ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-09T21:00:10.678Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\File\\Visual Studio\\GitHub\\KTajerbashi\\Extensions\\ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\File\\Visual Studio\\GitHub\\KTajerbashi\\Extensions\\ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\appsettings.Development.json",
-              "RelativeToolTip": "ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\appsettings.Development.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-09T21:00:08.821Z",
+              "Title": "MessageInboxServiceCollectionExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Extensions\\MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox.Dal.Dapper\\Extensions\\DependencyInjection\\MessageInboxServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox.Dal.Dapper\\Extensions\\DependencyInjection\\MessageInboxServiceCollectionExtensions.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Extensions\\MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox.Dal.Dapper\\Extensions\\DependencyInjection\\MessageInboxServiceCollectionExtensions.cs*",
+              "RelativeToolTip": "MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox.Dal.Dapper\\Extensions\\DependencyInjection\\MessageInboxServiceCollectionExtensions.cs*",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwCAAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T21:26:16.748Z",
               "EditorCaption": ""
             }
           ]

@@ -10,4 +10,11 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\1.Abstraction\Extensions.MessageBus.Abstractions\Extensions.MessageBus.Abstractions.csproj" />
+    <ProjectReference Include="..\..\2.Implementations\MessageInbox\Extensions.MessageBus.MessageInbox.Dal.Dapper\Extensions.MessageBus.MessageInbox.Dal.Dapper.csproj" />
+    <ProjectReference Include="..\..\2.Implementations\MessageInbox\Extensions.MessageBus.MessageInbox\Extensions.MessageBus.MessageInbox.csproj" />
+    <ProjectReference Include="..\..\2.Implementations\RabbitMQ\Extensions.MessageBus.RabbitMQ\Extensions.MessageBus.RabbitMQ.csproj" />
+  </ItemGroup>
+
 </Project>
