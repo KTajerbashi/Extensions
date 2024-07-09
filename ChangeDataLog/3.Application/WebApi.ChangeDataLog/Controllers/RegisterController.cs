@@ -11,7 +11,7 @@ public class RegisterController : BaseController
     [HttpPost]
     public async Task<IActionResult> Create()
     {
-        return ;
+        return Ok();
     }
 
 }
