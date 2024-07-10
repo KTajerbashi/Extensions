@@ -52,7 +52,7 @@ public class AddChangeDataLogInterceptor : SaveChangesInterceptor
         var options = eventData.Context.GetService<IOptions<ChangeDataLogHamsterOptions>>().Value;
         var changedEntities = GetChangedEntities(changeTracker);
         var transactionId = Guid.NewGuid().ToString();
-        var dateOfAccured = DateTime.Now;
+        var dateOfAccrued = DateTime.Now;
 
         var entityChangeInterceptorItems = new List<EntityChangeInterceptorItem>();
 
@@ -66,7 +66,7 @@ public class AddChangeDataLogInterceptor : SaveChangesInterceptor
                 Ip = userInfoService.GetUserIp(),
                 EntityType = entity.Entity.GetType().FullName,
                 EntityId = entity.Property(options.BusinessIdFieldName).CurrentValue.ToString(),
-                DateOfOccurrence = dateOfAccured,
+                DateOfOccurrence = dateOfAccrued,
                 ChangeType = entity.State.ToString(),
                 ContextName = GetType().FullName
             };

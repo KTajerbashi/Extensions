@@ -1,9 +1,27 @@
+
+using Extensions.ChangeDataLog.Hamster.Extensions.DependencyInjection;
+using Extensions.ChangeDataLog.Sql.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
+using WebApi.ChangeDataLog.DependencyInjections;
+using Extensions.UsersManagement.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddChangeDatalogDalSql(config =>
+{
+    config.ConnectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+});
+builder.Services.AddHamsterChangeDataLog(config =>
+{
+    config.BusinessIdFieldName = "Id";
+});
+builder.Services.AddWebUserInfoService(config =>
+{
+    config.DefaultUserId = "1";
+});
 
+builder.Services.AddDependencies(builder.Configuration);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

@@ -7,19 +7,28 @@ namespace WebApi.ChangeDataLog.Controllers;
 [Route("api/[controller]")]
 public abstract class BaseController : Controller
 {
-    protected readonly IHttpContextAccessor _contextAccessor;
 
-    protected BaseController(IHttpContextAccessor contextAccessor)
+    protected BaseController()
     {
-        _contextAccessor = contextAccessor;
+        
     }
 
-
-    public virtual async Task<IActionResult> Ok<T>(Result<T> result)
+    public async Task<IActionResult> ResultActionAsync<T>(Result<T> result)
     {
         if (result.StatusCode.Ok == StatusCodes.Status200OK)
         {
+            return base.Ok(result);
         }
-        return View(result);
+        return base.NotFound(result);
+    }
+
+    public Result<T> Result<T>(T result)
+    {
+        return new Result<T>
+        {
+            Data = result,
+            Message = "",
+            StatusCode = new StatusCode()
+        };
     }
 }

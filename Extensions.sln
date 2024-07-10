@@ -83,95 +83,95 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Application", "3.Applicat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Application", "3.Application", "{9F8A2A3E-3084-47D0-B552-A39B29DC169D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.Caching.Abstractions", "Caching\1.Abstraction\Extensions.Caching.Abstractions\Extensions.Caching.Abstractions.csproj", "{CCB3CF17-9F73-4E0D-B90D-169648FB05B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.Caching.Abstractions", "Caching\1.Abstraction\Extensions.Caching.Abstractions\Extensions.Caching.Abstractions.csproj", "{CCB3CF17-9F73-4E0D-B90D-169648FB05B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.ChangeDataLog.Abstractions", "ChangeDataLog\1.Abstraction\Extensions.ChangeDataLog.Abstractions\Extensions.ChangeDataLog.Abstractions.csproj", "{7A4B3212-D0F1-431C-83B9-5C7B7CE099FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.ChangeDataLog.Abstractions", "ChangeDataLog\1.Abstraction\Extensions.ChangeDataLog.Abstractions\Extensions.ChangeDataLog.Abstractions.csproj", "{7A4B3212-D0F1-431C-83B9-5C7B7CE099FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.DependencyInjection.Abstractions", "DependencyInjection\1.Abstraction\Extensions.DependencyInjection.Abstractions\Extensions.DependencyInjection.Abstractions.csproj", "{392F5EDE-23A3-4F0B-829A-4DF547557CA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.DependencyInjection.Abstractions", "DependencyInjection\1.Abstraction\Extensions.DependencyInjection.Abstractions\Extensions.DependencyInjection.Abstractions.csproj", "{392F5EDE-23A3-4F0B-829A-4DF547557CA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.Events.Abstractions", "Events\1.Abstraction\Extensions.Events.Abstractions\Extensions.Events.Abstractions.csproj", "{22DC16D9-9882-4CF8-B596-009D9E6A303F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.Events.Abstractions", "Events\1.Abstraction\Extensions.Events.Abstractions\Extensions.Events.Abstractions.csproj", "{22DC16D9-9882-4CF8-B596-009D9E6A303F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.Logger.Abstractions", "Logger\1.Abstraction\Extensions.Logger.Abstractions\Extensions.Logger.Abstractions.csproj", "{81DE615F-FDF6-4764-9005-359A73529745}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.Logger.Abstractions", "Logger\1.Abstraction\Extensions.Logger.Abstractions\Extensions.Logger.Abstractions.csproj", "{81DE615F-FDF6-4764-9005-359A73529745}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.MessageBus.Abstractions", "MessageBus\1.Abstraction\Extensions.MessageBus.Abstractions\Extensions.MessageBus.Abstractions.csproj", "{8FA82575-9EDD-44B3-94CF-108A474FAE4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.MessageBus.Abstractions", "MessageBus\1.Abstraction\Extensions.MessageBus.Abstractions\Extensions.MessageBus.Abstractions.csproj", "{8FA82575-9EDD-44B3-94CF-108A474FAE4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.ObjectMappers.Abstractions", "ObjectMappers\1.Abstraction\Extensions.ObjectMappers.Abstractions\Extensions.ObjectMappers.Abstractions.csproj", "{104BB3DC-B46F-41DF-AFE7-763D460C38D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.ObjectMappers.Abstractions", "ObjectMappers\1.Abstraction\Extensions.ObjectMappers.Abstractions\Extensions.ObjectMappers.Abstractions.csproj", "{104BB3DC-B46F-41DF-AFE7-763D460C38D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.Serializers.Abstractions", "Serializers\1.Abstraction\Extensions.Serializers.Abstractions\Extensions.Serializers.Abstractions.csproj", "{35CD7968-6E12-4D07-B16C-B2FDAC4C7198}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.Serializers.Abstractions", "Serializers\1.Abstraction\Extensions.Serializers.Abstractions\Extensions.Serializers.Abstractions.csproj", "{35CD7968-6E12-4D07-B16C-B2FDAC4C7198}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.Translations.Abstractions", "Translations\1.Abstraction\Extensions.Translations.Abstractions\Extensions.Translations.Abstractions.csproj", "{247FAE34-0627-4530-852C-042FD6CF04A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.Translations.Abstractions", "Translations\1.Abstraction\Extensions.Translations.Abstractions\Extensions.Translations.Abstractions.csproj", "{247FAE34-0627-4530-852C-042FD6CF04A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.UsersManagement.Abstractions", "UsersManagement\1.Abstraction\Extensions.UsersManagement.Abstractions\Extensions.UsersManagement.Abstractions.csproj", "{5C352AD5-AFE0-4E54-965C-82330F6E6D3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.UsersManagement.Abstractions", "UsersManagement\1.Abstraction\Extensions.UsersManagement.Abstractions\Extensions.UsersManagement.Abstractions.csproj", "{5C352AD5-AFE0-4E54-965C-82330F6E6D3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.Caching", "Caching\3.Application\WebApi.Caching\WebApi.Caching.csproj", "{2A7C8B09-D43B-41CE-9A43-9391D6974AD5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.Caching", "Caching\3.Application\WebApi.Caching\WebApi.Caching.csproj", "{2A7C8B09-D43B-41CE-9A43-9391D6974AD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.Caching.Distributed.Redis", "Caching\2.Implementations\Extensions.Caching.Distributed.Redis\Extensions.Caching.Distributed.Redis.csproj", "{EA2B53BA-A276-4655-8AC7-FB026AC71D56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.Caching.Distributed.Redis", "Caching\2.Implementations\Extensions.Caching.Distributed.Redis\Extensions.Caching.Distributed.Redis.csproj", "{EA2B53BA-A276-4655-8AC7-FB026AC71D56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.Caching.Distributed.Sql", "Caching\2.Implementations\Extensions.Caching.Distributed.Sql\Extensions.Caching.Distributed.Sql.csproj", "{DE991E38-B642-42B5-9383-403FEA82A0D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.Caching.Distributed.Sql", "Caching\2.Implementations\Extensions.Caching.Distributed.Sql\Extensions.Caching.Distributed.Sql.csproj", "{DE991E38-B642-42B5-9383-403FEA82A0D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.Caching.InMemory", "Caching\2.Implementations\Extensions.Caching.InMemory\Extensions.Caching.InMemory.csproj", "{F6FEE5EE-BCE0-483F-AED5-DDA77CB72AB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.Caching.InMemory", "Caching\2.Implementations\Extensions.Caching.InMemory\Extensions.Caching.InMemory.csproj", "{F6FEE5EE-BCE0-483F-AED5-DDA77CB72AB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.ChangeDataLog.Hamster", "ChangeDataLog\2.Implementations\Extensions.ChangeDataLog.Hamster\Extensions.ChangeDataLog.Hamster.csproj", "{05F8CBFA-A4E2-49C5-86EE-9646DEBFDD59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.ChangeDataLog.Hamster", "ChangeDataLog\2.Implementations\Extensions.ChangeDataLog.Hamster\Extensions.ChangeDataLog.Hamster.csproj", "{05F8CBFA-A4E2-49C5-86EE-9646DEBFDD59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.ChangeDataLog.Sql", "ChangeDataLog\2.Implementations\Extensions.ChangeDataLog.Sql\Extensions.ChangeDataLog.Sql.csproj", "{D35746F0-41A5-40E6-BDFF-E30CBAE429DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.ChangeDataLog.Sql", "ChangeDataLog\2.Implementations\Extensions.ChangeDataLog.Sql\Extensions.ChangeDataLog.Sql.csproj", "{D35746F0-41A5-40E6-BDFF-E30CBAE429DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.ChangeDataLog", "ChangeDataLog\3.Application\WebApi.ChangeDataLog\WebApi.ChangeDataLog.csproj", "{AF5272E9-BA96-4FA1-BC4F-B6B7E498D720}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.ChangeDataLog", "ChangeDataLog\3.Application\WebApi.ChangeDataLog\WebApi.ChangeDataLog.csproj", "{AF5272E9-BA96-4FA1-BC4F-B6B7E498D720}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.DependencyInjection", "DependencyInjection\2.Implementations\Extensions.DependencyInjection\Extensions.DependencyInjection.csproj", "{CDD42E56-4297-473C-85F0-EF57C9A06581}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.DependencyInjection", "DependencyInjection\2.Implementations\Extensions.DependencyInjection\Extensions.DependencyInjection.csproj", "{CDD42E56-4297-473C-85F0-EF57C9A06581}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.DependencyInjection", "DependencyInjection\3.Application\WebApi.DependencyInjection\WebApi.DependencyInjection.csproj", "{9BF88058-335C-45C8-9EFE-0FB86EDBD1BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.DependencyInjection", "DependencyInjection\3.Application\WebApi.DependencyInjection\WebApi.DependencyInjection.csproj", "{9BF88058-335C-45C8-9EFE-0FB86EDBD1BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.Events.Outbox", "Events\2.Implementations\Extensions.Events.Outbox\Extensions.Events.Outbox.csproj", "{95B282F1-D1BB-44EF-9D1A-008543DD8233}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.Events.Outbox", "Events\2.Implementations\Extensions.Events.Outbox\Extensions.Events.Outbox.csproj", "{95B282F1-D1BB-44EF-9D1A-008543DD8233}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.Events.PollingPublisher", "Events\2.Implementations\Extensions.Events.PollingPublisher\Extensions.Events.PollingPublisher.csproj", "{BA1FD594-3964-43A2-A679-95CE387B9265}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.Events.PollingPublisher", "Events\2.Implementations\Extensions.Events.PollingPublisher\Extensions.Events.PollingPublisher.csproj", "{BA1FD594-3964-43A2-A679-95CE387B9265}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.Events.PollingPublisher.Dal.Dapper", "Events\2.Implementations\Extensions.Events.PollingPublisher.Dal.Dapper\Extensions.Events.PollingPublisher.Dal.Dapper.csproj", "{31AD6ED1-BE7B-486C-AF55-EB1025121DB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.Events.PollingPublisher.Dal.Dapper", "Events\2.Implementations\Extensions.Events.PollingPublisher.Dal.Dapper\Extensions.Events.PollingPublisher.Dal.Dapper.csproj", "{31AD6ED1-BE7B-486C-AF55-EB1025121DB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.EventPatterns", "Events\3.Application\WebApi.EventPatterns\WebApi.EventPatterns.csproj", "{8F5DD80B-0EDB-4D80-8AB3-ED3DFC038D16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.EventPatterns", "Events\3.Application\WebApi.EventPatterns\WebApi.EventPatterns.csproj", "{8F5DD80B-0EDB-4D80-8AB3-ED3DFC038D16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.Logger.Serilog", "Logger\2.Implementations\Extensions.Logger.Serilog\Extensions.Logger.Serilog.csproj", "{3E6904D1-9C3B-40C9-BB2A-8C8CBBA66997}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.Logger.Serilog", "Logger\2.Implementations\Extensions.Logger.Serilog\Extensions.Logger.Serilog.csproj", "{3E6904D1-9C3B-40C9-BB2A-8C8CBBA66997}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.Logger.NLog", "Logger\2.Implementations\Extensions.Logger.NLog\Extensions.Logger.NLog.csproj", "{CA57EA31-C69E-4CE1-B2E5-F63C1F61C0C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.Logger.NLog", "Logger\2.Implementations\Extensions.Logger.NLog\Extensions.Logger.NLog.csproj", "{CA57EA31-C69E-4CE1-B2E5-F63C1F61C0C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.Logger.Log4Net", "Logger\2.Implementations\Extensions.Logger.Log4Net\Extensions.Logger.Log4Net.csproj", "{6794082F-6A8D-4A70-A715-E84C4A6C32E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.Logger.Log4Net", "Logger\2.Implementations\Extensions.Logger.Log4Net\Extensions.Logger.Log4Net.csproj", "{6794082F-6A8D-4A70-A715-E84C4A6C32E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.Logger", "Logger\3.Application\WebApi.Logger\WebApi.Logger.csproj", "{000D7214-C65A-4F61-8D6D-37FE75C07E98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.Logger", "Logger\3.Application\WebApi.Logger\WebApi.Logger.csproj", "{000D7214-C65A-4F61-8D6D-37FE75C07E98}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MessageInbox", "MessageInbox", "{F46A09DA-A8A8-4C7B-816E-A089BC24B3C8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RabbitMQ", "RabbitMQ", "{947B4F33-89EB-4D53-A650-0F4C1A53F660}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.MessageBus.MessageInbox", "MessageBus\2.Implementations\MessageInbox\Extensions.MessageBus.MessageInbox\Extensions.MessageBus.MessageInbox.csproj", "{9DE0F373-44A1-49DD-B22A-AFC92B878E89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.MessageBus.MessageInbox", "MessageBus\2.Implementations\MessageInbox\Extensions.MessageBus.MessageInbox\Extensions.MessageBus.MessageInbox.csproj", "{9DE0F373-44A1-49DD-B22A-AFC92B878E89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.MessageBus.MessageInbox.Dal.Dapper", "MessageBus\2.Implementations\MessageInbox\Extensions.MessageBus.MessageInbox.Dal.Dapper\Extensions.MessageBus.MessageInbox.Dal.Dapper.csproj", "{8A111C12-3EC2-4540-B262-820334A5D1B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.MessageBus.MessageInbox.Dal.Dapper", "MessageBus\2.Implementations\MessageInbox\Extensions.MessageBus.MessageInbox.Dal.Dapper\Extensions.MessageBus.MessageInbox.Dal.Dapper.csproj", "{8A111C12-3EC2-4540-B262-820334A5D1B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.MessageBus.RabbitMQ", "MessageBus\2.Implementations\RabbitMQ\Extensions.MessageBus.RabbitMQ\Extensions.MessageBus.RabbitMQ.csproj", "{A2317E65-5870-44F7-9A72-16CAB63B37B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.MessageBus.RabbitMQ", "MessageBus\2.Implementations\RabbitMQ\Extensions.MessageBus.RabbitMQ\Extensions.MessageBus.RabbitMQ.csproj", "{A2317E65-5870-44F7-9A72-16CAB63B37B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.MessageBus", "MessageBus\3.Application\WebApi.MessageBus\WebApi.MessageBus.csproj", "{3EFCC75B-D209-44C4-8652-1E8AF308CDC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.MessageBus", "MessageBus\3.Application\WebApi.MessageBus\WebApi.MessageBus.csproj", "{3EFCC75B-D209-44C4-8652-1E8AF308CDC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.ObjectMappers.AutoMapper", "ObjectMappers\2.Implementations\Extensions.ObjectMappers.AutoMapper\Extensions.ObjectMappers.AutoMapper.csproj", "{2DB9D79D-C88E-4DEF-8D72-51DB65F0F51C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.ObjectMappers.AutoMapper", "ObjectMappers\2.Implementations\Extensions.ObjectMappers.AutoMapper\Extensions.ObjectMappers.AutoMapper.csproj", "{2DB9D79D-C88E-4DEF-8D72-51DB65F0F51C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.ObjectMappers", "ObjectMappers\3.Application\WebApi.ObjectMappers\WebApi.ObjectMappers.csproj", "{3EB92E50-A70A-4B2C-B4C4-58270105642D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.ObjectMappers", "ObjectMappers\3.Application\WebApi.ObjectMappers\WebApi.ObjectMappers.csproj", "{3EB92E50-A70A-4B2C-B4C4-58270105642D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.Serializers.EPPlus", "Serializers\2.Implementations\Extensions.Serializers.EPPlus\Extensions.Serializers.EPPlus.csproj", "{B3787C39-3E88-4609-B78A-642554C01B51}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.Serializers.EPPlus", "Serializers\2.Implementations\Extensions.Serializers.EPPlus\Extensions.Serializers.EPPlus.csproj", "{B3787C39-3E88-4609-B78A-642554C01B51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.Serializers.Microsoft", "Serializers\2.Implementations\Extensions.Serializers.Microsoft\Extensions.Serializers.Microsoft.csproj", "{3BCB9600-0B43-4529-9FDD-E791CD38E0A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.Serializers.Microsoft", "Serializers\2.Implementations\Extensions.Serializers.Microsoft\Extensions.Serializers.Microsoft.csproj", "{3BCB9600-0B43-4529-9FDD-E791CD38E0A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.Serializers.NewtonSoft", "Serializers\2.Implementations\Extensions.Serializers.NewtonSoft\Extensions.Serializers.NewtonSoft.csproj", "{ECD4DE72-B435-4DA8-BF9F-A030A786845D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.Serializers.NewtonSoft", "Serializers\2.Implementations\Extensions.Serializers.NewtonSoft\Extensions.Serializers.NewtonSoft.csproj", "{ECD4DE72-B435-4DA8-BF9F-A030A786845D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.Serializers", "Serializers\3.Application\WebApi.Serializers\WebApi.Serializers.csproj", "{9E7CBA2F-3774-4DE3-AED9-AEDAF758CB46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.Serializers", "Serializers\3.Application\WebApi.Serializers\WebApi.Serializers.csproj", "{9E7CBA2F-3774-4DE3-AED9-AEDAF758CB46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.Translations.Parrot", "Translations\2.Implementations\Extensions.Translations.Parrot\Extensions.Translations.Parrot.csproj", "{5DC55CFE-61B8-473F-BC3F-CF0D6E81351C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.Translations.Parrot", "Translations\2.Implementations\Extensions.Translations.Parrot\Extensions.Translations.Parrot.csproj", "{5DC55CFE-61B8-473F-BC3F-CF0D6E81351C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.Translations", "Translations\3.Application\WebApi.Translations\WebApi.Translations.csproj", "{37E0BBEE-9812-4AAC-8407-FB2BE851B10A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.Translations", "Translations\3.Application\WebApi.Translations\WebApi.Translations.csproj", "{37E0BBEE-9812-4AAC-8407-FB2BE851B10A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.UsersManagement", "UsersManagement\2.Implementations\Extensions.UsersManagement\Extensions.UsersManagement.csproj", "{F6F073D1-3D27-4C59-950D-8177CBE21775}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.UsersManagement", "UsersManagement\2.Implementations\Extensions.UsersManagement\Extensions.UsersManagement.csproj", "{F6F073D1-3D27-4C59-950D-8177CBE21775}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.UsersManagement", "UsersManagement\3.Application\WebApi.UsersManagement\WebApi.UsersManagement.csproj", "{A0D4575B-80E3-4D77-8EEA-6E9C688EB1A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.UsersManagement", "UsersManagement\3.Application\WebApi.UsersManagement\WebApi.UsersManagement.csproj", "{A0D4575B-80E3-4D77-8EEA-6E9C688EB1A5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extensions", "Extensions", "{40F8F662-F92A-4A89-B63B-1C9220E24B30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities.Extensions", "Extensions\Utilities.Extensions\Utilities.Extensions.csproj", "{9E7B840E-7D44-4B4C-8EB0-1B09AD597739}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utilities.Extensions", "Extensions\Utilities.Extensions\Utilities.Extensions.csproj", "{9E7B840E-7D44-4B4C-8EB0-1B09AD597739}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MediatR", "MediatR", "{E4171AF9-B561-4FBE-9D84-1F93DBCA8167}"
 EndProject
@@ -181,13 +181,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Implementations", "2.Impl
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Application", "3.Application", "{72613FA5-1E6F-4231-8B79-5E3B2CCAC959}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediateR.Abstractions", "MediatR\1.Abstraction\MediateR.Abstractions\MediateR.Abstractions.csproj", "{397FB585-6093-40CF-A54E-2EFAC156369C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediateR.Abstractions", "MediatR\1.Abstraction\MediateR.Abstractions\MediateR.Abstractions.csproj", "{397FB585-6093-40CF-A54E-2EFAC156369C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediateR.Events", "MediatR\2.Implementations\MediateR.Events\MediateR.Events.csproj", "{EBBA109C-AB17-4CB0-80EA-FFF167BA877B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediateR.Events", "MediatR\2.Implementations\MediateR.Events\MediateR.Events.csproj", "{EBBA109C-AB17-4CB0-80EA-FFF167BA877B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediateR.Commands", "MediatR\2.Implementations\MediateR.Commands\MediateR.Commands.csproj", "{AD92E9D9-9573-427E-9BAB-BD3CBD3B9A87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediateR.Commands", "MediatR\2.Implementations\MediateR.Commands\MediateR.Commands.csproj", "{AD92E9D9-9573-427E-9BAB-BD3CBD3B9A87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediateR.Queries", "MediatR\2.Implementations\MediateR.Queries\MediateR.Queries.csproj", "{63D673C9-A638-419A-A8BB-37ECED39312A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediateR.Queries", "MediatR\2.Implementations\MediateR.Queries\MediateR.Queries.csproj", "{63D673C9-A638-419A-A8BB-37ECED39312A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DatabaseModelScaffold", "DatabaseModelScaffold", "{D2B69F56-7D4A-417B-8E1E-C92BA8BE538C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConsoleApplication", "ConsoleApplication", "{FD3AED63-C614-4D5E-B215-E796793BBC6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseModelScaffold", "DatabaseModelScaffold\ConsoleApplication\DatabaseModelScaffold\DatabaseModelScaffold.csproj", "{238E0928-871E-4EBE-BA90-27DE7F91BEB6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiApplication", "ApiApplication", "{D326973D-59DA-4672-B93B-2083474682FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseModelScaffold", "DatabaseModelScaffold\ApiApplication\DatabaseModelScaffold\DatabaseModelScaffold.csproj", "{BC4801D2-926E-4AC4-9CA7-EAC46BF12349}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -379,6 +389,14 @@ Global
 		{63D673C9-A638-419A-A8BB-37ECED39312A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63D673C9-A638-419A-A8BB-37ECED39312A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63D673C9-A638-419A-A8BB-37ECED39312A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{238E0928-871E-4EBE-BA90-27DE7F91BEB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{238E0928-871E-4EBE-BA90-27DE7F91BEB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{238E0928-871E-4EBE-BA90-27DE7F91BEB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{238E0928-871E-4EBE-BA90-27DE7F91BEB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC4801D2-926E-4AC4-9CA7-EAC46BF12349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC4801D2-926E-4AC4-9CA7-EAC46BF12349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC4801D2-926E-4AC4-9CA7-EAC46BF12349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC4801D2-926E-4AC4-9CA7-EAC46BF12349}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -465,6 +483,10 @@ Global
 		{EBBA109C-AB17-4CB0-80EA-FFF167BA877B} = {4272B2CE-A2CA-483F-9474-14F2B1401CDF}
 		{AD92E9D9-9573-427E-9BAB-BD3CBD3B9A87} = {4272B2CE-A2CA-483F-9474-14F2B1401CDF}
 		{63D673C9-A638-419A-A8BB-37ECED39312A} = {4272B2CE-A2CA-483F-9474-14F2B1401CDF}
+		{FD3AED63-C614-4D5E-B215-E796793BBC6D} = {D2B69F56-7D4A-417B-8E1E-C92BA8BE538C}
+		{238E0928-871E-4EBE-BA90-27DE7F91BEB6} = {FD3AED63-C614-4D5E-B215-E796793BBC6D}
+		{D326973D-59DA-4672-B93B-2083474682FD} = {D2B69F56-7D4A-417B-8E1E-C92BA8BE538C}
+		{BC4801D2-926E-4AC4-9CA7-EAC46BF12349} = {D326973D-59DA-4672-B93B-2083474682FD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {43DDE49A-8B5E-423A-AC4B-4A082846460E}

@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Tajer\\Desktop\\Extensions\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8A111C12-3EC2-4540-B262-820334A5D1B4}|MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox.Dal.Dapper\\Extensions.MessageBus.MessageInbox.Dal.Dapper.csproj|c:\\users\\tajer\\desktop\\extensions\\messagebus\\2.implementations\\messageinbox\\extensions.messagebus.messageinbox.dal.dapper\\sqlmessageinboxitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A111C12-3EC2-4540-B262-820334A5D1B4}|MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox.Dal.Dapper\\Extensions.MessageBus.MessageInbox.Dal.Dapper.csproj|solutionrelative:messagebus\\2.implementations\\messageinbox\\extensions.messagebus.messageinbox.dal.dapper\\sqlmessageinboxitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A111C12-3EC2-4540-B262-820334A5D1B4}|MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox.Dal.Dapper\\Extensions.MessageBus.MessageInbox.Dal.Dapper.csproj|c:\\users\\tajer\\desktop\\extensions\\messagebus\\2.implementations\\messageinbox\\extensions.messagebus.messageinbox.dal.dapper\\extensions\\dependencyinjection\\messageinboxservicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A111C12-3EC2-4540-B262-820334A5D1B4}|MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox.Dal.Dapper\\Extensions.MessageBus.MessageInbox.Dal.Dapper.csproj|solutionrelative:messagebus\\2.implementations\\messageinbox\\extensions.messagebus.messageinbox.dal.dapper\\extensions\\dependencyinjection\\messageinboxservicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AF5272E9-BA96-4FA1-BC4F-B6B7E498D720}|ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\WebApi.ChangeDataLog.csproj|c:\\users\\tajer\\desktop\\extensions\\changedatalog\\3.application\\webapi.changedatalog\\services\\bases\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5272E9-BA96-4FA1-BC4F-B6B7E498D720}|ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\WebApi.ChangeDataLog.csproj|solutionrelative:changedatalog\\3.application\\webapi.changedatalog\\services\\bases\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,68 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 313,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SqlMessageInboxItemRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Extensions\\MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox.Dal.Dapper\\SqlMessageInboxItemRepository.cs",
-              "RelativeDocumentMoniker": "MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox.Dal.Dapper\\SqlMessageInboxItemRepository.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Extensions\\MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox.Dal.Dapper\\SqlMessageInboxItemRepository.cs*",
-              "RelativeToolTip": "MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox.Dal.Dapper\\SqlMessageInboxItemRepository.cs*",
-              "ViewState": "AQIAABIAAAAAAAAAAAAQwCAAAABAAAAA",
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Extensions\\ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\Services\\Bases\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\Services\\Bases\\BaseRepository.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Extensions\\ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\Services\\Bases\\BaseRepository.cs",
+              "RelativeToolTip": "ChangeDataLog\\3.Application\\WebApi.ChangeDataLog\\Services\\Bases\\BaseRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T21:26:36.623Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MessageInboxServiceCollectionExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Extensions\\MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox.Dal.Dapper\\Extensions\\DependencyInjection\\MessageInboxServiceCollectionExtensions.cs",
-              "RelativeDocumentMoniker": "MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox.Dal.Dapper\\Extensions\\DependencyInjection\\MessageInboxServiceCollectionExtensions.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Extensions\\MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox.Dal.Dapper\\Extensions\\DependencyInjection\\MessageInboxServiceCollectionExtensions.cs*",
-              "RelativeToolTip": "MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox.Dal.Dapper\\Extensions\\DependencyInjection\\MessageInboxServiceCollectionExtensions.cs*",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwCAAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T21:26:16.748Z",
+              "WhenOpened": "2024-07-10T19:56:32.11Z",
               "EditorCaption": ""
             }
           ]
