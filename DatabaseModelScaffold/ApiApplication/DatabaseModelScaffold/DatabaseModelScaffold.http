@@ -1,0 +1,6 @@
+@DatabaseModelScaffold_HostAddress = http://localhost:5119
+
+GET {{DatabaseModelScaffold_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
