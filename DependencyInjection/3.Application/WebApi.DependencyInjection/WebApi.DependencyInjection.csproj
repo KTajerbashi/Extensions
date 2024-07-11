@@ -10,4 +10,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\1.Abstraction\Extensions.DependencyInjection.Abstractions\Extensions.DependencyInjection.Abstractions.csproj" />
+    <ProjectReference Include="..\..\2.Implementations\Extensions.DependencyInjection\Extensions.DependencyInjection.csproj" />
+  </ItemGroup>
+
 </Project>
