@@ -2,7 +2,7 @@
 
 namespace WebApi.MessageBus.Models;
 
-public class PersonCommand
+public class PersonCommand:ICommand
 {
     public string FirstName { get; set; }
     public string LastName { get; set; }

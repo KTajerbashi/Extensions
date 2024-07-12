@@ -2,7 +2,7 @@
 
 namespace WebApi.MessageBus.Models;
 
-public class BlogCommand
+public class BlogCommand:ICommand
 {
     public string BusinessId { get; private set; }
     public string Title { get; private set; }
