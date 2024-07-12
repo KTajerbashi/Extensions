@@ -1,6 +1,6 @@
 ﻿using Extensions.DependencyInjection.Abstractions;
 
-namespace WebApi.DependencyInjection.Services;
+namespace WebApi.DependencyInjection.Services.Singleton;
 
 public interface IGetGuidSingletonService : ISingletoneLifetime
 {

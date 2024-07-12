@@ -1,5 +1,4 @@
-﻿
-namespace WebApi.DependencyInjection.Services;
+﻿namespace WebApi.DependencyInjection.Services.Scope;
 
 public class GetGuidScopeService : IGetGuidScopeService
 {

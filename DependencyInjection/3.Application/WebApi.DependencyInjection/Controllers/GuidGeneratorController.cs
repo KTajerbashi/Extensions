@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using WebApi.DependencyInjection.Services;
 using WebApi.DependencyInjection.Services.Customer;
+using WebApi.DependencyInjection.Services.Scope;
+using WebApi.DependencyInjection.Services.Singleton;
+using WebApi.DependencyInjection.Services.Transient;
 
 namespace WebApi.DependencyInjection.Controllers;
 
@@ -9,11 +11,9 @@ namespace WebApi.DependencyInjection.Controllers;
 public class GuidGeneratorController : ControllerBase
 {
     private readonly IGetGuidSingletonService _getRandomNumberSingletonService;
-    private readonly ICustomerServices<string> _customerServices;
-    public GuidGeneratorController(IGetGuidSingletonService getRandomNumberSingletonService, ICustomerServices<string> customerServices)
+    public GuidGeneratorController(IGetGuidSingletonService getRandomNumberSingletonService)
     {
         _getRandomNumberSingletonService = getRandomNumberSingletonService;
-        _customerServices = customerServices;
     }
 
     [HttpGet("GetRandomNumberTransient")]
@@ -39,31 +39,4 @@ public class GuidGeneratorController : ControllerBase
                                                              [FromServices] IGetStringScopeService service2)
       => Ok(string.Format("1 : {0} , 2 : {1}", service1.Execute("GetRandomNumberStringScope1"), service2.Execute("GetRandomNumberStringScope2")));
 
-
-
-    [HttpPost("CustomCreate")]
-    public async Task<IActionResult> Create(string value)
-    {
-        _customerServices.Create(value);
-        return Ok(_customerServices.Get());
-    }
-
-    [HttpPut("CustomCreate")]
-    public async Task<IActionResult> Update(string value,int index)
-    {
-        _customerServices.Update(value,index);
-        return Ok(_customerServices.Get());
-    }
-
-    [HttpDelete("CustomCreate")]
-    public async Task<IActionResult> Delete(int index)
-    {
-        return Ok(_customerServices.Get());
-    }
-
-    [HttpGet("CustomCreate")]
-    public async Task<IActionResult> Get(string value)
-    {
-        return Ok(_customerServices.Get());
-    }
 }

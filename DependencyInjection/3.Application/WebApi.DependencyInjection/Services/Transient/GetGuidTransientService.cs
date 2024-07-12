@@ -1,4 +1,4 @@
-﻿namespace WebApi.DependencyInjection.Services;
+﻿namespace WebApi.DependencyInjection.Services.Transient;
 
 public class GetGuidTransientService : IGetGuidTransientService
 {
