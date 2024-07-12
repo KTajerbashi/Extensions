@@ -1,44 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Tajer\\Desktop\\Extensions\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{397FB585-6093-40CF-A54E-2EFAC156369C}|MediatR\\1.Abstraction\\MediateR.Abstractions\\MediateR.Abstractions.csproj|c:\\users\\tajer\\desktop\\extensions\\mediatr\\1.abstraction\\mediater.abstractions\\ieventdispatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{397FB585-6093-40CF-A54E-2EFAC156369C}|MediatR\\1.Abstraction\\MediateR.Abstractions\\MediateR.Abstractions.csproj|solutionrelative:mediatr\\1.abstraction\\mediater.abstractions\\ieventdispatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDCD4CAF-B3DA-4986-9AF5-30728263260F}|MediatR\\2.Implementations\\MediateR.Extensions\\MediateR.Extensions.csproj|c:\\users\\tajer\\desktop\\extensions\\mediatr\\2.implementations\\mediater.extensions\\options\\events\\eventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDCD4CAF-B3DA-4986-9AF5-30728263260F}|MediatR\\2.Implementations\\MediateR.Extensions\\MediateR.Extensions.csproj|solutionrelative:mediatr\\2.implementations\\mediater.extensions\\options\\events\\eventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDCD4CAF-B3DA-4986-9AF5-30728263260F}|MediatR\\2.Implementations\\MediateR.Extensions\\MediateR.Extensions.csproj|c:\\users\\tajer\\desktop\\extensions\\mediatr\\2.implementations\\mediater.extensions\\options\\commands\\commandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDCD4CAF-B3DA-4986-9AF5-30728263260F}|MediatR\\2.Implementations\\MediateR.Extensions\\MediateR.Extensions.csproj|solutionrelative:mediatr\\2.implementations\\mediater.extensions\\options\\commands\\commandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EFCC75B-D209-44C4-8652-1E8AF308CDC1}|MessageBus\\3.Application\\WebApi.MessageBus\\WebApi.MessageBus.csproj|c:\\users\\tajer\\desktop\\extensions\\messagebus\\3.application\\webapi.messagebus\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EFCC75B-D209-44C4-8652-1E8AF308CDC1}|MessageBus\\3.Application\\WebApi.MessageBus\\WebApi.MessageBus.csproj|solutionrelative:messagebus\\3.application\\webapi.messagebus\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9DE0F373-44A1-49DD-B22A-AFC92B878E89}|MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox\\Extensions.MessageBus.MessageInbox.csproj|c:\\users\\tajer\\desktop\\extensions\\messagebus\\2.implementations\\messageinbox\\extensions.messagebus.messageinbox\\inboxmessageconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9DE0F373-44A1-49DD-B22A-AFC92B878E89}|MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox\\Extensions.MessageBus.MessageInbox.csproj|solutionrelative:messagebus\\2.implementations\\messageinbox\\extensions.messagebus.messageinbox\\inboxmessageconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EFCC75B-D209-44C4-8652-1E8AF308CDC1}|MessageBus\\3.Application\\WebApi.MessageBus\\WebApi.MessageBus.csproj|c:\\users\\tajer\\desktop\\extensions\\messagebus\\3.application\\webapi.messagebus\\controllers\\messageinboxcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EFCC75B-D209-44C4-8652-1E8AF308CDC1}|MessageBus\\3.Application\\WebApi.MessageBus\\WebApi.MessageBus.csproj|solutionrelative:messagebus\\3.application\\webapi.messagebus\\controllers\\messageinboxcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EFCC75B-D209-44C4-8652-1E8AF308CDC1}|MessageBus\\3.Application\\WebApi.MessageBus\\WebApi.MessageBus.csproj|c:\\users\\tajer\\desktop\\extensions\\messagebus\\3.application\\webapi.messagebus\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EFCC75B-D209-44C4-8652-1E8AF308CDC1}|MessageBus\\3.Application\\WebApi.MessageBus\\WebApi.MessageBus.csproj|solutionrelative:messagebus\\3.application\\webapi.messagebus\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EFCC75B-D209-44C4-8652-1E8AF308CDC1}|MessageBus\\3.Application\\WebApi.MessageBus\\WebApi.MessageBus.csproj|c:\\users\\tajer\\desktop\\extensions\\messagebus\\3.application\\webapi.messagebus\\models\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EFCC75B-D209-44C4-8652-1E8AF308CDC1}|MessageBus\\3.Application\\WebApi.MessageBus\\WebApi.MessageBus.csproj|solutionrelative:messagebus\\3.application\\webapi.messagebus\\models\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EFCC75B-D209-44C4-8652-1E8AF308CDC1}|MessageBus\\3.Application\\WebApi.MessageBus\\WebApi.MessageBus.csproj|c:\\users\\tajer\\desktop\\extensions\\messagebus\\3.application\\webapi.messagebus\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EFCC75B-D209-44C4-8652-1E8AF308CDC1}|MessageBus\\3.Application\\WebApi.MessageBus\\WebApi.MessageBus.csproj|solutionrelative:messagebus\\3.application\\webapi.messagebus\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -46,21 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 400,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IEventDispatcher.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Extensions\\MediatR\\1.Abstraction\\MediateR.Abstractions\\IEventDispatcher.cs",
-              "RelativeDocumentMoniker": "MediatR\\1.Abstraction\\MediateR.Abstractions\\IEventDispatcher.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Extensions\\MediatR\\1.Abstraction\\MediateR.Abstractions\\IEventDispatcher.cs",
-              "RelativeToolTip": "MediatR\\1.Abstraction\\MediateR.Abstractions\\IEventDispatcher.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-12T03:39:52.888Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -96,110 +46,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EventHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Extensions\\MediatR\\2.Implementations\\MediateR.Extensions\\Options\\Events\\EventHandler.cs",
-              "RelativeDocumentMoniker": "MediatR\\2.Implementations\\MediateR.Extensions\\Options\\Events\\EventHandler.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Extensions\\MediatR\\2.Implementations\\MediateR.Extensions\\Options\\Events\\EventHandler.cs",
-              "RelativeToolTip": "MediatR\\2.Implementations\\MediateR.Extensions\\Options\\Events\\EventHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-12T03:39:17.593Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Extensions\\MediatR\\2.Implementations\\MediateR.Extensions\\Options\\Commands\\CommandHandler.cs",
-              "RelativeDocumentMoniker": "MediatR\\2.Implementations\\MediateR.Extensions\\Options\\Commands\\CommandHandler.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Extensions\\MediatR\\2.Implementations\\MediateR.Extensions\\Options\\Commands\\CommandHandler.cs",
-              "RelativeToolTip": "MediatR\\2.Implementations\\MediateR.Extensions\\Options\\Commands\\CommandHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-12T03:36:03.151Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "InboxMessageConsumer.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Extensions\\MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox\\InboxMessageConsumer.cs",
-              "RelativeDocumentMoniker": "MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox\\InboxMessageConsumer.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Extensions\\MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox\\InboxMessageConsumer.cs",
-              "RelativeToolTip": "MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox\\InboxMessageConsumer.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAQwA8AAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-12T03:32:42.686Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Extensions\\MessageBus\\3.Application\\WebApi.MessageBus\\Program.cs",
-              "RelativeDocumentMoniker": "MessageBus\\3.Application\\WebApi.MessageBus\\Program.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Extensions\\MessageBus\\3.Application\\WebApi.MessageBus\\Program.cs",
-              "RelativeToolTip": "MessageBus\\3.Application\\WebApi.MessageBus\\Program.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAIAwwB8AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-12T03:32:17.343Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MessageInboxController.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Extensions\\MessageBus\\3.Application\\WebApi.MessageBus\\Controllers\\MessageInboxController.cs",
-              "RelativeDocumentMoniker": "MessageBus\\3.Application\\WebApi.MessageBus\\Controllers\\MessageInboxController.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Extensions\\MessageBus\\3.Application\\WebApi.MessageBus\\Controllers\\MessageInboxController.cs",
-              "RelativeToolTip": "MessageBus\\3.Application\\WebApi.MessageBus\\Controllers\\MessageInboxController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-12T03:32:05.781Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BaseController.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Extensions\\MessageBus\\3.Application\\WebApi.MessageBus\\Controllers\\BaseController.cs",
-              "RelativeDocumentMoniker": "MessageBus\\3.Application\\WebApi.MessageBus\\Controllers\\BaseController.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Extensions\\MessageBus\\3.Application\\WebApi.MessageBus\\Controllers\\BaseController.cs",
-              "RelativeToolTip": "MessageBus\\3.Application\\WebApi.MessageBus\\Controllers\\BaseController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-12T03:32:05.011Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Person.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Extensions\\MessageBus\\3.Application\\WebApi.MessageBus\\Models\\Person.cs",
-              "RelativeDocumentMoniker": "MessageBus\\3.Application\\WebApi.MessageBus\\Models\\Person.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Extensions\\MessageBus\\3.Application\\WebApi.MessageBus\\Models\\Person.cs",
-              "RelativeToolTip": "MessageBus\\3.Application\\WebApi.MessageBus\\Models\\Person.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-12T03:31:55.13Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Blog.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Extensions\\MessageBus\\3.Application\\WebApi.MessageBus\\Models\\Blog.cs",
-              "RelativeDocumentMoniker": "MessageBus\\3.Application\\WebApi.MessageBus\\Models\\Blog.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Extensions\\MessageBus\\3.Application\\WebApi.MessageBus\\Models\\Blog.cs",
-              "RelativeToolTip": "MessageBus\\3.Application\\WebApi.MessageBus\\Models\\Blog.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-12T03:31:41.524Z",
-              "EditorCaption": ""
             }
           ]
         }
