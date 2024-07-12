@@ -8,7 +8,7 @@ using Extensions.UsersManagement.Extensions.DependencyInjection;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddChangeDatalogDalSql(config =>
+builder.Services.AddChangeDataLogDalSql(config =>
 {
     config.ConnectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 });

@@ -21,7 +21,8 @@ public static class ServiceInjectorContainer
     {
         services.AddDbContext<ApplicationContext>(option =>
         {
-            option.UseSqlServer(configuration.GetConnectionString("DefaultConnection")).AddInterceptors(new AddChangeDataLogInterceptor());
+            option.UseSqlServer(configuration.GetConnectionString("DefaultConnection"))
+            .AddInterceptors(new AddChangeDataLogInterceptor());
         });
         return services;
     }
