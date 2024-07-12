@@ -74,4 +74,5 @@ public static class DependencyInjectionServiceCollectionExtensions
 
     private static bool IsCandidateCompilationLibrary(RuntimeLibrary compilationLibrary, string[] assemblyName)
         => assemblyName.Any(d => compilationLibrary.Name.Contains(d)) || compilationLibrary.Dependencies.Any(d => assemblyName.Any(c => d.Name.Contains(c)));
+
 }

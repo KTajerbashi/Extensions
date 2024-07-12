@@ -1,6 +1,4 @@
 using Extensions.Caching.Distributed.Sql.Extensions.DependencyInjection;
-using Extensions.Caching.Distributed.Redis.Extensions.DependencyInjection;
-using Extensions.Caching.InMemory.Extensions.DependencyInjection;
 using Extensions.Serializers.NewtonSoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 

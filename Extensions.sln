@@ -183,21 +183,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Application", "3.Applicat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediateR.Abstractions", "MediatR\1.Abstraction\MediateR.Abstractions\MediateR.Abstractions.csproj", "{397FB585-6093-40CF-A54E-2EFAC156369C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediateR.Events", "MediatR\2.Implementations\MediateR.Events\MediateR.Events.csproj", "{EBBA109C-AB17-4CB0-80EA-FFF167BA877B}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediateR.Commands", "MediatR\2.Implementations\MediateR.Commands\MediateR.Commands.csproj", "{AD92E9D9-9573-427E-9BAB-BD3CBD3B9A87}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediateR.Queries", "MediatR\2.Implementations\MediateR.Queries\MediateR.Queries.csproj", "{63D673C9-A638-419A-A8BB-37ECED39312A}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DatabaseModelScaffold", "DatabaseModelScaffold", "{D2B69F56-7D4A-417B-8E1E-C92BA8BE538C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConsoleApplication", "ConsoleApplication", "{FD3AED63-C614-4D5E-B215-E796793BBC6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseModelScaffold", "DatabaseModelScaffold\ConsoleApplication\DatabaseModelScaffold\DatabaseModelScaffold.csproj", "{238E0928-871E-4EBE-BA90-27DE7F91BEB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DatabaseModelScaffold", "DatabaseModelScaffold\ConsoleApplication\DatabaseModelScaffold\DatabaseModelScaffold.csproj", "{238E0928-871E-4EBE-BA90-27DE7F91BEB6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiApplication", "ApiApplication", "{D326973D-59DA-4672-B93B-2083474682FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseModelScaffold", "DatabaseModelScaffold\ApiApplication\DatabaseModelScaffold\DatabaseModelScaffold.csproj", "{BC4801D2-926E-4AC4-9CA7-EAC46BF12349}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DatabaseModelScaffold", "DatabaseModelScaffold\ApiApplication\DatabaseModelScaffold\DatabaseModelScaffold.csproj", "{BC4801D2-926E-4AC4-9CA7-EAC46BF12349}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediateR.Extensions", "MediatR\2.Implementations\MediateR.Extensions\MediateR.Extensions.csproj", "{BDCD4CAF-B3DA-4986-9AF5-30728263260F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -377,18 +373,6 @@ Global
 		{397FB585-6093-40CF-A54E-2EFAC156369C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{397FB585-6093-40CF-A54E-2EFAC156369C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{397FB585-6093-40CF-A54E-2EFAC156369C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EBBA109C-AB17-4CB0-80EA-FFF167BA877B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EBBA109C-AB17-4CB0-80EA-FFF167BA877B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EBBA109C-AB17-4CB0-80EA-FFF167BA877B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EBBA109C-AB17-4CB0-80EA-FFF167BA877B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AD92E9D9-9573-427E-9BAB-BD3CBD3B9A87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AD92E9D9-9573-427E-9BAB-BD3CBD3B9A87}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AD92E9D9-9573-427E-9BAB-BD3CBD3B9A87}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AD92E9D9-9573-427E-9BAB-BD3CBD3B9A87}.Release|Any CPU.Build.0 = Release|Any CPU
-		{63D673C9-A638-419A-A8BB-37ECED39312A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{63D673C9-A638-419A-A8BB-37ECED39312A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{63D673C9-A638-419A-A8BB-37ECED39312A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{63D673C9-A638-419A-A8BB-37ECED39312A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{238E0928-871E-4EBE-BA90-27DE7F91BEB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{238E0928-871E-4EBE-BA90-27DE7F91BEB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{238E0928-871E-4EBE-BA90-27DE7F91BEB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -397,6 +381,10 @@ Global
 		{BC4801D2-926E-4AC4-9CA7-EAC46BF12349}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC4801D2-926E-4AC4-9CA7-EAC46BF12349}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC4801D2-926E-4AC4-9CA7-EAC46BF12349}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDCD4CAF-B3DA-4986-9AF5-30728263260F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDCD4CAF-B3DA-4986-9AF5-30728263260F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDCD4CAF-B3DA-4986-9AF5-30728263260F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDCD4CAF-B3DA-4986-9AF5-30728263260F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -480,13 +468,11 @@ Global
 		{4272B2CE-A2CA-483F-9474-14F2B1401CDF} = {E4171AF9-B561-4FBE-9D84-1F93DBCA8167}
 		{72613FA5-1E6F-4231-8B79-5E3B2CCAC959} = {E4171AF9-B561-4FBE-9D84-1F93DBCA8167}
 		{397FB585-6093-40CF-A54E-2EFAC156369C} = {0C8F2299-40A1-480E-99CE-31A4D904596F}
-		{EBBA109C-AB17-4CB0-80EA-FFF167BA877B} = {4272B2CE-A2CA-483F-9474-14F2B1401CDF}
-		{AD92E9D9-9573-427E-9BAB-BD3CBD3B9A87} = {4272B2CE-A2CA-483F-9474-14F2B1401CDF}
-		{63D673C9-A638-419A-A8BB-37ECED39312A} = {4272B2CE-A2CA-483F-9474-14F2B1401CDF}
 		{FD3AED63-C614-4D5E-B215-E796793BBC6D} = {D2B69F56-7D4A-417B-8E1E-C92BA8BE538C}
 		{238E0928-871E-4EBE-BA90-27DE7F91BEB6} = {FD3AED63-C614-4D5E-B215-E796793BBC6D}
 		{D326973D-59DA-4672-B93B-2083474682FD} = {D2B69F56-7D4A-417B-8E1E-C92BA8BE538C}
 		{BC4801D2-926E-4AC4-9CA7-EAC46BF12349} = {D326973D-59DA-4672-B93B-2083474682FD}
+		{BDCD4CAF-B3DA-4986-9AF5-30728263260F} = {4272B2CE-A2CA-483F-9474-14F2B1401CDF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {43DDE49A-8B5E-423A-AC4B-4A082846460E}

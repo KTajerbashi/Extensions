@@ -1,8 +1,7 @@
-﻿using Extensions.MessageBus.MessageInbox.Extensions.DependencyInjection;
+﻿using Extensions.MessageBus.Abstractions;
 using Extensions.MessageBus.MessageInbox.Options;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Extensions.MessageBus.Abstractions;
 
 namespace Extensions.MessageBus.MessageInbox.Extensions.DependencyInjection;
 

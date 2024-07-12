@@ -5,6 +5,7 @@ using Extensions.MessageBus.Abstractions;
 using Extensions.Serializers.Abstractions;
 using System.Windows.Input;
 using MediateR.Abstractions;
+using MediatR;
 
 namespace Extensions.MessageBus.MessageInbox;
 public class InboxMessageConsumer : IMessageConsumer
@@ -29,7 +30,7 @@ public class InboxMessageConsumer : IMessageConsumer
         _messageInboxItemRepository = messageInboxItemRepository;
         Assembly[] assemblies = AppDomain.CurrentDomain.GetAssemblies();
         _domainEventTypes.AddRange(assemblies.SelectMany(assembly => assembly.GetTypes().Where(c => c.IsAssignableTo(typeof(IDomainEvent)) && c.IsClass).ToList()).ToList());
-        _commandTypes.AddRange(assemblies.SelectMany(assembly => assembly.GetTypes().Where(c => c.IsAssignableTo(typeof(ICommand)) && c.IsClass).ToList()).ToList());
+        _commandTypes.AddRange(assemblies.SelectMany(assembly => assembly.GetTypes().Where(c => c.IsAssignableTo(typeof(IRequest)) && c.IsClass).ToList()).ToList());
     }
 
     public Task<bool> ConsumeCommand(string sender, Parcel parcel)

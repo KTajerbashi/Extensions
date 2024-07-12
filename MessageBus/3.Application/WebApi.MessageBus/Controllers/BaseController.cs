@@ -1,3 +1,4 @@
+using Extensions.MessageBus.Abstractions;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebApi.MessageBus.Controllers;
@@ -6,11 +7,9 @@ namespace WebApi.MessageBus.Controllers;
 [Route("api/[controller]")]
 public abstract class BaseController : ControllerBase
 {
-
-}
-
-
-public class MessageInboxController : BaseController
-{
-
+    protected readonly ISendMessageBus _sendMessageBus;
+    protected BaseController(ISendMessageBus sendMessageBus)
+    {
+        _sendMessageBus = sendMessageBus;
+    }
 }

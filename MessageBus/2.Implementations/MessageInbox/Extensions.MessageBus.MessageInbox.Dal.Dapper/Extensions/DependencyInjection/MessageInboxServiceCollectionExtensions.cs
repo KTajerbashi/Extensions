@@ -1,5 +1,4 @@
 ﻿using Extensions.MessageBus.Abstractions;
-using Extensions.MessageBus.MessageInbox.Dal.Dapper.Extensions.DependencyInjection;
 using Extensions.MessageBus.MessageInbox.Dal.Dapper.Options;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Tajer\\Desktop\\Extensions\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9BF88058-335C-45C8-9EFE-0FB86EDBD1BC}|DependencyInjection\\3.Application\\WebApi.DependencyInjection\\WebApi.DependencyInjection.csproj|c:\\users\\tajer\\desktop\\extensions\\dependencyinjection\\3.application\\webapi.dependencyinjection\\databasecontext\\databasecontextapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BF88058-335C-45C8-9EFE-0FB86EDBD1BC}|DependencyInjection\\3.Application\\WebApi.DependencyInjection\\WebApi.DependencyInjection.csproj|solutionrelative:dependencyinjection\\3.application\\webapi.dependencyinjection\\databasecontext\\databasecontextapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9DE0F373-44A1-49DD-B22A-AFC92B878E89}|MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox\\Extensions.MessageBus.MessageInbox.csproj|c:\\users\\tajer\\desktop\\extensions\\messagebus\\2.implementations\\messageinbox\\extensions.messagebus.messageinbox\\inboxmessageconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DE0F373-44A1-49DD-B22A-AFC92B878E89}|MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox\\Extensions.MessageBus.MessageInbox.csproj|solutionrelative:messagebus\\2.implementations\\messageinbox\\extensions.messagebus.messageinbox\\inboxmessageconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{397FB585-6093-40CF-A54E-2EFAC156369C}|MediatR\\1.Abstraction\\MediateR.Abstractions\\MediateR.Abstractions.csproj|c:\\users\\tajer\\desktop\\extensions\\mediatr\\1.abstraction\\mediater.abstractions\\iqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{397FB585-6093-40CF-A54E-2EFAC156369C}|MediatR\\1.Abstraction\\MediateR.Abstractions\\MediateR.Abstractions.csproj|solutionrelative:mediatr\\1.abstraction\\mediater.abstractions\\iqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EFCC75B-D209-44C4-8652-1E8AF308CDC1}|MessageBus\\3.Application\\WebApi.MessageBus\\WebApi.MessageBus.csproj|c:\\users\\tajer\\desktop\\extensions\\messagebus\\3.application\\webapi.messagebus\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EFCC75B-D209-44C4-8652-1E8AF308CDC1}|MessageBus\\3.Application\\WebApi.MessageBus\\WebApi.MessageBus.csproj|solutionrelative:messagebus\\3.application\\webapi.messagebus\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -13,9 +21,35 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 313,
-          "SelectedChildIndex": 9,
+          "DockedWidth": 400,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InboxMessageConsumer.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Extensions\\MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox\\InboxMessageConsumer.cs",
+              "RelativeDocumentMoniker": "MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox\\InboxMessageConsumer.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Extensions\\MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox\\InboxMessageConsumer.cs",
+              "RelativeToolTip": "MessageBus\\2.Implementations\\MessageInbox\\Extensions.MessageBus.MessageInbox\\InboxMessageConsumer.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAA6wB8AAACDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-12T02:50:17.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Extensions\\MediatR\\1.Abstraction\\MediateR.Abstractions\\IQueryHandler.cs",
+              "RelativeDocumentMoniker": "MediatR\\1.Abstraction\\MediateR.Abstractions\\IQueryHandler.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Extensions\\MediatR\\1.Abstraction\\MediateR.Abstractions\\IQueryHandler.cs",
+              "RelativeToolTip": "MediatR\\1.Abstraction\\MediateR.Abstractions\\IQueryHandler.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAA5wBMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-12T02:49:20.112Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -54,15 +88,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DatabaseContextApplication.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Extensions\\DependencyInjection\\3.Application\\WebApi.DependencyInjection\\DatabaseContext\\DatabaseContextApplication.cs",
-              "RelativeDocumentMoniker": "DependencyInjection\\3.Application\\WebApi.DependencyInjection\\DatabaseContext\\DatabaseContextApplication.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Extensions\\DependencyInjection\\3.Application\\WebApi.DependencyInjection\\DatabaseContext\\DatabaseContextApplication.cs",
-              "RelativeToolTip": "DependencyInjection\\3.Application\\WebApi.DependencyInjection\\DatabaseContext\\DatabaseContextApplication.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\Extensions\\MessageBus\\3.Application\\WebApi.MessageBus\\Program.cs",
+              "RelativeDocumentMoniker": "MessageBus\\3.Application\\WebApi.MessageBus\\Program.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\Extensions\\MessageBus\\3.Application\\WebApi.MessageBus\\Program.cs",
+              "RelativeToolTip": "MessageBus\\3.Application\\WebApi.MessageBus\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-12T00:18:40.262Z",
+              "WhenOpened": "2024-07-12T01:37:50.257Z",
               "EditorCaption": ""
             }
           ]
