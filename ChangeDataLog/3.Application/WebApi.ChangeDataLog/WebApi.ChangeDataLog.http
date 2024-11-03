@@ -1,6 +1,0 @@
-@WebApi.ChangeDataLog_HostAddress = http://localhost:5020
-
-GET {{WebApi.ChangeDataLog_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
