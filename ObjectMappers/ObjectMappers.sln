@@ -3,9 +3,44 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Abstraction", "Abstraction", "{DB96082B-4259-4DF0-9DDC-08136C306037}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Implemention", "Implemention", "{1A1C828E-D567-4F23-97E8-AABDAE85B631}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{DE1D1FE4-6163-420B-986B-5A4BB656F00A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.ObjectMappers", "Implemention\Extensions.ObjectMappers\Extensions.ObjectMappers.csproj", "{2170224B-AC30-4907-893A-0616A5C6E894}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectMappers.WebApi", "Sample\ObjectMappers.WebApi\ObjectMappers.WebApi.csproj", "{0470193F-4C13-4AD5-908B-831620A75499}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.ObjectMappers.Abstractions", "Abstraction\Extensions.ObjectMappers.Abstractions\Extensions.ObjectMappers.Abstractions.csproj", "{05C4A618-BDFA-4EDD-ABD7-E6B955CD6F85}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2170224B-AC30-4907-893A-0616A5C6E894}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2170224B-AC30-4907-893A-0616A5C6E894}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2170224B-AC30-4907-893A-0616A5C6E894}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2170224B-AC30-4907-893A-0616A5C6E894}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0470193F-4C13-4AD5-908B-831620A75499}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0470193F-4C13-4AD5-908B-831620A75499}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0470193F-4C13-4AD5-908B-831620A75499}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0470193F-4C13-4AD5-908B-831620A75499}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05C4A618-BDFA-4EDD-ABD7-E6B955CD6F85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05C4A618-BDFA-4EDD-ABD7-E6B955CD6F85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05C4A618-BDFA-4EDD-ABD7-E6B955CD6F85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05C4A618-BDFA-4EDD-ABD7-E6B955CD6F85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2170224B-AC30-4907-893A-0616A5C6E894} = {1A1C828E-D567-4F23-97E8-AABDAE85B631}
+		{0470193F-4C13-4AD5-908B-831620A75499} = {DE1D1FE4-6163-420B-986B-5A4BB656F00A}
+		{05C4A618-BDFA-4EDD-ABD7-E6B955CD6F85} = {DB96082B-4259-4DF0-9DDC-08136C306037}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DF757DFA-0B79-469C-A456-3FFB519B8360}

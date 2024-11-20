@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\ObjectMappers\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0470193F-4C13-4AD5-908B-831620A75499}|Sample\\ObjectMappers.WebApi\\ObjectMappers.WebApi.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\objectmappers\\sample\\objectmappers.webapi\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0470193F-4C13-4AD5-908B-831620A75499}|Sample\\ObjectMappers.WebApi\\ObjectMappers.WebApi.csproj|solutionrelative:sample\\objectmappers.webapi\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0470193F-4C13-4AD5-908B-831620A75499}|Sample\\ObjectMappers.WebApi\\ObjectMappers.WebApi.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\objectmappers\\sample\\objectmappers.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0470193F-4C13-4AD5-908B-831620A75499}|Sample\\ObjectMappers.WebApi\\ObjectMappers.WebApi.csproj|solutionrelative:sample\\objectmappers.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0470193F-4C13-4AD5-908B-831620A75499}|Sample\\ObjectMappers.WebApi\\ObjectMappers.WebApi.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\objectmappers\\sample\\objectmappers.webapi\\models\\person\\profile\\personprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0470193F-4C13-4AD5-908B-831620A75499}|Sample\\ObjectMappers.WebApi\\ObjectMappers.WebApi.csproj|solutionrelative:sample\\objectmappers.webapi\\models\\person\\profile\\personprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0470193F-4C13-4AD5-908B-831620A75499}|Sample\\ObjectMappers.WebApi\\ObjectMappers.WebApi.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\objectmappers\\sample\\objectmappers.webapi\\models\\person\\personentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0470193F-4C13-4AD5-908B-831620A75499}|Sample\\ObjectMappers.WebApi\\ObjectMappers.WebApi.csproj|solutionrelative:sample\\objectmappers.webapi\\models\\person\\personentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05C4A618-BDFA-4EDD-ABD7-E6B955CD6F85}|Abstraction\\Extensions.ObjectMappers.Abstractions\\Extensions.ObjectMappers.Abstractions.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\objectmappers\\abstraction\\extensions.objectmappers.abstractions\\extensions.objectmappers.abstractions.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{05C4A618-BDFA-4EDD-ABD7-E6B955CD6F85}|Abstraction\\Extensions.ObjectMappers.Abstractions\\Extensions.ObjectMappers.Abstractions.csproj|solutionrelative:abstraction\\extensions.objectmappers.abstractions\\extensions.objectmappers.abstractions.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 381,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,16 +67,71 @@
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 484,
-          "SelectedChildIndex": -1,
-          "Children": [
+            },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\ObjectMappers\\Sample\\ObjectMappers.WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "Sample\\ObjectMappers.WebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\ObjectMappers\\Sample\\ObjectMappers.WebApi\\Program.cs",
+              "RelativeToolTip": "Sample\\ObjectMappers.WebApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T22:53:12.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PersonController.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\ObjectMappers\\Sample\\ObjectMappers.WebApi\\Controllers\\PersonController.cs",
+              "RelativeDocumentMoniker": "Sample\\ObjectMappers.WebApi\\Controllers\\PersonController.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\ObjectMappers\\Sample\\ObjectMappers.WebApi\\Controllers\\PersonController.cs",
+              "RelativeToolTip": "Sample\\ObjectMappers.WebApi\\Controllers\\PersonController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T22:49:05.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PersonProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\ObjectMappers\\Sample\\ObjectMappers.WebApi\\Models\\Person\\Profile\\PersonProfile.cs",
+              "RelativeDocumentMoniker": "Sample\\ObjectMappers.WebApi\\Models\\Person\\Profile\\PersonProfile.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\ObjectMappers\\Sample\\ObjectMappers.WebApi\\Models\\Person\\Profile\\PersonProfile.cs",
+              "RelativeToolTip": "Sample\\ObjectMappers.WebApi\\Models\\Person\\Profile\\PersonProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T22:48:40.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PersonEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\ObjectMappers\\Sample\\ObjectMappers.WebApi\\Models\\Person\\PersonEntity.cs",
+              "RelativeDocumentMoniker": "Sample\\ObjectMappers.WebApi\\Models\\Person\\PersonEntity.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\ObjectMappers\\Sample\\ObjectMappers.WebApi\\Models\\Person\\PersonEntity.cs",
+              "RelativeToolTip": "Sample\\ObjectMappers.WebApi\\Models\\Person\\PersonEntity.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA9wAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T22:42:24.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Extensions.ObjectMappers.Abstractions",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\ObjectMappers\\Abstraction\\Extensions.ObjectMappers.Abstractions\\Extensions.ObjectMappers.Abstractions.csproj",
+              "RelativeDocumentMoniker": "Abstraction\\Extensions.ObjectMappers.Abstractions\\Extensions.ObjectMappers.Abstractions.csproj",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\ObjectMappers\\Abstraction\\Extensions.ObjectMappers.Abstractions\\Extensions.ObjectMappers.Abstractions.csproj",
+              "RelativeToolTip": "Abstraction\\Extensions.ObjectMappers.Abstractions\\Extensions.ObjectMappers.Abstractions.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-20T22:36:24.884Z",
+              "EditorCaption": ""
             }
           ]
         }
