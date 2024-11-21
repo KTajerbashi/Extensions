@@ -1,4 +1,14 @@
-﻿using Extensions.ChangeDataLog.Hamster.Options;
+﻿using Extensions.ChangeDataLog.Abstractions;
+using Extensions.ChangeDataLog.Hamster.Options;
+using Extensions.UsersManagement.Abstractions;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Microsoft.EntityFrameworkCore.Diagnostics;
+using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.Extensions.Options;
+using Microsoft.EntityFrameworkCore.Storage;
+using System.Data;
+
 
 namespace Extensions.ChangeDataLog.Hamster.Interceptors;
 
@@ -19,7 +29,7 @@ public sealed class AddChangeDataLogInterceptor : SaveChangesInterceptor
     private void SaveEntityChangeLogs(DbContextEventData eventData)
     {
         var changeTracker = eventData.Context.ChangeTracker;
-        var userInfoService = eventData.Context.GetService<IUserInfoService>();
+        var userInfoService = eventData.Context.GetService<IUserManager<long>>();
         var itemRepository = eventData.Context.GetService<IEntityChageInterceptorItemRepository>();
         var options = eventData.Context.GetService<IOptions<ChangeDataLogHamsterOptions>>().Value;
         var changedEntities = GetChangedEntities(changeTracker);
@@ -34,8 +44,8 @@ public sealed class AddChangeDataLogInterceptor : SaveChangesInterceptor
             {
                 Id = Guid.NewGuid(),
                 TransactionId = transactionId,
-                UserId = userInfoService.UserId().ToString(),
-                Ip = userInfoService.GetUserIp(),
+                UserId = userInfoService.UserId.ToString(),
+                Ip = userInfoService.Ip,
                 EntityType = entity.Entity.GetType().FullName,
                 EntityId = entity.Property(options.BusinessIdFieldName).CurrentValue.ToString(),
                 DateOfOccurrence = dateOfAccured,
@@ -65,7 +75,15 @@ public sealed class AddChangeDataLogInterceptor : SaveChangesInterceptor
 
         if (entityChangeInterceptorItems.Count != 0)
         {
-            itemRepository.Save(entityChangeInterceptorItems, changeTracker.Context.Database.CurrentTransaction.GetDbTransaction());
+            var currentTransaction = changeTracker.Context.Database.CurrentTransaction;
+
+            if (currentTransaction == null)
+                throw new InvalidOperationException("No active database transaction found.");
+
+            // Access the underlying DbTransaction
+            var dbTransaction = currentTransaction.GetDbTransaction();
+
+            itemRepository.Save(entityChangeInterceptorItems, dbTransaction);
         }
     }
 
