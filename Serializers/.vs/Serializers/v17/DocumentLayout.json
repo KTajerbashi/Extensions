@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\Serializers\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AF403055-278A-4909-BF0A-01FCFD09D18A}|Sample\\Serializers.WebApi\\Serializers.WebApi.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\serializers\\sample\\serializers.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF403055-278A-4909-BF0A-01FCFD09D18A}|Sample\\Serializers.WebApi\\Serializers.WebApi.csproj|solutionrelative:sample\\serializers.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 381,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,6 +51,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\Serializers\\Sample\\Serializers.WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "Sample\\Serializers.WebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\Serializers\\Sample\\Serializers.WebApi\\Program.cs",
+              "RelativeToolTip": "Sample\\Serializers.WebApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T20:02:39.484Z",
+              "EditorCaption": ""
             }
           ]
         }
