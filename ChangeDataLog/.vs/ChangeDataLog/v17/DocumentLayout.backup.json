@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\ChangeDataLog\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{61976255-DE45-472B-9683-E3349D3D46EC}|Implemention\\Extensions.ChangeDataLog.Sql\\Extensions.ChangeDataLog.Sql.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\changedatalog\\implemention\\extensions.changedatalog.sql\\extensions.changedatalog.sql.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{61976255-DE45-472B-9683-E3349D3D46EC}|Implemention\\Extensions.ChangeDataLog.Sql\\Extensions.ChangeDataLog.Sql.csproj|solutionrelative:implemention\\extensions.changedatalog.sql\\extensions.changedatalog.sql.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA3F7BA-A227-46E6-ADDA-D96E23228A4C}|Implemention\\Extensions.ChangeDataLog.Hamster\\Extensions.ChangeDataLog.Hamster.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\changedatalog\\implemention\\extensions.changedatalog.hamster\\extensions.changedatalog.hamster.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3DA3F7BA-A227-46E6-ADDA-D96E23228A4C}|Implemention\\Extensions.ChangeDataLog.Hamster\\Extensions.ChangeDataLog.Hamster.csproj|solutionrelative:implemention\\extensions.changedatalog.hamster\\extensions.changedatalog.hamster.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA3F7BA-A227-46E6-ADDA-D96E23228A4C}|Implemention\\Extensions.ChangeDataLog.Hamster\\Extensions.ChangeDataLog.Hamster.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\changedatalog\\implemention\\extensions.changedatalog.hamster\\extensions\\dependencyinjection\\chagedatalogservicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DA3F7BA-A227-46E6-ADDA-D96E23228A4C}|Implemention\\Extensions.ChangeDataLog.Hamster\\Extensions.ChangeDataLog.Hamster.csproj|solutionrelative:implemention\\extensions.changedatalog.hamster\\extensions\\dependencyinjection\\chagedatalogservicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +22,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 381,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Extensions.ChangeDataLog.Sql",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\ChangeDataLog\\Implemention\\Extensions.ChangeDataLog.Sql\\Extensions.ChangeDataLog.Sql.csproj",
+              "RelativeDocumentMoniker": "Implemention\\Extensions.ChangeDataLog.Sql\\Extensions.ChangeDataLog.Sql.csproj",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\ChangeDataLog\\Implemention\\Extensions.ChangeDataLog.Sql\\Extensions.ChangeDataLog.Sql.csproj",
+              "RelativeToolTip": "Implemention\\Extensions.ChangeDataLog.Sql\\Extensions.ChangeDataLog.Sql.csproj",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAmwB0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-21T20:51:36.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Extensions.ChangeDataLog.Hamster",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\ChangeDataLog\\Implemention\\Extensions.ChangeDataLog.Hamster\\Extensions.ChangeDataLog.Hamster.csproj",
+              "RelativeDocumentMoniker": "Implemention\\Extensions.ChangeDataLog.Hamster\\Extensions.ChangeDataLog.Hamster.csproj",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\ChangeDataLog\\Implemention\\Extensions.ChangeDataLog.Hamster\\Extensions.ChangeDataLog.Hamster.csproj",
+              "RelativeToolTip": "Implemention\\Extensions.ChangeDataLog.Hamster\\Extensions.ChangeDataLog.Hamster.csproj",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAmwBEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-21T20:51:17.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ChageDatalogServiceCollectionExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\ChangeDataLog\\Implemention\\Extensions.ChangeDataLog.Hamster\\Extensions\\DependencyInjection\\ChageDatalogServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "Implemention\\Extensions.ChangeDataLog.Hamster\\Extensions\\DependencyInjection\\ChageDatalogServiceCollectionExtensions.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\ChangeDataLog\\Implemention\\Extensions.ChangeDataLog.Hamster\\Extensions\\DependencyInjection\\ChageDatalogServiceCollectionExtensions.cs",
+              "RelativeToolTip": "Implemention\\Extensions.ChangeDataLog.Hamster\\Extensions\\DependencyInjection\\ChageDatalogServiceCollectionExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T20:50:59.587Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -46,16 +98,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 484,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }

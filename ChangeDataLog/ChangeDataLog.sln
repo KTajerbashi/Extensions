@@ -3,9 +3,44 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{51606F5E-9006-47FE-9644-F3957DF61305}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Abstraction", "Abstraction", "{9339D9CF-986D-4156-917B-0C555408A092}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Implemention", "Implemention", "{B8745F0C-5B5A-4265-B6AC-547F4DA72DE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.ChangeDataLog.Abstractions", "Abstraction\Extensions.ChangeDataLog.Abstractions\Extensions.ChangeDataLog.Abstractions.csproj", "{669AA3AE-7BB8-4B3D-960C-60ACE812C869}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.ChangeDataLog.Hamster", "Implemention\Extensions.ChangeDataLog.Hamster\Extensions.ChangeDataLog.Hamster.csproj", "{3DA3F7BA-A227-46E6-ADDA-D96E23228A4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.ChangeDataLog.Sql", "Implemention\Extensions.ChangeDataLog.Sql\Extensions.ChangeDataLog.Sql.csproj", "{61976255-DE45-472B-9683-E3349D3D46EC}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{669AA3AE-7BB8-4B3D-960C-60ACE812C869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{669AA3AE-7BB8-4B3D-960C-60ACE812C869}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{669AA3AE-7BB8-4B3D-960C-60ACE812C869}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{669AA3AE-7BB8-4B3D-960C-60ACE812C869}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DA3F7BA-A227-46E6-ADDA-D96E23228A4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DA3F7BA-A227-46E6-ADDA-D96E23228A4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DA3F7BA-A227-46E6-ADDA-D96E23228A4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DA3F7BA-A227-46E6-ADDA-D96E23228A4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61976255-DE45-472B-9683-E3349D3D46EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61976255-DE45-472B-9683-E3349D3D46EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61976255-DE45-472B-9683-E3349D3D46EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61976255-DE45-472B-9683-E3349D3D46EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{669AA3AE-7BB8-4B3D-960C-60ACE812C869} = {9339D9CF-986D-4156-917B-0C555408A092}
+		{3DA3F7BA-A227-46E6-ADDA-D96E23228A4C} = {B8745F0C-5B5A-4265-B6AC-547F4DA72DE4}
+		{61976255-DE45-472B-9683-E3349D3D46EC} = {B8745F0C-5B5A-4265-B6AC-547F4DA72DE4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EAFD00CF-0F64-4F6E-B928-580DEABB1617}
