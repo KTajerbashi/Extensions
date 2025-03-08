@@ -2,9 +2,9 @@
 using Extensions.Serializers.EPPlus.Services;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Extensions.Serializers.EPPlus.Extensions.DependencyInjection;
+namespace Extensions.Serializers.EPPlus;
 
-public static class EPPlusExcelSerializerServiceCollectionExtensions
+public static class DependencyInjection
 {
     public static IServiceCollection AddEPPlusExcelSerializer(this IServiceCollection services)
         => services.AddSingleton<IExcelSerializer, EPPlusExcelSerializer>();
