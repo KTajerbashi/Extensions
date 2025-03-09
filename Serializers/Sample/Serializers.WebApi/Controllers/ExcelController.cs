@@ -13,15 +13,20 @@ public class ExcelController : BaseController
         _excelSerializer = excelSerializer;
         _env = env;
     }
-  
-    [HttpGet("Generate")]
-    public IActionResult Generate()
+
+    [HttpGet("GenerateEPPlus")]
+    public IActionResult GenerateEPPlus()
     {
-        var filePath = Datasource.GetMainDatasource().Generate(GetFolderPath("Exports"));
+        var filePath = Datasource.GetSheetParameter().GenerateAndSaveExcelEPPlus<Person>(GetFolderPath("Exports"));
         return Ok(filePath);
     }
-
-    private string GetFolderPath(string foldername) => Path.Combine(_env.WebRootPath, foldername);
+    
+    [HttpGet("GenerateXMLClosed")]
+    public IActionResult GenerateXMLClosed()
+    {
+        var filePath = Datasource.GetSheetParameter().GenerateAndSaveExcelClosedXML<Person>(GetFolderPath("Exports"));
+        return Ok(filePath);
+    }
 
     [HttpGet("ExportData")]
     public IActionResult ExportData()
@@ -42,5 +47,6 @@ public class ExcelController : BaseController
         return Content($"File created at: {filePath}");
     }
 
+    private string GetFolderPath(string foldername) => Path.Combine(_env.WebRootPath, foldername);
 
 }

@@ -1,5 +1,6 @@
 using Serializers.WebApi.Swagger;
 using Extensions.Serializers.EPPlus;
+using Serializers.WebApi.DependencyInjections;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,16 @@ builder.Services.AddOpenApi();
 builder.Services.AddSwaggerService();
 
 builder.Services.AddEPPlusExcelSerializer();
+
+//builder.Services.AddSingleton<ISendEmail, SendSingleton>();
+//builder.Services.AddScoped<ISendEmail, SendScope>();
+builder.Services.AddTransient<ISendEmail, SendTransient>();
+
+
+builder.Services.AddSingleton<IIDSingleton>(new ID());
+builder.Services.AddScoped<IIDScoped, ID>();
+builder.Services.AddTransient<IIDTransient, ID>();
+
 
 var app = builder.Build();
 
