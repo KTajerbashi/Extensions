@@ -7,7 +7,7 @@ using System.Reflection;
 
 namespace Extensions.Serializers.EPPlus.EPPlusGenerator;
 
-public static class ExcelGeneratorWith_EPPlus
+public static class ExcelGeneratorWithEPPlus
 {
     public static string GenerateAndSaveExcelEPPlus<TModel>(this SheetParameter<TModel> sheetParameter, string filePath)
         where TModel : class, new()

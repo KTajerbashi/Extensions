@@ -30,8 +30,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 691,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 12,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -39,6 +75,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:1309131781:0:{81164725-9a96-4ece-a4cb-440d8fd285e5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{90243340-bd7a-11d0-93ef-00a0c90f2734}"
             },
             {
               "$type": "Document",
@@ -106,7 +146,7 @@
               "RelativeDocumentMoniker": "Implemention\\Extensions.Serializers.EPPlus\\EPPlusGenerator\\ExcelGeneratorWith_EPPlus.cs",
               "ToolTip": "D:\\Visual Studio\\Git KTajerbashi\\Extensions\\Serializers\\Implemention\\Extensions.Serializers.EPPlus\\EPPlusGenerator\\ExcelGeneratorWith_EPPlus.cs",
               "RelativeToolTip": "Implemention\\Extensions.Serializers.EPPlus\\EPPlusGenerator\\ExcelGeneratorWith_EPPlus.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAQwGYAAAC9AAAAAAAAAA==",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAQwGQAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-10T09:06:50.161Z",
               "EditorCaption": ""

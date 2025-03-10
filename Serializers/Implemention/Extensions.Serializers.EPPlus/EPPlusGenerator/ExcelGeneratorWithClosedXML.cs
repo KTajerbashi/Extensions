@@ -5,7 +5,7 @@ using System.Reflection;
 
 namespace Extensions.Serializers.EPPlus.EPPlusGenerator;
 
-public static class ExcelGeneratorWith_ClosedXML
+public static class ExcelGeneratorWithClosedXML
 {
     public static string GenerateAndSaveExcelClosedXML<TModel>(this SheetParameter<TModel> sheetParameter, string filePath)
         where TModel : class, new()
