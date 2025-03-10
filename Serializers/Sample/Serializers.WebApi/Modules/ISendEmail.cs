@@ -1,4 +1,4 @@
-﻿namespace Serializers.WebApi.DependencyInjections;
+﻿namespace Serializers.WebApi.Modules;
 public interface ISendEmail
 {
     string SendMail();
@@ -26,7 +26,7 @@ public class SendScope : ISendEmail
     public SendScope()
     {
         Count++;
-        Console.WriteLine($"SendScope : Count {Count} , {this.GetHashCode()}");
+        Console.WriteLine($"SendScope : Count {Count} , {GetHashCode()}");
         Code = Guid.NewGuid();
     }
     public string SendMail()
@@ -41,7 +41,7 @@ public class SendTransient : ISendEmail
     public SendTransient()
     {
         Count++;
-        Console.WriteLine($"SendTransient : Count {Count} , {this.GetHashCode()}");
+        Console.WriteLine($"SendTransient : Count {Count} , {GetHashCode()}");
         Code = Guid.NewGuid();
     }
     public string SendMail()

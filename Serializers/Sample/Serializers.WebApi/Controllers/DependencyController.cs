@@ -1,8 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Serializers.WebApi.DependencyInjections;
+using Serializers.WebApi.Modules;
 
 namespace Serializers.WebApi.Controllers;
-
 public class DependencyController : BaseController
 {
     private readonly IIDSingleton _singletonA;

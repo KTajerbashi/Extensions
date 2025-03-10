@@ -1,4 +1,4 @@
-﻿namespace Serializers.WebApi.DependencyInjections;
+﻿namespace Serializers.WebApi.Modules;
 
 public interface IIDSingleton : IID { }
 public interface IIDScoped : IID { }

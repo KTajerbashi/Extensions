@@ -1,6 +1,6 @@
 using Serializers.WebApi.Swagger;
 using Extensions.Serializers.EPPlus;
-using Serializers.WebApi.DependencyInjections;
+using Serializers.WebApi.Modules;
 
 var builder = WebApplication.CreateBuilder(args);
 
