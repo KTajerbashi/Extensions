@@ -1,55 +1,39 @@
 ﻿using Bogus;
-using Serializers.WebApi.Attributes;
+using Extensions.Serializers.EPPlus.Attributes;
+using Extensions.Serializers.EPPlus.Models;
 
-namespace Serializers.WebApi.Controllers;
+namespace Serializers.WebApi.Models;
 public static class Datasource
 {
-    public static SheetParameter GetSheetParameter()
+    public static SheetParameter<TModel> GetSheetParameter<TModel>()
+        where TModel : class, new()
     {
-        SheetParameter data = new();
-        data.Datasource.Add("نظر سنجی سامانه میزکار", GetTableParameter(5));
+        SheetParameter<TModel> data = new();
+        data.Datasource.Add("نظر سنجی سامانه میزکار", GetTableParameter<TModel>(1));
+        data.Datasource.Add("نظر سنجی سامانه م1یزکار", GetTableParameter<TModel>(2));
+        data.Datasource.Add("نظر سنجی سامانه م2یزکار", GetTableParameter<TModel>(3));
+        data.Datasource.Add("نظر سنجی سامانه م3یزکار", GetTableParameter<TModel>(4));
         //data.Datasource.Add("Sheet 2", GetTableParameter(3));
         return data;
     }
 
-    public static Dictionary<string, List<Person>> GetTableParameter(int a)
+    public static Dictionary<string, List<TModel>> GetTableParameter<TModel>(int a)
+        where TModel : class, new()
     {
-        Dictionary<string, List<Person>> data  = new();
+        Dictionary<string, List<TModel>> data  = new();
         for (int i = 0; i < a; i++)
         {
-            data.Add($"Question{i}", GetPeople());
+            data.Add($"Question{i + 1}", GenerateFakeDataExtensions.GenrateFakeData<TModel>(20));
         }
         return data;
     }
 
-    public static List<Person> GetPeople()
-    {
-        var fakePerson = new Faker<Person>()
-            .RuleFor(p => p.Name, f => f.Name.FirstName())
-            .RuleFor(p => p.Family, f => f.Name.LastName())
-            .RuleFor(p => p.Address, f => f.Address.FullAddress())
-            .RuleFor(p => p.Role, f => f.Rant.Locale)
-            .RuleFor(p => p.Job, f => f.Company.Bs())
-            .RuleFor(p => p.NationalCode, f => f.Random.Replace("##########"))
-            .RuleFor(p => p.Phone, f => f.Phone.PhoneNumber("09##########"))
-            .RuleFor(p => p.DateTime, f => f.Date.Past().ToString("yyyy-MM-dd HH:mm:ss"));
-
-        return fakePerson.Generate(20);
-    }
-}
-
-
-
-public class SheetParameter
-{
-    public SheetParameter()
-    {
-        Datasource = new();
-    }
-    [ExcelSheet]
-    public Dictionary<string, Dictionary<string, List<Person>>> Datasource { get; set; }
 
 }
+
+
+
+
 
 
 public class Person
@@ -68,12 +52,22 @@ public class Person
 
     [ExcelColumn("آدرس", "DateTime")]
     public string Address { get; set; }
-    
+
     [ExcelColumn("شغل", "DateTime")]
     public string Job { get; set; }
-    
+
     [ExcelColumn("سمت", "DateTime")]
     public string Role { get; set; }
+
+    [ExcelColumn("تاریخ ایجاد", "CreateDatetTime")]
+    public string CreateDatetTime { get; set; }
+
+    [ExcelColumn("تاریخ ویرایش", "UpdateDatetTime")]
+    public string UpdateDatetTime { get; set; }
+    public Person()
+    {
+
+    }
 
 }
 

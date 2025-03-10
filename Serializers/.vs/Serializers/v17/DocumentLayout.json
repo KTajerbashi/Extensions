@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "D:\\Visual Studio\\Git KTajerbashi\\Extensions\\Serializers\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AF403055-278A-4909-BF0A-01FCFD09D18A}|Sample\\Serializers.WebApi\\Serializers.WebApi.csproj|d:\\visual studio\\git ktajerbashi\\extensions\\serializers\\sample\\serializers.webapi\\epplusgenerator\\excelgeneratorwith_closedxml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF403055-278A-4909-BF0A-01FCFD09D18A}|Sample\\Serializers.WebApi\\Serializers.WebApi.csproj|solutionrelative:sample\\serializers.webapi\\epplusgenerator\\excelgeneratorwith_closedxml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D956A7B9-656B-4780-B1FE-BFD33C21EF28}|Implemention\\Extensions.Serializers.EPPlus\\Extensions.Serializers.EPPlus.csproj|d:\\visual studio\\git ktajerbashi\\extensions\\serializers\\implemention\\extensions.serializers.epplus\\epplusgenerator\\excelgeneratorwith_epplus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D956A7B9-656B-4780-B1FE-BFD33C21EF28}|Implemention\\Extensions.Serializers.EPPlus\\Extensions.Serializers.EPPlus.csproj|solutionrelative:implemention\\extensions.serializers.epplus\\epplusgenerator\\excelgeneratorwith_epplus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AF403055-278A-4909-BF0A-01FCFD09D18A}|Sample\\Serializers.WebApi\\Serializers.WebApi.csproj|d:\\visual studio\\git ktajerbashi\\extensions\\serializers\\sample\\serializers.webapi\\controllers\\excelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AF403055-278A-4909-BF0A-01FCFD09D18A}|Sample\\Serializers.WebApi\\Serializers.WebApi.csproj|solutionrelative:sample\\serializers.webapi\\controllers\\excelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D956A7B9-656B-4780-B1FE-BFD33C21EF28}|Implemention\\Extensions.Serializers.EPPlus\\Extensions.Serializers.EPPlus.csproj|d:\\visual studio\\git ktajerbashi\\extensions\\serializers\\implemention\\extensions.serializers.epplus\\epplusgenerator\\excelgeneratorwith_closedxml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D956A7B9-656B-4780-B1FE-BFD33C21EF28}|Implemention\\Extensions.Serializers.EPPlus\\Extensions.Serializers.EPPlus.csproj|solutionrelative:implemention\\extensions.serializers.epplus\\epplusgenerator\\excelgeneratorwith_closedxml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D956A7B9-656B-4780-B1FE-BFD33C21EF28}|Implemention\\Extensions.Serializers.EPPlus\\Extensions.Serializers.EPPlus.csproj|d:\\visual studio\\git ktajerbashi\\extensions\\serializers\\implemention\\extensions.serializers.epplus\\models\\sheetparameter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D956A7B9-656B-4780-B1FE-BFD33C21EF28}|Implemention\\Extensions.Serializers.EPPlus\\Extensions.Serializers.EPPlus.csproj|solutionrelative:implemention\\extensions.serializers.epplus\\models\\sheetparameter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF403055-278A-4909-BF0A-01FCFD09D18A}|Sample\\Serializers.WebApi\\Serializers.WebApi.csproj|d:\\visual studio\\git ktajerbashi\\extensions\\serializers\\sample\\serializers.webapi\\models\\datasource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF403055-278A-4909-BF0A-01FCFD09D18A}|Sample\\Serializers.WebApi\\Serializers.WebApi.csproj|solutionrelative:sample\\serializers.webapi\\models\\datasource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,9 +29,45 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 1513,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 691,
+          "SelectedChildIndex": 12,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -29,17 +77,8 @@
               "Name": "ST:1309131781:0:{81164725-9a96-4ece-a4cb-440d8fd285e5}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ExcelGeneratorWith_ClosedXML.cs",
-              "DocumentMoniker": "D:\\Visual Studio\\Git KTajerbashi\\Extensions\\Serializers\\Sample\\Serializers.WebApi\\EPPlusGenerator\\ExcelGeneratorWith_ClosedXML.cs",
-              "RelativeDocumentMoniker": "Sample\\Serializers.WebApi\\EPPlusGenerator\\ExcelGeneratorWith_ClosedXML.cs",
-              "ToolTip": "D:\\Visual Studio\\Git KTajerbashi\\Extensions\\Serializers\\Sample\\Serializers.WebApi\\EPPlusGenerator\\ExcelGeneratorWith_ClosedXML.cs",
-              "RelativeToolTip": "Sample\\Serializers.WebApi\\EPPlusGenerator\\ExcelGeneratorWith_ClosedXML.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAuwDQAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T13:54:12.238Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{90243340-bd7a-11d0-93ef-00a0c90f2734}"
             },
             {
               "$type": "Document",
@@ -49,9 +88,67 @@
               "RelativeDocumentMoniker": "Sample\\Serializers.WebApi\\Controllers\\ExcelController.cs",
               "ToolTip": "D:\\Visual Studio\\Git KTajerbashi\\Extensions\\Serializers\\Sample\\Serializers.WebApi\\Controllers\\ExcelController.cs",
               "RelativeToolTip": "Sample\\Serializers.WebApi\\Controllers\\ExcelController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAUwBQAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T13:50:44.118Z",
+              "WhenOpened": "2025-03-10T09:06:21.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SheetParameter.cs",
+              "DocumentMoniker": "D:\\Visual Studio\\Git KTajerbashi\\Extensions\\Serializers\\Implemention\\Extensions.Serializers.EPPlus\\Models\\SheetParameter.cs",
+              "RelativeDocumentMoniker": "Implemention\\Extensions.Serializers.EPPlus\\Models\\SheetParameter.cs",
+              "ToolTip": "D:\\Visual Studio\\Git KTajerbashi\\Extensions\\Serializers\\Implemention\\Extensions.Serializers.EPPlus\\Models\\SheetParameter.cs",
+              "RelativeToolTip": "Implemention\\Extensions.Serializers.EPPlus\\Models\\SheetParameter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T09:05:59.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ExcelGeneratorWith_ClosedXML.cs",
+              "DocumentMoniker": "D:\\Visual Studio\\Git KTajerbashi\\Extensions\\Serializers\\Implemention\\Extensions.Serializers.EPPlus\\EPPlusGenerator\\ExcelGeneratorWith_ClosedXML.cs",
+              "RelativeDocumentMoniker": "Implemention\\Extensions.Serializers.EPPlus\\EPPlusGenerator\\ExcelGeneratorWith_ClosedXML.cs",
+              "ToolTip": "D:\\Visual Studio\\Git KTajerbashi\\Extensions\\Serializers\\Implemention\\Extensions.Serializers.EPPlus\\EPPlusGenerator\\ExcelGeneratorWith_ClosedXML.cs",
+              "RelativeToolTip": "Implemention\\Extensions.Serializers.EPPlus\\EPPlusGenerator\\ExcelGeneratorWith_ClosedXML.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T08:24:14.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Datasource.cs",
+              "DocumentMoniker": "D:\\Visual Studio\\Git KTajerbashi\\Extensions\\Serializers\\Sample\\Serializers.WebApi\\Models\\Datasource.cs",
+              "RelativeDocumentMoniker": "Sample\\Serializers.WebApi\\Models\\Datasource.cs",
+              "ToolTip": "D:\\Visual Studio\\Git KTajerbashi\\Extensions\\Serializers\\Sample\\Serializers.WebApi\\Models\\Datasource.cs",
+              "RelativeToolTip": "Sample\\Serializers.WebApi\\Models\\Datasource.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T08:24:01.227Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1602,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExcelGeneratorWith_EPPlus.cs",
+              "DocumentMoniker": "D:\\Visual Studio\\Git KTajerbashi\\Extensions\\Serializers\\Implemention\\Extensions.Serializers.EPPlus\\EPPlusGenerator\\ExcelGeneratorWith_EPPlus.cs",
+              "RelativeDocumentMoniker": "Implemention\\Extensions.Serializers.EPPlus\\EPPlusGenerator\\ExcelGeneratorWith_EPPlus.cs",
+              "ToolTip": "D:\\Visual Studio\\Git KTajerbashi\\Extensions\\Serializers\\Implemention\\Extensions.Serializers.EPPlus\\EPPlusGenerator\\ExcelGeneratorWith_EPPlus.cs",
+              "RelativeToolTip": "Implemention\\Extensions.Serializers.EPPlus\\EPPlusGenerator\\ExcelGeneratorWith_EPPlus.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAQwGQAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T09:06:50.161Z",
               "EditorCaption": ""
             }
           ]

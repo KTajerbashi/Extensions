@@ -1,6 +1,7 @@
 using Extensions.Serializers.Abstractions;
+using Extensions.Serializers.EPPlus.EPPlusGenerator;
 using Microsoft.AspNetCore.Mvc;
-using Serializers.WebApi.EPPlusGenerator;
+using Serializers.WebApi.Models;
 
 namespace Serializers.WebApi.Controllers;
 
@@ -17,14 +18,14 @@ public class ExcelController : BaseController
     [HttpGet("GenerateEPPlus")]
     public IActionResult GenerateEPPlus()
     {
-        var filePath = Datasource.GetSheetParameter().GenerateAndSaveExcelEPPlus<Person>(GetFolderPath("Exports"));
+        var filePath = Datasource.GetSheetParameter<Person>().GenerateAndSaveExcelEPPlus(GetFolderPath("Exports"));
         return Ok(filePath);
     }
-    
+
     [HttpGet("GenerateXMLClosed")]
     public IActionResult GenerateXMLClosed()
     {
-        var filePath = Datasource.GetSheetParameter().GenerateAndSaveExcelClosedXML<Person>(GetFolderPath("Exports"));
+        var filePath = Datasource.GetSheetParameter<Person>().GenerateAndSaveExcelClosedXML(GetFolderPath("Exports"));
         return Ok(filePath);
     }
 

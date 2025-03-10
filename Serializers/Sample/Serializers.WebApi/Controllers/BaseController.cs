@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Serializers.WebApi.Models;
 
 namespace Serializers.WebApi.Controllers;
 

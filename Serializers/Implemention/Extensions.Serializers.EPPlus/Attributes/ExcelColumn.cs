@@ -1,4 +1,4 @@
-﻿namespace Serializers.WebApi.Attributes;
+﻿namespace Extensions.Serializers.EPPlus.Attributes;
 
 public class ExcelColumnAttribute : Attribute
 {
@@ -12,8 +12,5 @@ public class ExcelColumnAttribute : Attribute
 }
 
 public class ExcelSheetAttribute : Attribute
-{
-}
-public class ExcelTableAttribute : Attribute
 {
 }

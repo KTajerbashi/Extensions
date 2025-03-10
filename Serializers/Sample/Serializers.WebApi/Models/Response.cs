@@ -1,4 +1,4 @@
-﻿namespace Serializers.WebApi.Controllers;
+﻿namespace Serializers.WebApi.Models;
 
 public static class ResponseApi
 {
