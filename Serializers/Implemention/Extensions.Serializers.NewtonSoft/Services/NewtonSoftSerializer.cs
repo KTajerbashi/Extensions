@@ -2,11 +2,6 @@
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Extensions.Serializers.NewtonSoft.Services;
 public class NewtonSoftSerializer : IJsonSerializer, IDisposable

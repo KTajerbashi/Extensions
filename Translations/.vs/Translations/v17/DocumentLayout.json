@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\Translations\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{423ACBD6-9E95-4DBD-85BA-5DBFEA0427B3}|Implemention\\Extensions.Translations.Parrot\\Extensions.Translations.Parrot.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\translations\\implemention\\extensions.translations.parrot\\database\\parrotsqlrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{423ACBD6-9E95-4DBD-85BA-5DBFEA0427B3}|Implemention\\Extensions.Translations.Parrot\\Extensions.Translations.Parrot.csproj|solutionrelative:implemention\\extensions.translations.parrot\\database\\parrotsqlrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{423ACBD6-9E95-4DBD-85BA-5DBFEA0427B3}|Implemention\\Extensions.Translations.Parrot\\Extensions.Translations.Parrot.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\translations\\implemention\\extensions.translations.parrot\\services\\parrottranslator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{423ACBD6-9E95-4DBD-85BA-5DBFEA0427B3}|Implemention\\Extensions.Translations.Parrot\\Extensions.Translations.Parrot.csproj|solutionrelative:implemention\\extensions.translations.parrot\\services\\parrottranslator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{423ACBD6-9E95-4DBD-85BA-5DBFEA0427B3}|Implemention\\Extensions.Translations.Parrot\\Extensions.Translations.Parrot.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\translations\\implemention\\extensions.translations.parrot\\extensions\\dependencyinjection\\parrottranslatorservicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{423ACBD6-9E95-4DBD-85BA-5DBFEA0427B3}|Implemention\\Extensions.Translations.Parrot\\Extensions.Translations.Parrot.csproj|solutionrelative:implemention\\extensions.translations.parrot\\extensions\\dependencyinjection\\parrottranslatorservicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +22,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 381,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ParrotSqlRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\Translations\\Implemention\\Extensions.Translations.Parrot\\Database\\ParrotSqlRepository.cs",
+              "RelativeDocumentMoniker": "Implemention\\Extensions.Translations.Parrot\\Database\\ParrotSqlRepository.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\Translations\\Implemention\\Extensions.Translations.Parrot\\Database\\ParrotSqlRepository.cs",
+              "RelativeToolTip": "Implemention\\Extensions.Translations.Parrot\\Database\\ParrotSqlRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T22:23:21.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ParrotTranslator.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\Translations\\Implemention\\Extensions.Translations.Parrot\\Services\\ParrotTranslator.cs",
+              "RelativeDocumentMoniker": "Implemention\\Extensions.Translations.Parrot\\Services\\ParrotTranslator.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\Translations\\Implemention\\Extensions.Translations.Parrot\\Services\\ParrotTranslator.cs",
+              "RelativeToolTip": "Implemention\\Extensions.Translations.Parrot\\Services\\ParrotTranslator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T22:19:48.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ParrotTranslatorServiceCollectionExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\Translations\\Implemention\\Extensions.Translations.Parrot\\Extensions\\DependencyInjection\\ParrotTranslatorServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "Implemention\\Extensions.Translations.Parrot\\Extensions\\DependencyInjection\\ParrotTranslatorServiceCollectionExtensions.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\Translations\\Implemention\\Extensions.Translations.Parrot\\Extensions\\DependencyInjection\\ParrotTranslatorServiceCollectionExtensions.cs",
+              "RelativeToolTip": "Implemention\\Extensions.Translations.Parrot\\Extensions\\DependencyInjection\\ParrotTranslatorServiceCollectionExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T22:19:04.227Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -46,6 +98,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }
