@@ -1,0 +1,6 @@
+@Extensions.Caching.WebApi_HostAddress = http://localhost:5083
+
+GET {{Extensions.Caching.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
