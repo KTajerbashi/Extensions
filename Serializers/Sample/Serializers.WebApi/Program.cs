@@ -1,3 +1,7 @@
+using Serializers.WebApi.Swagger;
+using Extensions.Serializers.EPPlus;
+using Serializers.WebApi.Modules;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -5,6 +9,20 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+builder.Services.AddSwaggerService();
+
+builder.Services.AddEPPlusExcelSerializer();
+
+//builder.Services.AddSingleton<ISendEmail, SendSingleton>();
+//builder.Services.AddScoped<ISendEmail, SendScope>();
+builder.Services.AddTransient<ISendEmail, SendTransient>();
+
+
+builder.Services.AddSingleton<IIDSingleton>(new ID());
+builder.Services.AddScoped<IIDScoped, ID>();
+builder.Services.AddTransient<IIDTransient, ID>();
+
 
 var app = builder.Build();
 
@@ -14,10 +32,14 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
+app.UseStaticFiles();
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseSwaggerService();
 
 app.Run();

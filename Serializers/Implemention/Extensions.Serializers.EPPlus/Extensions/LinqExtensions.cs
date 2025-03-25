@@ -5,20 +5,20 @@ using System.Reflection;
 namespace Extensions.Serializers.EPPlus.Extensions;
 public static class LinqExtensions
 {
-    public static List<T> ToList<T>(this DataTable dataTable, ITranslator translator)
+    public static List<T> ToList<T>(this DataTable dataTable)
     {
         List<T> data = new();
 
         foreach (DataRow row in dataTable.Rows)
         {
-            T item = GetItem<T>(row, translator);
+            T item = GetItem<T>(row);
             data.Add(item);
         }
 
         return data;
     }
 
-    private static T GetItem<T>(DataRow dr, ITranslator translator)
+    private static T GetItem<T>(DataRow dr)
     {
         Type temp = typeof(T);
 
@@ -28,7 +28,7 @@ public static class LinqExtensions
         {
             foreach (PropertyInfo pro in temp.GetProperties())
             {
-                if (pro.Name == column.ColumnName || translator[pro.Name] == column.ColumnName)
+                if (pro.Name == column.ColumnName || column.ColumnName == "")
                     pro.SetValue(obj, Convert.ChangeType(dr[column.ColumnName], pro.PropertyType), null);
                 else
                     continue;

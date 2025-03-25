@@ -8,7 +8,7 @@ namespace Extensions.Serializers.EPPlus.Extensions;
 
 public static class ExcelExtensions
 {
-    public static byte[] ToExcelByteArray<T>(this List<T> list, ITranslator translator, string sheetName = "Result")
+    public static byte[] ToExcelByteArray<T>(this List<T> list, string sheetName = "Result")
     {
         using ExcelPackage excelPackage = new ExcelPackage();
 
@@ -20,7 +20,7 @@ public static class ExcelExtensions
         for (int i = 0; i < headings.Count(); i++)
         {
 
-            ws.Cells[1, i + 1].Value = translator[headings[i].Name];
+            ws.Cells[1, i + 1].Value = headings[i].Name;
         }
 
         //populate our Data
