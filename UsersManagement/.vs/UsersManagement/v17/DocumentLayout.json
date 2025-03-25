@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F402C669-357F-436B-AE82-8714442A1466}|Implemention\\Extensions.UsersManagement\\Extensions.UsersManagement.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\implemention\\extensions.usersmanagement\\extensions.usersmanagement.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F402C669-357F-436B-AE82-8714442A1466}|Implemention\\Extensions.UsersManagement\\Extensions.UsersManagement.csproj|solutionrelative:implemention\\extensions.usersmanagement\\extensions.usersmanagement.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{456E1C81-4B6C-4A74-B6B1-B099A831591C}|Abstraction\\Extensions.UsersManagement.Abstractions\\Extensions.UsersManagement.Abstractions.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\abstraction\\extensions.usersmanagement.abstractions\\extensions.usersmanagement.abstractions.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{456E1C81-4B6C-4A74-B6B1-B099A831591C}|Abstraction\\Extensions.UsersManagement.Abstractions\\Extensions.UsersManagement.Abstractions.csproj|solutionrelative:abstraction\\extensions.usersmanagement.abstractions\\extensions.usersmanagement.abstractions.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 381,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,6 +55,52 @@
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1309131781:0:{81164725-9a96-4ece-a4cb-440d8fd285e5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Extensions.UsersManagement",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Implemention\\Extensions.UsersManagement\\Extensions.UsersManagement.csproj",
+              "RelativeDocumentMoniker": "Implemention\\Extensions.UsersManagement\\Extensions.UsersManagement.csproj",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Implemention\\Extensions.UsersManagement\\Extensions.UsersManagement.csproj",
+              "RelativeToolTip": "Implemention\\Extensions.UsersManagement\\Extensions.UsersManagement.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-25T23:12:00.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Extensions.UsersManagement.Abstractions",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Abstraction\\Extensions.UsersManagement.Abstractions\\Extensions.UsersManagement.Abstractions.csproj",
+              "RelativeDocumentMoniker": "Abstraction\\Extensions.UsersManagement.Abstractions\\Extensions.UsersManagement.Abstractions.csproj",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Abstraction\\Extensions.UsersManagement.Abstractions\\Extensions.UsersManagement.Abstractions.csproj",
+              "RelativeToolTip": "Abstraction\\Extensions.UsersManagement.Abstractions\\Extensions.UsersManagement.Abstractions.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-25T23:11:57.735Z",
+              "EditorCaption": ""
             }
           ]
         }
