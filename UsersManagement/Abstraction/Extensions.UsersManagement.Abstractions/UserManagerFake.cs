@@ -52,6 +52,6 @@ public class UserManagerFake : IUserManager<long>
 
     public TClaim GetClaimValue<TClaim>(string key) => default;
 
-    public object GetUserAgent() => default;
+    public string GetUserAgent() => default;
 
 }

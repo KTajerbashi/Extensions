@@ -21,6 +21,6 @@ public interface IUserManager<T>
     string GetClaim<TClaim>(string key);
     TClaim GetClaimValue<TClaim>(string key);
     KeyValue<string, string> GetClaim(string key);
-    object GetUserAgent();
+    string GetUserAgent();
 
 }
