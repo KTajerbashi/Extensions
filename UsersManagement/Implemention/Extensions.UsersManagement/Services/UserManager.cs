@@ -1,5 +1,5 @@
 ﻿using Extensions.UsersManagement.Abstractions;
-using Extensions.UsersManagement.Extensions.Identity;
+using Extensions.UsersManagement.Extensions;
 using Extensions.UsersManagement.Options;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Options;
@@ -96,7 +96,7 @@ public class UserManager : IUserManager<long>
         return (TClaim)Convert.ChangeType(claimValue, typeof(TClaim));
     }
 
-    public object GetUserAgent()
+    public string GetUserAgent()
         => _httpContextAccessor
         .HttpContext?
         .Request?

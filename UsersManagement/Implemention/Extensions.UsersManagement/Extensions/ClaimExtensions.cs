@@ -1,16 +1,16 @@
 ﻿using System.Security.Claims;
 
-namespace Extensions.UsersManagement.Extensions.Identity;
+namespace Extensions.UsersManagement.Extensions;
 
 public static class ClaimExtensions
 {
     public static string GetClaimValue(this ClaimsPrincipal userClaimsPrincipal, string claimType)
     {
-        return userClaimsPrincipal.Claims.FirstOrDefault((Claim x) => x.Type == claimType)?.Value;
+        return userClaimsPrincipal.Claims.FirstOrDefault((x) => x.Type == claimType)?.Value;
     }
     public static Claim GetClaim(this ClaimsPrincipal userClaimsPrincipal, string claimType)
     {
-        return userClaimsPrincipal.Claims.FirstOrDefault((Claim x) => x.Type == claimType);
+        return userClaimsPrincipal.Claims.FirstOrDefault((x) => x.Type == claimType);
     }
 }
 
