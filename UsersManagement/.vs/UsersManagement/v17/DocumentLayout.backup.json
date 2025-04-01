@@ -1,7 +1,44 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\sample\\usersmanagement.webapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|solutionrelative:sample\\usersmanagement.webapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\sample\\usersmanagement.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|solutionrelative:sample\\usersmanagement.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F402C669-357F-436B-AE82-8714442A1466}|Implemention\\Extensions.UsersManagement\\Extensions.UsersManagement.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\implemention\\extensions.usersmanagement\\configurations\\identityextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F402C669-357F-436B-AE82-8714442A1466}|Implemention\\Extensions.UsersManagement\\Extensions.UsersManagement.csproj|solutionrelative:implemention\\extensions.usersmanagement\\configurations\\identityextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\sample\\usersmanagement.webapi\\models\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|solutionrelative:sample\\usersmanagement.webapi\\models\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\sample\\usersmanagement.webapi\\datacontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|solutionrelative:sample\\usersmanagement.webapi\\datacontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F402C669-357F-436B-AE82-8714442A1466}|Implemention\\Extensions.UsersManagement\\Extensions.UsersManagement.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\implemention\\extensions.usersmanagement\\extensions.usersmanagement.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F402C669-357F-436B-AE82-8714442A1466}|Implemention\\Extensions.UsersManagement\\Extensions.UsersManagement.csproj|solutionrelative:implemention\\extensions.usersmanagement\\extensions.usersmanagement.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F402C669-357F-436B-AE82-8714442A1466}|Implemention\\Extensions.UsersManagement\\Extensions.UsersManagement.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\implemention\\extensions.usersmanagement\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F402C669-357F-436B-AE82-8714442A1466}|Implemention\\Extensions.UsersManagement\\Extensions.UsersManagement.csproj|solutionrelative:implemention\\extensions.usersmanagement\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\sample\\usersmanagement.webapi\\extensions\\swaggerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|solutionrelative:sample\\usersmanagement.webapi\\extensions\\swaggerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F402C669-357F-436B-AE82-8714442A1466}|Implemention\\Extensions.UsersManagement\\Extensions.UsersManagement.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\implemention\\extensions.usersmanagement\\services\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F402C669-357F-436B-AE82-8714442A1466}|Implemention\\Extensions.UsersManagement\\Extensions.UsersManagement.csproj|solutionrelative:implemention\\extensions.usersmanagement\\services\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +46,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 381,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 16,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\DataContext\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Sample\\UsersManagement.WebApi\\DataContext\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\DataContext\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Sample\\UsersManagement.WebApi\\DataContext\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T16:13:28.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Models\\Entities\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Sample\\UsersManagement.WebApi\\Models\\Entities\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Models\\Entities\\ApplicationUser.cs",
+              "RelativeToolTip": "Sample\\UsersManagement.WebApi\\Models\\Entities\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T16:12:40.636Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -66,6 +129,103 @@
             {
               "$type": "Bookmark",
               "Name": "ST:1309131781:0:{81164725-9a96-4ece-a4cb-440d8fd285e5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "Sample\\UsersManagement.WebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Program.cs",
+              "RelativeToolTip": "Sample\\UsersManagement.WebApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T16:07:52.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IdentityExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Implemention\\Extensions.UsersManagement\\Configurations\\IdentityExtensions.cs",
+              "RelativeDocumentMoniker": "Implemention\\Extensions.UsersManagement\\Configurations\\IdentityExtensions.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Implemention\\Extensions.UsersManagement\\Configurations\\IdentityExtensions.cs",
+              "RelativeToolTip": "Implemention\\Extensions.UsersManagement\\Configurations\\IdentityExtensions.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAowGQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T16:07:36.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Extensions.UsersManagement.csproj",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Implemention\\Extensions.UsersManagement\\Extensions.UsersManagement.csproj",
+              "RelativeDocumentMoniker": "Implemention\\Extensions.UsersManagement\\Extensions.UsersManagement.csproj",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Implemention\\Extensions.UsersManagement\\Extensions.UsersManagement.csproj",
+              "RelativeToolTip": "Implemention\\Extensions.UsersManagement\\Extensions.UsersManagement.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-31T16:14:05.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserManager.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Implemention\\Extensions.UsersManagement\\Services\\UserManager.cs",
+              "RelativeDocumentMoniker": "Implemention\\Extensions.UsersManagement\\Services\\UserManager.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Implemention\\Extensions.UsersManagement\\Services\\UserManager.cs",
+              "RelativeToolTip": "Implemention\\Extensions.UsersManagement\\Services\\UserManager.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAswEIAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T13:21:00.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Implemention\\Extensions.UsersManagement\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Implemention\\Extensions.UsersManagement\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Implemention\\Extensions.UsersManagement\\DependencyInjection.cs",
+              "RelativeToolTip": "Implemention\\Extensions.UsersManagement\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T13:19:00.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SwaggerExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Extensions\\SwaggerExtensions.cs",
+              "RelativeDocumentMoniker": "Sample\\UsersManagement.WebApi\\Extensions\\SwaggerExtensions.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Extensions\\SwaggerExtensions.cs",
+              "RelativeToolTip": "Sample\\UsersManagement.WebApi\\Extensions\\SwaggerExtensions.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAmwBQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T13:14:00.311Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 381,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Sample\\UsersManagement.WebApi\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\appsettings.Development.json",
+              "RelativeToolTip": "Sample\\UsersManagement.WebApi\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-31T16:15:18.625Z",
+              "EditorCaption": ""
             }
           ]
         }

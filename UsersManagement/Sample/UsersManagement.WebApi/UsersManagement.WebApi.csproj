@@ -12,7 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Abstraction\Extensions.UsersManagement.Abstractions\Extensions.UsersManagement.Abstractions.csproj" />
     <ProjectReference Include="..\..\Implemention\Extensions.UsersManagement\Extensions.UsersManagement.csproj" />
   </ItemGroup>
 
