@@ -4,6 +4,9 @@ namespace UsersManagement.WebApi.Models.Entities;
 
 public class ApplicationUser : IdentityUser<long>
 {
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public string DisplayName { get; set; }
 }
 
 
@@ -14,6 +17,14 @@ public class ApplicationUserClaim : IdentityUserClaim<long>
 
 public class ApplicationRole : IdentityRole<long>
 {
+    protected ApplicationRole()
+    {
+        
+    }
+    public ApplicationRole(string name)
+    {
+        Name = name;
+    }
 }
 
 

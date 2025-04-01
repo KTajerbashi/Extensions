@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\sample\\usersmanagement.webapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|solutionrelative:sample\\usersmanagement.webapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\sample\\usersmanagement.webapi\\extensions\\swaggerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|solutionrelative:sample\\usersmanagement.webapi\\extensions\\swaggerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\sample\\usersmanagement.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|solutionrelative:sample\\usersmanagement.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\sample\\usersmanagement.webapi\\controllers\\securecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|solutionrelative:sample\\usersmanagement.webapi\\controllers\\securecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\sample\\usersmanagement.webapi\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|solutionrelative:sample\\usersmanagement.webapi\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\sample\\usersmanagement.webapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,6 +17,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{F402C669-357F-436B-AE82-8714442A1466}|Implemention\\Extensions.UsersManagement\\Extensions.UsersManagement.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\implemention\\extensions.usersmanagement\\configurations\\identityextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F402C669-357F-436B-AE82-8714442A1466}|Implemention\\Extensions.UsersManagement\\Extensions.UsersManagement.csproj|solutionrelative:implemention\\extensions.usersmanagement\\configurations\\identityextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\sample\\usersmanagement.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|solutionrelative:sample\\usersmanagement.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\sample\\usersmanagement.webapi\\models\\dtos\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|solutionrelative:sample\\usersmanagement.webapi\\models\\dtos\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,8 +33,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 576,
-          "SelectedChildIndex": 16,
+          "DockedWidth": 1161,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -102,91 +94,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "SecureController.cs",
               "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Controllers\\SecureController.cs",
               "RelativeDocumentMoniker": "Sample\\UsersManagement.WebApi\\Controllers\\SecureController.cs",
               "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Controllers\\SecureController.cs",
               "RelativeToolTip": "Sample\\UsersManagement.WebApi\\Controllers\\SecureController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T10:13:49.45Z",
+              "WhenOpened": "2025-04-01T11:23:58.929Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AuthenticationController.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Controllers\\AuthenticationController.cs",
-              "RelativeDocumentMoniker": "Sample\\UsersManagement.WebApi\\Controllers\\AuthenticationController.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Controllers\\AuthenticationController.cs",
-              "RelativeToolTip": "Sample\\UsersManagement.WebApi\\Controllers\\AuthenticationController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T10:13:47.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SwaggerExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Extensions\\SwaggerExtensions.cs",
-              "RelativeDocumentMoniker": "Sample\\UsersManagement.WebApi\\Extensions\\SwaggerExtensions.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Extensions\\SwaggerExtensions.cs",
-              "RelativeToolTip": "Sample\\UsersManagement.WebApi\\Extensions\\SwaggerExtensions.cs",
-              "ViewState": "AgIAAIkAAAAAAAAAAAAuwFAAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T10:08:01.67Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Sample\\UsersManagement.WebApi\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Sample\\UsersManagement.WebApi\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T10:13:44Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BaseController.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Controllers\\BaseController.cs",
-              "RelativeDocumentMoniker": "Sample\\UsersManagement.WebApi\\Controllers\\BaseController.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Controllers\\BaseController.cs",
-              "RelativeToolTip": "Sample\\UsersManagement.WebApi\\Controllers\\BaseController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T10:13:41.072Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "IdentityExtensions.cs",
               "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Implemention\\Extensions.UsersManagement\\Configurations\\IdentityExtensions.cs",
               "RelativeDocumentMoniker": "Implemention\\Extensions.UsersManagement\\Configurations\\IdentityExtensions.cs",
               "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Implemention\\Extensions.UsersManagement\\Configurations\\IdentityExtensions.cs",
               "RelativeToolTip": "Implemention\\Extensions.UsersManagement\\Configurations\\IdentityExtensions.cs",
-              "ViewState": "AgIAAMAAAAAAAAAAAAAYwMwAAABfAAAAAAAAAA==",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAIwF0AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T10:11:44.743Z",
+              "WhenOpened": "2025-04-01T11:01:09.125Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Sample\\UsersManagement.WebApi\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Sample\\UsersManagement.WebApi\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAywCMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T10:43:30.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "Sample\\UsersManagement.WebApi\\Controllers\\AuthenticationController.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "Sample\\UsersManagement.WebApi\\Controllers\\AuthenticationController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T10:37:33.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Program.cs",
               "RelativeDocumentMoniker": "Sample\\UsersManagement.WebApi\\Program.cs",
               "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Program.cs",
               "RelativeToolTip": "Sample\\UsersManagement.WebApi\\Program.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAvwBIAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACMAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-01T10:06:00.692Z",
               "EditorCaption": ""
@@ -194,20 +160,20 @@
           ]
         },
         {
-          "DockedWidth": 576,
+          "DockedWidth": 568,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "Sample\\UsersManagement.WebApi\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\appsettings.Development.json",
-              "RelativeToolTip": "Sample\\UsersManagement.WebApi\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-01T10:20:42.369Z",
+              "DocumentIndex": 5,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Models\\DTOs\\LoginModel.cs",
+              "RelativeDocumentMoniker": "Sample\\UsersManagement.WebApi\\Models\\DTOs\\LoginModel.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Models\\DTOs\\LoginModel.cs",
+              "RelativeToolTip": "Sample\\UsersManagement.WebApi\\Models\\DTOs\\LoginModel.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAcwBMAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T10:44:08.536Z",
               "EditorCaption": ""
             }
           ]

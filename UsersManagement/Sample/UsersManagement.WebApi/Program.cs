@@ -16,7 +16,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
 // Add Swagger
-builder.Services.AddJwtSecurityDefinition(configuration);
+builder.Services.AddSwaggerWithIdentity(configuration,IdentityType.Cookie);
 
 // Add Repository
 builder.Services.AddScoped<IIdentityRespository, IdentityRespository>();
@@ -54,7 +54,7 @@ switch (identityType)
 
 var app = builder.Build();
 
-app.UseSwaggerWithIdentity();
+app.UseSwaggerWithIdentity(IdentityType.Cookie);
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

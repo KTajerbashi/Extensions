@@ -87,6 +87,8 @@ public static class IdentityExtensions
         // Configure application cookie
         services.ConfigureApplicationCookie(options =>
         {
+            options.Cookie.Name = "UsersManagement";
+            //options.Cookie.Domain = "UsersManagement";
             options.Cookie.HttpOnly = true;
             options.ExpireTimeSpan = TimeSpan.FromDays(30);
             options.LoginPath = "/Account/Login";

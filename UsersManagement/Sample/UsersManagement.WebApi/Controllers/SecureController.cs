@@ -21,7 +21,7 @@ public class SecureController : BaseController
     [HttpGet("admin-only")]
     public IActionResult AdminOnly()
     {
-        return Ok("Only admins can see this");
+        return Ok("You Are Admin => Only admins can see this");
     }
 
 }
