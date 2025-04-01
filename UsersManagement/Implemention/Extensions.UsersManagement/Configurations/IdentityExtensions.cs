@@ -9,16 +9,60 @@ using System.Security.Cryptography;
 using System.Text;
 
 namespace Extensions.UsersManagement.Configurations;
-
+public enum IdentityType
+{
+    Cookie,
+    Session,
+    JWT,
+    JWE,
+}
 public static class IdentityExtensions
 {
-    public static IServiceCollection AddUsersManagementIdentityCookie<TDbContext, TUser, TRole>(
+    public static IServiceCollection AddUsersManagementIdentityService<TDbContext, TUser, TRole, TId>(this IServiceCollection services, IdentityType type)
+        where TDbContext : DbContext
+        where TUser : IdentityUser<TId>
+        where TRole : IdentityRole<TId>
+        where TId : struct, IEquatable<TId>
+    {
+
+        switch (type)
+        {
+            case IdentityType.Cookie:
+                services.AddUsersManagementIdentityCookie<TDbContext, TUser, TRole, TId>();
+                break;
+            case IdentityType.Session:
+                break;
+            case IdentityType.JWT:
+                break;
+            case IdentityType.JWE:
+                break;
+            default:
+                break;
+        }
+
+        services.AddIdentityServices<TUser, TRole, TId>();
+        return services;
+    }
+    public static IServiceCollection AddIdentityServices<TUser, TRole, TId>(this IServiceCollection services)
+        where TUser : IdentityUser<TId>
+        where TRole : IdentityRole<TId>
+        where TId : struct, IEquatable<TId>
+    {
+        services.AddScoped<RoleManager<TRole>>();
+
+        return services;
+    }
+
+
+
+    public static IServiceCollection AddUsersManagementIdentityCookie<TDbContext, TUser, TRole, TId>(
         this IServiceCollection services,
         Action<IdentityOptions>? configureIdentity = null,
         Action<CookieAuthenticationOptions>? configureCookie = null)
         where TDbContext : DbContext
-        where TUser : IdentityUser
-        where TRole : IdentityRole
+        where TUser : IdentityUser<TId>
+        where TRole : IdentityRole<TId>
+        where TId : struct, IEquatable<TId>
     {
         // Add Identity with default options
         var identityBuilder = services.AddIdentity<TUser, TRole>(options =>
@@ -55,13 +99,14 @@ public static class IdentityExtensions
         return services;
     }
 
-    public static IServiceCollection AddUsersManagementIdentitySession<TDbContext, TUser, TRole>(
+    public static IServiceCollection AddUsersManagementIdentitySession<TDbContext, TUser, TRole, TId>(
         this IServiceCollection services,
         Action<IdentityOptions>? configureIdentity = null,
         Action<SessionOptions>? configureSession = null)
         where TDbContext : DbContext
-        where TUser : IdentityUser
-        where TRole : IdentityRole
+        where TUser : IdentityUser<TId>
+        where TRole : IdentityRole<TId>
+        where TId : struct, IEquatable<TId>
     {
         // Add Identity with default options
         var identityBuilder = services.AddIdentity<TUser, TRole>(options =>
@@ -98,7 +143,7 @@ public static class IdentityExtensions
         return services;
     }
 
-    public static IServiceCollection AddUsersManagementIdentityJWT<TDbContext, TUser, TRole>(
+    public static IServiceCollection AddUsersManagementIdentityJWT<TDbContext, TUser, TRole, TId>(
         this IServiceCollection services,
         string issuer,
         string audience,
@@ -106,8 +151,9 @@ public static class IdentityExtensions
         Action<IdentityOptions>? configureIdentity = null,
         Action<JwtBearerOptions>? configureJwt = null)
         where TDbContext : DbContext
-        where TUser : IdentityUser
-        where TRole : IdentityRole
+        where TUser : IdentityUser<TId>
+        where TRole : IdentityRole<TId>
+        where TId : struct, IEquatable<TId>
     {
         // Add Identity with default options
         var identityBuilder = services.AddIdentity<TUser, TRole>(options =>
@@ -156,7 +202,7 @@ public static class IdentityExtensions
         return services;
     }
 
-    public static IServiceCollection AddUsersManagementIdentityJWE<TDbContext, TUser, TRole>(
+    public static IServiceCollection AddUsersManagementIdentityJWE<TDbContext, TUser, TRole,TId>(
         this IServiceCollection services,
         string issuer,
         string audience,
@@ -164,8 +210,9 @@ public static class IdentityExtensions
         Action<IdentityOptions>? configureIdentity = null,
         Action<JwtBearerOptions>? configureJwt = null)
         where TDbContext : DbContext
-        where TUser : IdentityUser
-        where TRole : IdentityRole
+        where TUser : IdentityUser<TId>
+        where TRole : IdentityRole<TId>
+        where TId : struct, IEquatable<TId>
     {
         // Add Identity with default options
         var identityBuilder = services.AddIdentity<TUser, TRole>(options =>
