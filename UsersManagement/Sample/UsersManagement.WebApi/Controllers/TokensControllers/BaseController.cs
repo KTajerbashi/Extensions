@@ -2,12 +2,12 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using UsersManagement.WebApi.Interfaces;
 
-namespace UsersManagement.WebApi.Controllers;
+namespace UsersManagement.WebApi.Controllers.TokensControllers;
 
 
 
 [ApiController]
-[Route("[controller]")]
+[Route("Tokens/[controller]")]
 public abstract class BaseController : ControllerBase
 {
     protected readonly IIdentityRespository Repository;

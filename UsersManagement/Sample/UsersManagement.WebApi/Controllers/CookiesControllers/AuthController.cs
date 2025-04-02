@@ -2,12 +2,12 @@
 using Microsoft.AspNetCore.Mvc;
 using UsersManagement.WebApi.Interfaces;
 
-namespace UsersManagement.WebApi.Controllers;
+namespace UsersManagement.WebApi.Controllers.CookiesControllers;
 
-public class AuthenticationController : BaseController
+public class AuthController : BaseController
 {
-    private readonly ILogger<AuthenticationController> _logger;
-    public AuthenticationController(IIdentityRespository identityRespository, ILogger<AuthenticationController> logger) : base(identityRespository)
+    private readonly ILogger<AuthController> _logger;
+    public AuthController(IIdentityRespository identityRespository, ILogger<AuthController> logger) : base(identityRespository)
     {
         _logger = logger;
     }

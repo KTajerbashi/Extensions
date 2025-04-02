@@ -5,13 +5,14 @@ using UsersManagement.WebApi.Interfaces;
 using UsersManagement.WebApi.Models.DTOs;
 using UsersManagement.WebApi.Models.Entities;
 
-namespace UsersManagement.WebApi.Controllers;
+namespace UsersManagement.WebApi.Controllers.SessionsControllers;
 
 public class AccountController : BaseController
 {
     public AccountController(IIdentityRespository identityRespository) : base(identityRespository)
     {
     }
+
 
     [HttpPost("login")]
     [AllowAnonymous]
@@ -80,9 +81,6 @@ public class AccountController : BaseController
         return Ok(response);
     }
 
-
 }
 
 
-//tajerbashi
-//@Kamran#123
