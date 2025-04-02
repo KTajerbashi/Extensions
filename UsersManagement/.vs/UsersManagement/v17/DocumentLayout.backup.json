@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\sample\\usersmanagement.webapi\\controllers\\cookiescontrollers\\cookieaccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|solutionrelative:sample\\usersmanagement.webapi\\controllers\\cookiescontrollers\\cookieaccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\sample\\usersmanagement.webapi\\providers\\identitybasetoken\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|solutionrelative:sample\\usersmanagement.webapi\\providers\\identitybasetoken\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\sample\\usersmanagement.webapi\\controllers\\cookiescontrollers\\cookiesecurecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|solutionrelative:sample\\usersmanagement.webapi\\controllers\\cookiescontrollers\\cookiesecurecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\sample\\usersmanagement.webapi\\providers\\identitybasecookie\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|solutionrelative:sample\\usersmanagement.webapi\\providers\\identitybasecookie\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\sample\\usersmanagement.webapi\\controllers\\cookiescontrollers\\cookieauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|solutionrelative:sample\\usersmanagement.webapi\\controllers\\cookiescontrollers\\cookieauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\sample\\usersmanagement.webapi\\controllers\\cookiescontrollers\\cookieaccesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|solutionrelative:sample\\usersmanagement.webapi\\controllers\\cookiescontrollers\\cookieaccesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\sample\\usersmanagement.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|solutionrelative:sample\\usersmanagement.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\sample\\usersmanagement.webapi\\providers\\identitybasecookie\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|solutionrelative:sample\\usersmanagement.webapi\\providers\\identitybasecookie\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +38,80 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1161,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CookieAccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Controllers\\CookiesControllers\\CookieAccountController.cs",
+              "RelativeDocumentMoniker": "Sample\\UsersManagement.WebApi\\Controllers\\CookiesControllers\\CookieAccountController.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Controllers\\CookiesControllers\\CookieAccountController.cs",
+              "RelativeToolTip": "Sample\\UsersManagement.WebApi\\Controllers\\CookiesControllers\\CookieAccountController.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAqwFAAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T13:40:16.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Providers\\IdentityBaseToken\\Configuration.cs",
+              "RelativeDocumentMoniker": "Sample\\UsersManagement.WebApi\\Providers\\IdentityBaseToken\\Configuration.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Providers\\IdentityBaseToken\\Configuration.cs",
+              "RelativeToolTip": "Sample\\UsersManagement.WebApi\\Providers\\IdentityBaseToken\\Configuration.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAnwDsAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T13:33:30.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CookieSecureController.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Controllers\\CookiesControllers\\CookieSecureController.cs",
+              "RelativeDocumentMoniker": "Sample\\UsersManagement.WebApi\\Controllers\\CookiesControllers\\CookieSecureController.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Controllers\\CookiesControllers\\CookieSecureController.cs",
+              "RelativeToolTip": "Sample\\UsersManagement.WebApi\\Controllers\\CookiesControllers\\CookieSecureController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwCIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T13:32:32.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CookieAuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Controllers\\CookiesControllers\\CookieAuthController.cs",
+              "RelativeDocumentMoniker": "Sample\\UsersManagement.WebApi\\Controllers\\CookiesControllers\\CookieAuthController.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Controllers\\CookiesControllers\\CookieAuthController.cs",
+              "RelativeToolTip": "Sample\\UsersManagement.WebApi\\Controllers\\CookiesControllers\\CookieAuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T13:32:05.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Providers\\IdentityBaseCookie\\Configuration.cs",
+              "RelativeDocumentMoniker": "Sample\\UsersManagement.WebApi\\Providers\\IdentityBaseCookie\\Configuration.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Providers\\IdentityBaseCookie\\Configuration.cs",
+              "RelativeToolTip": "Sample\\UsersManagement.WebApi\\Providers\\IdentityBaseCookie\\Configuration.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAgwEAAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T13:26:21.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "CookieAccessController.cs",
               "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Controllers\\CookiesControllers\\CookieAccessController.cs",
               "RelativeDocumentMoniker": "Sample\\UsersManagement.WebApi\\Controllers\\CookiesControllers\\CookieAccessController.cs",
@@ -39,20 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Configuration.cs",
-              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Providers\\IdentityBaseCookie\\Configuration.cs",
-              "RelativeDocumentMoniker": "Sample\\UsersManagement.WebApi\\Providers\\IdentityBaseCookie\\Configuration.cs",
-              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Providers\\IdentityBaseCookie\\Configuration.cs",
-              "RelativeToolTip": "Sample\\UsersManagement.WebApi\\Providers\\IdentityBaseCookie\\Configuration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T13:26:21.518Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Program.cs",
               "RelativeDocumentMoniker": "Sample\\UsersManagement.WebApi\\Program.cs",
@@ -62,62 +134,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-02T13:25:50.623Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1309131781:0:{81164725-9a96-4ece-a4cb-440d8fd285e5}"
             }
           ]
         }

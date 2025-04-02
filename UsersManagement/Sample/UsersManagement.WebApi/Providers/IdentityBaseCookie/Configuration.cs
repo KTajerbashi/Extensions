@@ -54,6 +54,17 @@ public static class Configuration
                     Domain = ".mydomain.com"
                 };
             });
+
+        // Policy best practices
+        services.AddAuthorization(options =>
+        {
+            options.AddPolicy("RequireAdmin", policy =>
+                policy.RequireRole("Admin"));
+
+            // Fine-grained policy
+            options.AddPolicy("EditContent", policy =>
+                policy.RequireClaim("permission", "content.edit"));
+        });
         return services;
     }
 }
