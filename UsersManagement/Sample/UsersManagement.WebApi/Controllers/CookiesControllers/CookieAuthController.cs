@@ -77,8 +77,11 @@ public class CookieAuthController : BaseController
     public async Task<IActionResult> Logout()
     {
         var userId = User.GetClaim(ClaimTypes.NameIdentifier);
-        var user = await Repository.UserManager.FindByIdAsync(userId.Value);
-        await Repository.UserManager.RemoveClaimsAsync(user, User.Claims);
+        if (userId is not null)
+        {
+            var user = await Repository.UserManager.FindByIdAsync(userId.Value);
+            await Repository.UserManager.RemoveClaimsAsync(user, User.Claims);
+        }
         await Repository.SignInManager.SignOutAsync();
         return Ok();
     }

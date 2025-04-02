@@ -22,13 +22,6 @@ builder.Services.AddEndpointsApiExplorer();
 // Add Swagger
 builder.Services.AddSwaggerWithIdentity(configuration, IdentityType.Cookie);
 
-// Add Identity Configuration
-builder.Services
-            .AddIdentity<ApplicationUser, ApplicationRole>()
-            .AddEntityFrameworkStores<ApplicationDbContext>()
-            .AddSignInManager()
-            ;
-
 // Anti-CSRF protection
 builder.Services.AddAntiforgery(options =>
 {
@@ -36,10 +29,6 @@ builder.Services.AddAntiforgery(options =>
     options.Cookie.Name = "CSRF-TOKEN";
     options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
 });
-
-
-// Add Cookie Configuration
-builder.Services.AddCookieConfigurations(configuration, "Cookie");
 
 // Add Scope Initializer
 builder.Services.AddScoped<ApplicationDbContextSeedInitializer>();
@@ -50,8 +39,12 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
 });
 
+// Add Cookie Configuration
+builder.Services.AddAuthenticationConfigurations(configuration);
+
+
 //  Add Identity Service Injections
-builder.Services.AddIdentityServices<ApplicationUser, ApplicationRole, long>();
+//builder.Services.AddIdentityServices<ApplicationUser, ApplicationRole, long>();
 
 // Register in Program.cs
 builder.Services.AddHostedService<RefreshTokenCleanupService>();

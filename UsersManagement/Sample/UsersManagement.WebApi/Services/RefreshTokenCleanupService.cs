@@ -21,24 +21,25 @@ public class RefreshTokenCleanupService : BackgroundService
     {
         while (!stoppingToken.IsCancellationRequested)
         {
-            using (var scope = _serviceProvider.CreateScope())
-            {
-                var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+            await Task.Delay(1000);
+            //using (var scope = _serviceProvider.CreateScope())
+            //{
+            //    var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
 
-                var expiredTokens = await dbContext.ApplicationRefreshTokens
-                    //.Where(t => !(t.Expires.ToString("g").Contains("000")) && (t.IsExpired || t.IsRevoked))
-                    .ToListAsync(stoppingToken);
+            //    var expiredTokens = await dbContext.ApplicationRefreshTokens
+            //        //.Where(t => !(t.Expires.ToString("g").Contains("000")) && (t.IsExpired || t.IsRevoked))
+            //        .ToListAsync(stoppingToken);
 
-                if (expiredTokens.Any())
-                {
-                    dbContext.ApplicationRefreshTokens.RemoveRange(expiredTokens);
-                    await dbContext.SaveChangesAsync(stoppingToken);
-                    _logger.LogInformation($"Cleaned up {expiredTokens.Count} expired refresh tokens");
-                }
-            }
+            //    if (expiredTokens.Any())
+            //    {
+            //        dbContext.ApplicationRefreshTokens.RemoveRange(expiredTokens);
+            //        await dbContext.SaveChangesAsync(stoppingToken);
+            //        _logger.LogInformation($"Cleaned up {expiredTokens.Count} expired refresh tokens");
+            //    }
+            //}
 
             // Run once per day
-            await Task.Delay(TimeSpan.FromDays(1), stoppingToken);
+            //await Task.Delay(TimeSpan.FromDays(1), stoppingToken);
         }
     }
 }
