@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\sample\\usersmanagement.webapi\\extensions\\swaggerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|solutionrelative:sample\\usersmanagement.webapi\\extensions\\swaggerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\sample\\usersmanagement.webapi\\extensions\\identityextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|solutionrelative:sample\\usersmanagement.webapi\\extensions\\identityextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\sample\\usersmanagement.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|solutionrelative:sample\\usersmanagement.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\sample\\usersmanagement.webapi\\extensions\\swaggerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|solutionrelative:sample\\usersmanagement.webapi\\extensions\\swaggerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\sample\\usersmanagement.webapi\\extensions\\identitytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|solutionrelative:sample\\usersmanagement.webapi\\extensions\\identitytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|c:\\users\\tajer\\desktop\\github\\ktajerbashi\\extensions\\usersmanagement\\sample\\usersmanagement.webapi\\providers\\identitybasecookie\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8D7241E-5126-477D-BC77-F66DD63E7E74}|Sample\\UsersManagement.WebApi\\UsersManagement.WebApi.csproj|solutionrelative:sample\\usersmanagement.webapi\\providers\\identitybasecookie\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,23 +30,101 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1161,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1309131781:0:{81164725-9a96-4ece-a4cb-440d8fd285e5}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "IdentityExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Extensions\\IdentityExtensions.cs",
+              "RelativeDocumentMoniker": "Sample\\UsersManagement.WebApi\\Extensions\\IdentityExtensions.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Extensions\\IdentityExtensions.cs",
+              "RelativeToolTip": "Sample\\UsersManagement.WebApi\\Extensions\\IdentityExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T19:55:37.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "SwaggerExtensions.cs",
               "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Extensions\\SwaggerExtensions.cs",
               "RelativeDocumentMoniker": "Sample\\UsersManagement.WebApi\\Extensions\\SwaggerExtensions.cs",
               "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Extensions\\SwaggerExtensions.cs",
               "RelativeToolTip": "Sample\\UsersManagement.WebApi\\Extensions\\SwaggerExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAQwAkAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T18:32:42.261Z",
+              "WhenOpened": "2025-04-02T19:48:23.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IdentityType.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Extensions\\IdentityType.cs",
+              "RelativeDocumentMoniker": "Sample\\UsersManagement.WebApi\\Extensions\\IdentityType.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Extensions\\IdentityType.cs",
+              "RelativeToolTip": "Sample\\UsersManagement.WebApi\\Extensions\\IdentityType.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAIwAwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T19:47:47.019Z",
               "EditorCaption": ""
             },
             {
@@ -45,9 +135,22 @@
               "RelativeDocumentMoniker": "Sample\\UsersManagement.WebApi\\Program.cs",
               "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Program.cs",
               "RelativeToolTip": "Sample\\UsersManagement.WebApi\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAADgvzUAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T18:32:38.518Z",
+              "WhenOpened": "2025-04-02T19:41:51.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Providers\\IdentityBaseCookie\\Configuration.cs",
+              "RelativeDocumentMoniker": "Sample\\UsersManagement.WebApi\\Providers\\IdentityBaseCookie\\Configuration.cs",
+              "ToolTip": "C:\\Users\\Tajer\\Desktop\\GitHub\\KTajerbashi\\Extensions\\UsersManagement\\Sample\\UsersManagement.WebApi\\Providers\\IdentityBaseCookie\\Configuration.cs",
+              "RelativeToolTip": "Sample\\UsersManagement.WebApi\\Providers\\IdentityBaseCookie\\Configuration.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T19:29:46.705Z",
               "EditorCaption": ""
             }
           ]

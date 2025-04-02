@@ -10,17 +10,6 @@ using UsersManagement.WebApi.Models.Entities;
 
 namespace UsersManagement.WebApi.Extensions;
 
-
-
-
-
-public enum IdentityType
-{
-    Cookie,
-    Session,
-    JWT,
-    JWE,
-}
 public static class IdentityExtensions
 {
 
