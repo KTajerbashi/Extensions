@@ -1,7 +1,4 @@
 ﻿using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Identity;
-using UsersManagement.WebApi.DataContext;
-using UsersManagement.WebApi.Models.Entities;
 
 namespace UsersManagement.WebApi.Providers.IdentityBaseCookie;
 
@@ -57,9 +54,6 @@ public static class Configuration
                     Domain = ".mydomain.com"
                 };
             });
-        
-        
-
         return services;
     }
 }

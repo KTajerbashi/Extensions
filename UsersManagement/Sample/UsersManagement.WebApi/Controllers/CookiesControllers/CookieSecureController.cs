@@ -5,9 +5,9 @@ using UsersManagement.WebApi.Interfaces;
 namespace UsersManagement.WebApi.Controllers.CookiesControllers;
 
 [Authorize] // This applies to all actions in the controller
-public class SecureController : BaseController
+public class CookieSecureController : BaseController
 {
-    public SecureController(IIdentityRespository identityRespository) : base(identityRespository)
+    public CookieSecureController(IIdentityRespository identityRespository) : base(identityRespository)
     {
     }
 

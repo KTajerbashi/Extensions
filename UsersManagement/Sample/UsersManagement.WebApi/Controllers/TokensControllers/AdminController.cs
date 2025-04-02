@@ -5,4 +5,4 @@ namespace UsersManagement.WebApi.Controllers.TokensControllers;
 
 // Add to controllers
 [Authorize(Policy = "RequireAdmin")]
-public class AdminController : Controller { /* ... */ }
+public class TokenAdminController : Controller { /* ... */ }

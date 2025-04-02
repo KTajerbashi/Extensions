@@ -4,10 +4,10 @@ using UsersManagement.WebApi.Interfaces;
 
 namespace UsersManagement.WebApi.Controllers.CookiesControllers;
 
-public class AuthController : BaseController
+public class CookieAuthController : BaseController
 {
-    private readonly ILogger<AuthController> _logger;
-    public AuthController(IIdentityRespository identityRespository, ILogger<AuthController> logger) : base(identityRespository)
+    private readonly ILogger<CookieAuthController> _logger;
+    public CookieAuthController(IIdentityRespository identityRespository, ILogger<CookieAuthController> logger) : base(identityRespository)
     {
         _logger = logger;
     }

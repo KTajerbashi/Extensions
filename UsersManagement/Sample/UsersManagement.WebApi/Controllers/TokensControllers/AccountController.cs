@@ -7,9 +7,9 @@ using UsersManagement.WebApi.Models.Entities;
 
 namespace UsersManagement.WebApi.Controllers.TokensControllers;
 
-public class AccountController : BaseController
+public class TokenAccountController : BaseController
 {
-    public AccountController(IIdentityRespository identityRespository) : base(identityRespository)
+    public TokenAccountController(IIdentityRespository identityRespository) : base(identityRespository)
     {
     }
 

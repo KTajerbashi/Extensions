@@ -2,9 +2,9 @@
 
 namespace UsersManagement.WebApi.Controllers.TokensControllers;
 
-public class AccessController : BaseController
+public class TokenAccessController : BaseController
 {
-    public AccessController(IIdentityRespository identityRespository) : base(identityRespository)
+    public TokenAccessController(IIdentityRespository identityRespository) : base(identityRespository)
     {
     }
 }

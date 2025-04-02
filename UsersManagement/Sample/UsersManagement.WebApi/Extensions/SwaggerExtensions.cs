@@ -12,7 +12,6 @@ public static class SwaggerExtensions
         services.AddSwaggerGen(c =>
         {
             c.SwaggerDoc("v1", new OpenApiInfo { Title = "Users Management API", Version = "v1" });
-
             //// Add security definition if using JWT
             //if (configuration["Authentication:Type"]?.ToUpper() == "JWT" ||
             //    configuration["Authentication:Type"]?.ToUpper() == "JWE")
@@ -112,7 +111,7 @@ public static class SwaggerExtensions
             Description = "Cookie-based authentication",
             Name = ".AspNetCore.Identity.Application",
             In = ParameterLocation.Cookie,
-            Type = SecuritySchemeType.ApiKey
+            Type = SecuritySchemeType.ApiKey,
         });
     }
 
@@ -138,7 +137,6 @@ public static class SwaggerExtensions
                 app.UseSwaggerUI(c =>
                 {
                     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Users Management API v1");
-
                     // Enable OAuth for JWT if needed
                     if (app.Configuration["Authentication:Type"]?.ToUpper() == "JWT" ||
                         app.Configuration["Authentication:Type"]?.ToUpper() == "JWE")
@@ -154,6 +152,7 @@ public static class SwaggerExtensions
                 app.UseSwaggerUI(c =>
                 {
                     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Users Management API v1");
+                    c.ExposeSwaggerDocumentUrlsRoute = true;
                 });
             }
 

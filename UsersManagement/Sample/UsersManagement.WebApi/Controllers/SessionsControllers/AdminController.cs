@@ -5,4 +5,4 @@ namespace UsersManagement.WebApi.Controllers.SessionsControllers;
 
 // Add to controllers
 [Authorize(Policy = "RequireAdmin")]
-public class AdminController : Controller { /* ... */ }
+public class SessionAdminController : Controller { /* ... */ }

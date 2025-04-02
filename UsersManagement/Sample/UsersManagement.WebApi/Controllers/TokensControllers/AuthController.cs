@@ -4,10 +4,10 @@ using UsersManagement.WebApi.Interfaces;
 
 namespace UsersManagement.WebApi.Controllers.TokensControllers;
 
-public class AuthController : BaseController
+public class TokenAuthController : BaseController
 {
-    private readonly ILogger<AuthController> _logger;
-    public AuthController(IIdentityRespository identityRespository, ILogger<AuthController> logger) : base(identityRespository)
+    private readonly ILogger<TokenAuthController> _logger;
+    public TokenAuthController(IIdentityRespository identityRespository, ILogger<TokenAuthController> logger) : base(identityRespository)
     {
         _logger = logger;
     }

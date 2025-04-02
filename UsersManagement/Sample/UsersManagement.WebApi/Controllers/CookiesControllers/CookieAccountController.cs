@@ -7,9 +7,9 @@ using UsersManagement.WebApi.Models.Entities;
 
 namespace UsersManagement.WebApi.Controllers.CookiesControllers;
 
-public class AccountController : BaseController
+public class CookieAccountController : BaseController
 {
-    public AccountController(IIdentityRespository identityRespository) : base(identityRespository)
+    public CookieAccountController(IIdentityRespository identityRespository) : base(identityRespository)
     {
     }
 
@@ -53,6 +53,7 @@ public class AccountController : BaseController
     [ProducesResponseType(StatusCodes.Status200OK)]
     public async Task<IActionResult> Register(RegisterModel model)
     {
+
         var response= new IdentityResult();
         var userEntity = new ApplicationUser()
         {
@@ -80,6 +81,21 @@ public class AccountController : BaseController
         return Ok(response);
     }
 
+    [HttpPost("RegisterList")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    public async Task<IActionResult> RegisterList()
+    {
+        var dataList = new List<RegisterModel>();
+        dataList.Add(new RegisterModel() { Username = "Tajerbashi", Email = "tajerbashi@mail.com", Password = "@Kamran#100", PhoneNumber = "09011001230", FirstName = "Kamran", LastName = "Tajerbashi", DisplayName = "Tajer-K", FullName = "Kamran Tajerbashi", IsAdmin = true });
+        dataList.Add(new RegisterModel() { Username = "Kaihan", Email = "yousefzay@mail.com", Password = "@Kaihan#100", PhoneNumber = "09181521560", FirstName = "Kaihan", LastName = "Yousefzay", DisplayName = "Yousef-K", FullName = "Kaihan Yousefzay", IsAdmin = false });
+
+        foreach (var item in dataList)
+        {
+            await Register(item);
+        }
+
+        return Ok("OK");
+    }
 }
 
 

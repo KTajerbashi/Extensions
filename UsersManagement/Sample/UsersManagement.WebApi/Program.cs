@@ -14,6 +14,8 @@ IConfiguration configuration = builder.Configuration;
 // Add services to the container.
 builder.Services.AddControllers();
 
+builder.Services.AddOpenApi();
+
 // Configure Swagger
 builder.Services.AddEndpointsApiExplorer();
 
@@ -27,8 +29,20 @@ builder.Services
             .AddSignInManager()
             ;
 
-// Add Cookie Conffiguration
-builder.Services.AddCookieConfigurations(configuration,"Cookie");
+// Anti-CSRF protection
+builder.Services.AddAntiforgery(options =>
+{
+    options.HeaderName = "X-CSRF-TOKEN";
+    options.Cookie.Name = "CSRF-TOKEN";
+    options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
+});
+
+
+// Add Cookie Configuration
+builder.Services.AddCookieConfigurations(configuration, "Cookie");
+
+// Add Scope Initializer
+builder.Services.AddScoped<ApplicationDbContextSeedInitializer>();
 
 // Configure DbContext
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -36,6 +50,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
 });
 
+//  Add Identity Service Injections
 builder.Services.AddIdentityServices<ApplicationUser, ApplicationRole, long>();
 
 // Register in Program.cs
@@ -51,8 +66,10 @@ app.UseSwaggerWithIdentity(IdentityType.Cookie);
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    //app.MapOpenApi();
+    app.MapOpenApi();
 }
+
+await app.InitialDatabaseAsync();
 
 app.UseHttpsRedirection();
 

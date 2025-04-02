@@ -5,7 +5,7 @@ using UsersManagement.WebApi.Interfaces;
 namespace UsersManagement.WebApi.Controllers.CookiesControllers;
 
 [ApiController]
-[Route("Cookies/[controller]")]
+[Route("api/[controller]")]
 [EndpointGroupName("Cookies")]
 public abstract class BaseController : ControllerBase
 {

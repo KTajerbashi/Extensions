@@ -7,9 +7,9 @@ using UsersManagement.WebApi.Models.Entities;
 
 namespace UsersManagement.WebApi.Controllers.SessionsControllers;
 
-public class AccountController : BaseController
+public class SessionAccountController : BaseController
 {
-    public AccountController(IIdentityRespository identityRespository) : base(identityRespository)
+    public SessionAccountController(IIdentityRespository identityRespository) : base(identityRespository)
     {
     }
 

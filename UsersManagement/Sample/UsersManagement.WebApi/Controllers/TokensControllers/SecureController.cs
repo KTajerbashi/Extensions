@@ -5,9 +5,9 @@ using UsersManagement.WebApi.Interfaces;
 namespace UsersManagement.WebApi.Controllers.TokensControllers;
 
 [Authorize] // This applies to all actions in the controller
-public class SecureController : BaseController
+public class TokenSecureController : BaseController
 {
-    public SecureController(IIdentityRespository identityRespository) : base(identityRespository)
+    public TokenSecureController(IIdentityRespository identityRespository) : base(identityRespository)
     {
     }
 

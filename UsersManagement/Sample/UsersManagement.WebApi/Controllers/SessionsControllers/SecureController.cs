@@ -5,9 +5,9 @@ using UsersManagement.WebApi.Interfaces;
 namespace UsersManagement.WebApi.Controllers.SessionsControllers;
 
 [Authorize] // This applies to all actions in the controller
-public class SecureController : BaseController
+public class SessionSecureController : BaseController
 {
-    public SecureController(IIdentityRespository identityRespository) : base(identityRespository)
+    public SessionSecureController(IIdentityRespository identityRespository) : base(identityRespository)
     {
     }
 

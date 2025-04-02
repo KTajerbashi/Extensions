@@ -5,4 +5,4 @@ namespace UsersManagement.WebApi.Controllers.CookiesControllers;
 
 // Add to controllers
 [Authorize(Policy = "RequireAdmin")]
-public class AdminController : Controller { /* ... */ }
+public class CookieAdminController : Controller { /* ... */ }
