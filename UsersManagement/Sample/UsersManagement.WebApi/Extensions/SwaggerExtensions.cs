@@ -9,120 +9,91 @@ public static class SwaggerExtensions
 {
     public static IServiceCollection AddSwaggerWithIdentity(this IServiceCollection services, IConfiguration configuration, IdentityType type)
     {
-        services.AddSwaggerGen(c =>
+        services.AddSwaggerGen(static c =>
         {
-            c.SwaggerDoc("v1", new OpenApiInfo { Title = "Users Management API", Version = "v1" });
-            //// Add security definition if using JWT
-            //if (configuration["Authentication:Type"]?.ToUpper() == "JWT" ||
-            //    configuration["Authentication:Type"]?.ToUpper() == "JWE")
-            //{
-            //    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-            //    {
-            //        Description = "JWT Authorization header using the Bearer scheme",
-            //        Name = "Authorization",
-            //        In = ParameterLocation.Header,
-            //        Type = SecuritySchemeType.Http,
-            //        Scheme = "bearer",
-            //        BearerFormat = "JWT"
-            //    });
-
-            //    // Add this to your SwaggerGen configuration
-            //    c.OperationFilter<SecurityRequirementsOperationFilter>();
-
-            //    c.AddSecurityRequirement(new OpenApiSecurityRequirement
-            //    {
-            //        {
-            //            new OpenApiSecurityScheme
-            //            {
-            //                Reference = new OpenApiReference
-            //                {
-            //                    Type = ReferenceType.SecurityScheme,
-            //                    Id = "Bearer"
-            //                }
-            //            },
-            //            Array.Empty<string>()
-            //        }
-            //    });
-            //}
+            c.SwaggerDoc("v1", new OpenApiInfo
+            {
+                Title = "🔐 Users Management 🔑 API 🗝️",
+                Version = "v1",
+                Contact = new OpenApiContact()
+                {
+                    Name = "Tajerbashi",
+                    Email = "kamrantajerbashi@gmail.com",
+                    Url = new Uri("https://accounts.google.com/b/0/AddMailService")
+                },
+                Description = "📌 User Management With \n🔒Identity \n⚙️Cookie-Base, \n🪪Session-Base, \n🛰️Token-Base",
+                License = new OpenApiLicense()
+                {
+                    Name = "MCIT",
+                    Url = new Uri("https://accounts.google.com/b/0/AddMailService")
+                },
+                TermsOfService = new Uri("https://accounts.google.com/b/0/AddMailService"),
+            });
 
             // Include XML comments if available
             var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
             var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-            if (File.Exists(xmlPath))
-            {
-                c.IncludeXmlComments(xmlPath);
-            }
 
-            // Add security definition based on identity type
-            switch (type)
-            {
-                case IdentityType.JWT:
-                    AddJwtSecurityDefinition(c);
-                    break;
-                case IdentityType.JWE:
-                    AddJweSecurityDefinition(c);
-                    break;
-                case IdentityType.Cookie:
-                    AddCookieSecurityDefinition(c);
-                    break;
-                case IdentityType.Session:
-                    AddSessionSecurityDefinition(c);
-                    break;
-                default:
-                    AddJwtSecurityDefinition(c);
-                    break;
-            }
+            if (File.Exists(xmlPath))
+                c.IncludeXmlComments(xmlPath);
 
             // Operation filter for all identity types
             c.OperationFilter<SecurityRequirementsOperationFilter>();
+
+            // Add Bearer JWT Token Configuration
+            ApiKey(c);
+            //Http(c);
+            //OAuth2(c);
+            //OpenIdConnect(c);
+
         });
 
         return services;
     }
 
-    private static void AddJwtSecurityDefinition(SwaggerGenOptions c)
+    private static void ApiKey(SwaggerGenOptions c)
     {
         c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
         {
-            Description = "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\"",
+            Description = @"JWT Authorization header using the Bearer scheme.Example: Authorization: Bearer {token}",
             Name = "Authorization",
-            In = ParameterLocation.Header,
+            Scheme = "Bearer",
+            In = ParameterLocation.Cookie,
             Type = SecuritySchemeType.ApiKey,
-            Scheme = "Bearer"
+            //BearerFormat = "Bearer <Token>"
         });
     }
-
-    private static void AddJweSecurityDefinition(SwaggerGenOptions c)
+    private static void OpenIdConnect(SwaggerGenOptions c)
     {
         c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
         {
-            Description = "JWE Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\"",
+            Description = @"JWT Authorization header using the Bearer scheme. Example: Authorization: Bearer {token}",
             Name = "Authorization",
-            In = ParameterLocation.Header,
-            Type = SecuritySchemeType.ApiKey,
+            In = ParameterLocation.Cookie,
+            Type = SecuritySchemeType.OpenIdConnect,
             Scheme = "Bearer"
         });
     }
-
-    private static void AddCookieSecurityDefinition(SwaggerGenOptions c)
+    private static void Http(SwaggerGenOptions c)
     {
-        c.AddSecurityDefinition("CookieAuth", new OpenApiSecurityScheme
+        c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
         {
-            Description = "Cookie-based authentication",
-            Name = ".AspNetCore.Identity.Application",
+            Description = @"JWT Authorization header using the Bearer scheme. Example: Authorization: Bearer {token}",
+            Name = "Authorization",
             In = ParameterLocation.Cookie,
-            Type = SecuritySchemeType.ApiKey,
+            Type = SecuritySchemeType.Http,
+            Scheme = "Bearer"
         });
     }
-
-    private static void AddSessionSecurityDefinition(SwaggerGenOptions c)
+    private static void OAuth2(SwaggerGenOptions c)
     {
-        c.AddSecurityDefinition("SessionAuth", new OpenApiSecurityScheme
+        c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
         {
-            Description = "Session-based authentication",
-            Name = ".AspNetCore.Session",
+            Description = @"JWT Authorization header using the Bearer scheme. Example: Authorization: Bearer {token}",
+            Name = "Authorization",
             In = ParameterLocation.Cookie,
-            Type = SecuritySchemeType.ApiKey
+            Type = SecuritySchemeType.OAuth2,
+            Scheme = "Bearer"
         });
     }
 
