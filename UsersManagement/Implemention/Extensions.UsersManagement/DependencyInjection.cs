@@ -33,9 +33,7 @@ public static class DependencyInjection
     public static IServiceCollection AddUsersManagement(this IServiceCollection services, Action<UserManagementOptions> setupAction, bool useFake = false)
     {
         if (useFake)
-        {
             services.AddSingleton(typeof(IUserManager<>), typeof(UserManagerFake));
-        }
         else
         {
             services.Configure(setupAction);
