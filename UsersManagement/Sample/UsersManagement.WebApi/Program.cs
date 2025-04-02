@@ -1,10 +1,12 @@
-using UsersManagement.WebApi.DataContext;
-using Extensions.UsersManagement.Configurations;
-using UsersManagement.WebApi.Models.Entities;
-using UsersManagement.WebApi.Interfaces;
-using UsersManagement.WebApi.Services;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using UsersManagement.WebApi;
+using UsersManagement.WebApi.DataContext;
 using UsersManagement.WebApi.Extensions;
+using UsersManagement.WebApi.Interfaces;
+using UsersManagement.WebApi.Models.Entities;
+using UsersManagement.WebApi.Providers.IdentityBaseCookie;
+using UsersManagement.WebApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 IConfiguration configuration = builder.Configuration;
@@ -16,10 +18,17 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
 // Add Swagger
-builder.Services.AddSwaggerWithIdentity(configuration,IdentityType.Cookie);
+builder.Services.AddSwaggerWithIdentity(configuration, IdentityType.Cookie);
 
-// Add Repository
-builder.Services.AddScoped<IIdentityRespository, IdentityRespository>();
+// Add Identity Configuration
+builder.Services
+            .AddIdentity<ApplicationUser, ApplicationRole>()
+            .AddEntityFrameworkStores<ApplicationDbContext>()
+            .AddSignInManager()
+            ;
+
+// Add Cookie Conffiguration
+builder.Services.AddCookieConfigurations(configuration,"Cookie");
 
 // Configure DbContext
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -27,30 +36,13 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
 });
 
-//Finally add identity
-// Configure Identity based on type
-var identityType = IdentityType.Cookie; // Change this as needed
-switch (identityType)
-{
-    case IdentityType.Cookie:
-        builder.Services.AddUsersManagementIdentityCookie<ApplicationDbContext, ApplicationUser, ApplicationRole, long>();
-        break;
-    case IdentityType.Session:
-        builder.Services.AddUsersManagementIdentitySession<ApplicationDbContext, ApplicationUser, ApplicationRole, long>();
-        break;
-    case IdentityType.JWT:
-        builder.Services.AddUsersManagementIdentityJWT<ApplicationDbContext, ApplicationUser, ApplicationRole, long>(
-            issuer: configuration["Jwt:Issuer"],
-            audience: configuration["Jwt:Audience"],
-            secretKey: configuration["Jwt:Key"]);
-        break;
-    case IdentityType.JWE:
-        builder.Services.AddUsersManagementIdentityJWE<ApplicationDbContext, ApplicationUser, ApplicationRole, long>(
-            issuer: configuration["Jwt:Issuer"],
-            audience: configuration["Jwt:Audience"],
-            secretKey: configuration["Jwt:Key"]);
-        break;
-}
+builder.Services.AddIdentityServices<ApplicationUser, ApplicationRole, long>();
+
+// Register in Program.cs
+builder.Services.AddHostedService<RefreshTokenCleanupService>();
+
+// Add Repository
+builder.Services.AddScoped<IIdentityRespository, IdentityRespository>();
 
 var app = builder.Build();
 
@@ -70,4 +62,7 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+app.MapRoutesAPIsRouter();
+
 app.Run();
+
