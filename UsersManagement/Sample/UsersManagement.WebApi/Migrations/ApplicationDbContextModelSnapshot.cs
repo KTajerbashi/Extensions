@@ -22,6 +22,32 @@ namespace UsersManagement.WebApi.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("UsersManagement.WebApi.Models.Entities.ApplicationRefreshToken", b =>
+                {
+                    b.Property<string>("Token")
+                        .HasMaxLength(64)
+                        .HasColumnType("nvarchar(64)");
+
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("Expires")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsRevoked")
+                        .HasColumnType("bit");
+
+                    b.Property<long>("UserId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("Token");
+
+                    b.HasIndex("UserId")
+                        .HasDatabaseName("IX_RefreshTokens_UserId");
+
+                    b.ToTable("RefreshTokens", "Security");
+                });
+
             modelBuilder.Entity("UsersManagement.WebApi.Models.Entities.ApplicationRole", b =>
                 {
                     b.Property<long>("Id")
@@ -233,6 +259,17 @@ namespace UsersManagement.WebApi.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("UserTokens", "Security");
+                });
+
+            modelBuilder.Entity("UsersManagement.WebApi.Models.Entities.ApplicationRefreshToken", b =>
+                {
+                    b.HasOne("UsersManagement.WebApi.Models.Entities.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("UsersManagement.WebApi.Models.Entities.ApplicationRoleClaim", b =>
