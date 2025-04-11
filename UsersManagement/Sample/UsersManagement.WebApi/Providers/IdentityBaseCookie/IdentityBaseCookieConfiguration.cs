@@ -42,7 +42,7 @@ public static class IdentityBaseCookieConfiguration
 
     private static void ConfigureCookieOptions(CookieAuthenticationOptions options)
     {
-        options.Cookie.Name = "AngularJs_WebApp";
+        options.Cookie.Name = "App.Cookie";
         options.Cookie.HttpOnly = true;
         options.Cookie.SameSite = SameSiteMode.Strict;
         options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
