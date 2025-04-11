@@ -1,2 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Console.WriteLine("ConsoleSample.HelloWorld.Sender Started ...");
+
+
+Console.WriteLine("ConsoleSample.HelloWorld.Sender Finished ...");
+
+Console.WriteLine("Press Any Key To Close ...");
+Console.ReadLine();

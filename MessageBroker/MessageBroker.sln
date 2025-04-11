@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleSample.HelloWorld.Se
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleSample.HelloWorld.Receiver", "Sample\ConsoleSamples\HelloWorld\ConsoleSample.HelloWorld.Receiver\ConsoleSample.HelloWorld.Receiver.csproj", "{38A033C1-3BCB-4D62-9FC6-B18313860C7D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{C87EBFDD-5CB4-43E2-B01E-323364D2D022}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Basesource", "Sample\Framework\Framework.Basesource\Framework.Basesource.csproj", "{F592D1EC-EFB1-4399-B9C6-291B3A450E09}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +47,10 @@ Global
 		{38A033C1-3BCB-4D62-9FC6-B18313860C7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38A033C1-3BCB-4D62-9FC6-B18313860C7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38A033C1-3BCB-4D62-9FC6-B18313860C7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F592D1EC-EFB1-4399-B9C6-291B3A450E09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F592D1EC-EFB1-4399-B9C6-291B3A450E09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F592D1EC-EFB1-4399-B9C6-291B3A450E09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F592D1EC-EFB1-4399-B9C6-291B3A450E09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,5 +62,7 @@ Global
 		{AB3408F7-6592-4F37-B3EA-6B530E393EA6} = {B8862029-905E-4780-B5D2-0E7BEC16777C}
 		{91C4BD21-750C-445E-994F-0E72BD11EC39} = {AB3408F7-6592-4F37-B3EA-6B530E393EA6}
 		{38A033C1-3BCB-4D62-9FC6-B18313860C7D} = {AB3408F7-6592-4F37-B3EA-6B530E393EA6}
+		{C87EBFDD-5CB4-43E2-B01E-323364D2D022} = {54AECEFE-E5A9-4F2B-8A42-8406A0E6AE2E}
+		{F592D1EC-EFB1-4399-B9C6-291B3A450E09} = {C87EBFDD-5CB4-43E2-B01E-323364D2D022}
 	EndGlobalSection
 EndGlobal
