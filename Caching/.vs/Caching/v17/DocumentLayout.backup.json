@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Visual Studio\\Git KTajerbashi\\Extensions\\Caching\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{C126E8DE-420D-426E-ADB0-474107377334}|Sample\\Extensions.Caching.WebApi\\Extensions.Caching.WebApi.csproj|d:\\visual studio\\git ktajerbashi\\extensions\\caching\\sample\\extensions.caching.webapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C126E8DE-420D-426E-ADB0-474107377334}|Sample\\Extensions.Caching.WebApi\\Extensions.Caching.WebApi.csproj|solutionrelative:sample\\extensions.caching.webapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C126E8DE-420D-426E-ADB0-474107377334}|Sample\\Extensions.Caching.WebApi\\Extensions.Caching.WebApi.csproj|d:\\visual studio\\git ktajerbashi\\extensions\\caching\\sample\\extensions.caching.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C126E8DE-420D-426E-ADB0-474107377334}|Sample\\Extensions.Caching.WebApi\\Extensions.Caching.WebApi.csproj|solutionrelative:sample\\extensions.caching.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 494,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -67,32 +58,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{90243340-bd7a-11d0-93ef-00a0c90f2734}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "D:\\Visual Studio\\Git KTajerbashi\\Extensions\\Caching\\Sample\\Extensions.Caching.WebApi\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "Sample\\Extensions.Caching.WebApi\\appsettings.Development.json",
-              "ToolTip": "D:\\Visual Studio\\Git KTajerbashi\\Extensions\\Caching\\Sample\\Extensions.Caching.WebApi\\appsettings.Development.json",
-              "RelativeToolTip": "Sample\\Extensions.Caching.WebApi\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-25T11:32:56.804Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Visual Studio\\Git KTajerbashi\\Extensions\\Caching\\Sample\\Extensions.Caching.WebApi\\Program.cs",
-              "RelativeDocumentMoniker": "Sample\\Extensions.Caching.WebApi\\Program.cs",
-              "ToolTip": "D:\\Visual Studio\\Git KTajerbashi\\Extensions\\Caching\\Sample\\Extensions.Caching.WebApi\\Program.cs",
-              "RelativeToolTip": "Sample\\Extensions.Caching.WebApi\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T11:25:28.974Z",
-              "EditorCaption": ""
             }
           ]
         }
