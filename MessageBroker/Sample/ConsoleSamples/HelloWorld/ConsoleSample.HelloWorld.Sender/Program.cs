@@ -1,5 +1,6 @@
-﻿using RabbitMQ.Client;
-using RabbitMQ.SharedKernel.Extensions;
+﻿using ConsoleSample.HelloWorld.Sender;
+using Framework.Basesource.Extensions;
+using RabbitMQ.Client;
 using System.Text;
 
 const string RoutingKey = "HelloWorld";

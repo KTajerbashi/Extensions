@@ -1,6 +1,7 @@
 ﻿using Framework.Basesource.Apps.SendEmail.Data;
 using Framework.Basesource.Delegations;
 using Framework.Basesource.Extensions;
+using RabbitMQ.Client;
 using System.Text;
 using System.Text.Json;
 

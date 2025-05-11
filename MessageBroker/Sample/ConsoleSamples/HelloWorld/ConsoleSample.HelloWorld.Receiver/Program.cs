@@ -1,6 +1,6 @@
-﻿using RabbitMQ.Client;
+﻿using Framework.Basesource.Extensions;
+using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
-using RabbitMQ.SharedKernel.Extensions;
 using System.Text;
 
 const string QueueKey = "HelloWorld"; // Must match sender's queue name
