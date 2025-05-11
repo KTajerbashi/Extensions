@@ -1,6 +1,13 @@
-﻿namespace Extensions.MessageBroker.RabbitMQ;
+﻿using Extensions.MessageBroker.Abstractions;
+using Microsoft.Extensions.DependencyInjection;
 
-public class DependencyInjections
+namespace Extensions.MessageBroker.RabbitMQ;
+
+public static class DependencyInjections
 {
-
+    public static IServiceCollection AddMessageBrokerServices(this IServiceCollection services)
+    {
+        services.AddSingleton<IMessageBroker, MessageBroker>();
+        return services;
+    }
 }
