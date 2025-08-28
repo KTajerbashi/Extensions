@@ -3,6 +3,7 @@ using System.Text;
 
 namespace SampleSource.Extensions;
 
+
 /// <summary>
 /// Provides extension methods for various hashing operations with custom output lengths.
 /// </summary>

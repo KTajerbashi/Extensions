@@ -1,8 +1,14 @@
-using Microsoft.AspNetCore.Mvc;
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
+using SampleSource.Extensions;
+using SampleSource.Providers.AutoFacDI;
+using SampleSource.Providers.FluentEmails;
 
 var builder = WebApplication.CreateBuilder(args);
-
+//  Get Assemblies Of By Namespaces
+var assemblies = ("SampleSource").GetAssemblies().ToArray();
 builder.Services.AddControllers();
 
 builder.Services.AddOpenApi();
@@ -11,6 +17,16 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Sample API's", Version = "v1" });
 });
+// Tell ASP.NET Core to use Autofac
+builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
+// Configure Autofac container
+builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder =>
+{
+    containerBuilder.AddAutofacLifetimeServices(assemblies);
+});
+
+builder.Services.AddScoped<EmailService>();
+builder.AddFluenEmails();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -32,5 +48,11 @@ app.UseSwaggerUI(c =>
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
+
+using (var scope = app.Services.CreateScope())
+{
+    var service = scope.ServiceProvider.GetService<EmailService>();
+    await service.RunAsync();
+}
 
 app.Run();
