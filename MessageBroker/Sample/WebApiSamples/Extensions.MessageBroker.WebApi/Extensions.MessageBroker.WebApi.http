@@ -1,6 +1,0 @@
-@Extensions.MessageBroker.WebApi_HostAddress = http://localhost:5173
-
-GET {{Extensions.MessageBroker.WebApi_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
