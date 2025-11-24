@@ -1,1 +1,13 @@
-<Solution />
+<Solution>
+  <Folder Name="/Src/" />
+  <Folder Name="/Src/ObjectMapper/">
+    <Project Path="Src/ObjectMapper/Extensions.ObjectMappers.Abstractions/Extensions.ObjectMappers.Abstractions.csproj" Id="e5b5ef9f-02a1-471c-9569-299e679e0b37" />
+  </Folder>
+  <Folder Name="/Src/Serializers/">
+    <Project Path="Src/Serializers/Extensions.Serializers.Abstractions/Extensions.Serializers.Abstractions.csproj" Id="81b51337-12bf-4d0f-b48c-ee12e7818dc3" />
+    <Project Path="Src/Serializers/Extensions.Serializers.EPPlus/Extensions.Serializers.EPPlus.csproj" Id="98ecdab7-329f-4098-8263-4ce8bf1e2c67" />
+    <Project Path="Src/Serializers/Extensions.Serializers.Microsoft/Extensions.Serializers.Microsoft.csproj" Id="54560269-32b1-432e-b849-8d3e7f793e5a" />
+    <Project Path="Src/Serializers/Extensions.Serializers.NewtonSoft/Extensions.Serializers.NewtonSoft.csproj" Id="4330f815-8a52-4e1a-bc4d-f8581a21947b" />
+    <Project Path="Src/Serializers/SerializersApp/SerializersApp.csproj" Id="8365d234-a984-41a7-ad4f-0f2e9c951bed" />
+  </Folder>
+</Solution>
