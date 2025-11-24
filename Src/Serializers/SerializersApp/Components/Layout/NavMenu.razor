@@ -1,0 +1,18 @@
+﻿<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">Serializers App</a>
+    </div>
+</div>
+
+<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+
+<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
+    <nav class="nav flex-column">
+        <AppNavLink Href="" Text="Home" IconClass="bi bi-house-door-fill-nav-menu" Match="NavLinkMatch.All" />
+        <AppNavLink Href="counter" Text="Counter" IconClass="bi bi-plus-square-fill-nav-menu" />
+        <AppNavLink Href="weather" Text="Weather" IconClass="bi bi-list-nested-nav-menu" />
+        <AppNavLink Href="ep-plus" Text="EPPlus Generator" IconClass="bi bi-list-nested-nav-menu" />
+        <AppNavLink Href="microsoft-serializer" Text="Microsoft Serializer" IconClass="bi bi-list-nested-nav-menu" />
+        <AppNavLink Href="newtonsoft-serializer" Text="NewtonSoft Serializer" IconClass="bi bi-list-nested-nav-menu" />
+    </nav>
+</div>

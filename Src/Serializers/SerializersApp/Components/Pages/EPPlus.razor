@@ -1,0 +1,160 @@
+﻿@page "/ep-plus"
+@rendermode InteractiveServer
+@using Extensions.Serializers.Abstractions
+@using System.Data
+@inject ISerializerExcel Excel
+
+
+<h2>EPPlus Excel Test</h2>
+
+<hr />
+
+<h3>1. Generate Excel From List</h3>
+<button class="btn btn-primary" @onclick="GenerateExcel">Download Sample Excel</button>
+
+@if (DownloadBytes != null)
+{
+    <a class="btn btn-success mt-2"
+       href="@DownloadUrl"
+       download="sample.xlsx">Click to Download</a>
+}
+
+<hr />
+
+<h3>2. Upload Excel → DataTable</h3>
+
+<InputFile OnChange="ExcelToTable" />
+
+@if (TableResult != null)
+{
+    <h4 class="mt-3">DataTable Result</h4>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                @foreach (DataColumn col in TableResult.Columns)
+                {
+                    <th>@col.ColumnName</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (DataRow row in TableResult.Rows)
+            {
+                <tr>
+                    @foreach (var col in TableResult.Columns)
+                    {
+                        <td>@row[((DataColumn)col).ColumnName]</td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<hr />
+
+<h3>3. Upload Excel → List&lt;Person&gt;</h3>
+
+<InputFile OnChange="ExcelToPersonList" />
+
+@if (People != null)
+{
+    <h4 class="mt-3">List&lt;Person&gt; Result</h4>
+    <ul>
+        @foreach (var p in People)
+        {
+            <li>@p.Id - @p.Name - @p.Age years old</li>
+        }
+    </ul>
+}
+
+<hr />
+
+<h3>4. Round Trip Test (List → Excel → List)</h3>
+<button class="btn btn-warning" @onclick="RoundTripTest">Run Round Trip Test</button>
+
+@if (RoundTripPeople != null)
+{
+    <h4 class="mt-3">Round Trip Output</h4>
+    <ul>
+        @foreach (var p in RoundTripPeople)
+        {
+            <li>@p.Id - @p.Name - @p.Age</li>
+        }
+    </ul>
+}
+
+@code {
+    // Test class
+    public class Person
+    {
+        public int Id { get; set; }
+        public string? Name { get; set; }
+        public int Age { get; set; }
+    }
+
+    byte[]? DownloadBytes;
+    string? DownloadUrl;
+    DataTable? TableResult;
+    List<Person>? People;
+    List<Person>? RoundTripPeople;
+
+    // ------------------------------------------------------------
+    // 1. Generate Excel From List<T>
+    // ------------------------------------------------------------
+    void GenerateExcel()
+    {
+        var list = new List<Person>
+        {
+            new Person { Id = 1, Name = "Kamran", Age = 26 },
+            new Person { Id = 2, Name = "Ali", Age = 30 }
+        };
+
+        DownloadBytes = Excel.ListToExcelByteArray(list);
+
+        // Convert to base64 URL for download
+        DownloadUrl = $"data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{Convert.ToBase64String(DownloadBytes)}";
+    }
+
+    // ------------------------------------------------------------
+    // 2. Excel → DataTable
+    // ------------------------------------------------------------
+    async Task ExcelToTable(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+        using var ms = new MemoryStream();
+        await file.OpenReadStream().CopyToAsync(ms);
+
+        TableResult = Excel.ExcelToDataTable(ms.ToArray());
+    }
+
+    // ------------------------------------------------------------
+    // 3. Excel → List<Person>
+    // ------------------------------------------------------------
+    async Task ExcelToPersonList(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+        using var ms = new MemoryStream();
+        await file.OpenReadStream().CopyToAsync(ms);
+
+        People = Excel.ExcelToList<Person>(ms.ToArray());
+    }
+
+    // ------------------------------------------------------------
+    // 4. RoundTrip Test
+    // ------------------------------------------------------------
+    async Task RoundTripTest()
+    {
+        var original = new List<Person>
+        {
+            new Person { Id = 10, Name = "Hamid", Age = 40 },
+            new Person { Id = 11, Name = "Sara", Age = 28 }
+        };
+
+        // List → Excel
+        var bytes = Excel.ListToExcelByteArray(original);
+
+        // Excel → List
+        RoundTripPeople = Excel.ExcelToList<Person>(bytes);
+    }
+}

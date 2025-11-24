@@ -1,0 +1,77 @@
+﻿@page "/newtonsoft-serializer"
+@rendermode InteractiveServer
+
+@using Extensions.Serializers.Abstractions;
+@inject ISerializerJson Serializer
+
+<h3>Newtonsoft Serializer Test</h3>
+
+<div class="mb-3">
+    <label class="form-label">Enter Name:</label>
+    <input class="form-control" @bind="Sample.Name" />
+</div>
+
+<div class="mb-3">
+    <label class="form-label">Enter Age:</label>
+    <input class="form-control" type="number" @bind="Sample.Age" />
+</div>
+
+<button class="btn btn-primary me-2" @onclick="SerializeSample">Serialize</button>
+<button class="btn btn-secondary me-2" @onclick="DeserializeGeneric">Deserialize (Generic)</button>
+<button class="btn btn-dark" @onclick="DeserializeToType">Deserialize (Type)</button>
+
+<hr />
+
+<h5>JSON Output:</h5>
+<pre>@JsonOutput</pre>
+
+<h5>Deserialized (Generic):</h5>
+<pre>@ResultGenericText</pre>
+
+<h5>Deserialized (Type):</h5>
+<pre>@ResultTypeText</pre>
+
+@code {
+    // Simple test model
+    public class Person
+    {
+        public string Name { get; set; } = "";
+        public int Age { get; set; }
+    }
+
+    private Person Sample = new();
+    private string JsonOutput = "";
+    private string ResultGenericText = "";
+    private string ResultTypeText = "";
+
+    private void SerializeSample()
+    {
+        JsonOutput = Serializer.Serialize(Sample);
+    }
+
+    private void DeserializeGeneric()
+    {
+        if (string.IsNullOrWhiteSpace(JsonOutput))
+        {
+            ResultGenericText = "No JSON to deserialize.";
+            return;
+        }
+
+        var result = Serializer.Deserialize<Person>(JsonOutput);
+        ResultGenericText = $"Name: {result.Name}, Age: {result.Age}";
+    }
+
+    private void DeserializeToType()
+    {
+        if (string.IsNullOrWhiteSpace(JsonOutput))
+        {
+            ResultTypeText = "No JSON to deserialize.";
+            return;
+        }
+
+        var result = Serializer.Deserialize(JsonOutput, typeof(Person));
+
+        if (result is Person p)
+            ResultTypeText = $"Name: {p.Name}, Age: {p.Age}";
+    }
+}
