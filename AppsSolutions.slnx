@@ -2,6 +2,8 @@
   <Folder Name="/Src/" />
   <Folder Name="/Src/ObjectMapper/">
     <Project Path="Src/ObjectMapper/Extensions.ObjectMappers.Abstractions/Extensions.ObjectMappers.Abstractions.csproj" Id="e5b5ef9f-02a1-471c-9569-299e679e0b37" />
+    <Project Path="Src/ObjectMapper/Extensions.ObjectMappers/Extensions.ObjectMappers.csproj" Id="37212a0f-a679-4ff8-a054-d7a5192ae186" />
+    <Project Path="Src/ObjectMapper/ObjectMappersApp/ObjectMappersApp.csproj" Id="53ed4901-4156-4d2e-8331-58d4a908df69" />
   </Folder>
   <Folder Name="/Src/Serializers/">
     <Project Path="Src/Serializers/Extensions.Serializers.Abstractions/Extensions.Serializers.Abstractions.csproj" Id="81b51337-12bf-4d0f-b48c-ee12e7818dc3" />

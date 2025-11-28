@@ -1,0 +1,80 @@
+﻿@page "/mapper"
+@using Extensions.ObjectMappers.Abstractions
+@using ObjectMappersApp.Handler
+
+@rendermode InteractiveServer
+
+@inject IMapperAdapter _Mapper
+
+<PageTitle>Mapper Demo</PageTitle>
+
+<h3>User Mapper Demo</h3>
+
+<div class="card p-3 mt-3 shadow-sm">
+    <h5>Create UserEntity</h5>
+
+    <div class="row g-2 mt-2">
+        <div class="col-4">
+            <label>Name:</label>
+            <input class="form-control" @bind="userName" />
+        </div>
+
+        <div class="col-4">
+            <label>Email:</label>
+            <input class="form-control" @bind="userEmail" />
+        </div>
+
+        <div class="col-4">
+            <label>Phone Number:</label>
+            <input class="form-control" @bind="userPhone" />
+        </div>
+    </div>
+
+    <button class="btn btn-primary mt-3" @onclick="MapUser">Map User</button>
+</div>
+
+@if (userDto is not null)
+{
+    <div class="card p-3 mt-3 shadow-sm bg-light">
+        <h5>Mapped UserDTO</h5>
+        <p><strong>Name:</strong> @userDto.Name</p>
+        <p><strong>Email:</strong> @userDto.Email</p>
+    </div>
+}
+
+@if (userView is not null)
+{
+    <div class="card p-3 mt-3 shadow-sm bg-light">
+        <h5>Mapped UserView</h5>
+        <p><strong>Name:</strong> @userView.Name</p>
+        <p><strong>Display Name:</strong> @userView.DisplayName</p>
+        <p><strong>Phone:</strong> @userView.PhoneNumber</p>
+        <p><strong>Contact:</strong> @userView.Contact</p>
+        <p><strong>Email:</strong> @userView.Email</p>
+    </div>
+}
+
+@code {
+    private string userName = string.Empty;
+    private string userEmail = string.Empty;
+    private string userPhone = string.Empty;
+
+    private UserDTO? userDto;
+    private UserView? userView;
+
+    private void MapUser()
+    {
+        var entity = new UserEntity
+        {
+            Name = userName,
+            Email = userEmail,
+            PhoneNumber = userPhone
+        };
+
+        userDto = _Mapper.Map<UserEntity, UserDTO>(entity);
+        userView = _Mapper.Map<UserDTO, UserView>(userDto);
+
+        // Propagate phone into view (DTO doesn't contain it)
+        userView.PhoneNumber = entity.PhoneNumber;
+    }
+}
