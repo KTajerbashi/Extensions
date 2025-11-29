@@ -1,0 +1,108 @@
+﻿@page "/logger"
+@using LoggerApp.Extensions
+@using Serilog
+@using Serilog.Context
+@using global::Extensions.Logger.Abstractions
+@rendermode InteractiveServer
+
+@* @inject IAppLogger<LoggerPage> _logger *@
+@inject ILogger<LoggerPage> _logger
+
+<PageTitle>Logger Demo</PageTitle>
+
+<h2 class="mb-3">Logger Demo</h2>
+
+<div class="card shadow p-4">
+
+    <div class="row">
+        <div class="col-md-4">
+            <label class="form-label fw-bold">Select Log Event</label>
+            <select class="form-select" @bind="selectedEventId">
+                @foreach (var evt in eventOptions)
+                {
+                    <option value="@evt.Value">@evt.Title (@evt.Value)</option>
+                }
+            </select>
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="d-flex flex-wrap gap-2">
+        <button class="btn btn-primary" @onclick="LogInfo">Log Information</button>
+        <button class="btn btn-warning" @onclick="LogWarning">Log Warning</button>
+        <button class="btn btn-danger" @onclick="LogError">Log Error</button>
+        <button class="btn btn-secondary" @onclick="LogDebug">Log Debug</button>
+        <button class="btn btn-dark" @onclick="LogTrace">Log Trace</button>
+    </div>
+
+    <hr />
+
+    <h5>Last Log Message:</h5>
+    <div class="alert alert-info">
+        @lastLog
+    </div>
+
+</div>
+
+@code {
+    private string lastLog = "No logs yet.";
+    private int selectedEventId;
+
+    // Event ID dropdown data
+    private readonly List<ConstItem> eventOptions = typeof(AppLogEventId).GetConstFields();
+
+    protected override void OnInitialized()
+    {
+        // Set default event ID
+        selectedEventId = AppLogEventId.WebAppInfo;
+    }
+
+    private void LogInfo()
+    {
+        // Example log inside a controller/action
+        using (LogContext.PushProperty("Controller", "HomeController"))
+        using (LogContext.PushProperty("Action", "Index"))
+        using (LogContext.PushProperty("UserId", "123"))
+        {
+            Log.Information("User accessed the home page.");
+        }
+        _logger.LogInformation("Information log executed.", selectedEventId);
+        lastLog = $"INFO logged (EventId: {selectedEventId})";
+    }
+
+    private void LogWarning()
+    {
+        _logger.LogWarning("Warning log executed.", selectedEventId);
+        lastLog = $"WARNING logged (EventId: {selectedEventId})";
+    }
+
+    private void LogError()
+    {
+        try
+        {
+            throw new InvalidOperationException("Sample error.");
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError("Error occurred.", ex, selectedEventId);
+        }
+
+        lastLog = $"ERROR logged (EventId: {selectedEventId})";
+    }
+
+    private void LogDebug()
+    {
+        _logger.LogDebug("Debug log executed.", selectedEventId);
+        lastLog = $"DEBUG logged (EventId: {selectedEventId})";
+    }
+
+    private void LogTrace()
+    {
+        _logger.LogTrace("Trace log executed.", selectedEventId);
+        lastLog = $"TRACE logged (EventId: {selectedEventId})";
+    }
+
+    // This is used for the generic logger injection
+    private class LoggerPage { }
+}

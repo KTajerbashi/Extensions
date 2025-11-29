@@ -1,5 +1,10 @@
 <Solution>
   <Folder Name="/Src/" />
+  <Folder Name="/Src/Logger/">
+    <Project Path="Src/Logger/Extensions.Logger.Abstractions/Extensions.Logger.Abstractions.csproj" Id="bd1fb50f-c9d5-4830-8563-001e557f7bc2" />
+    <Project Path="Src/Logger/Extensions.Logger/Extensions.Logger.csproj" Id="ec6107a8-2214-44d3-9a60-e58bc7e43660" />
+    <Project Path="Src/Logger/LoggerApp/LoggerApp.csproj" Id="bfd6e065-82a1-44f9-b5fd-6d6c455cd0d2" />
+  </Folder>
   <Folder Name="/Src/ObjectMapper/">
     <Project Path="Src/ObjectMapper/Extensions.ObjectMappers.Abstractions/Extensions.ObjectMappers.Abstractions.csproj" Id="e5b5ef9f-02a1-471c-9569-299e679e0b37" />
     <Project Path="Src/ObjectMapper/Extensions.ObjectMappers/Extensions.ObjectMappers.csproj" Id="37212a0f-a679-4ff8-a054-d7a5192ae186" />
