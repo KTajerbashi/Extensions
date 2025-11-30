@@ -1,0 +1,208 @@
+﻿@page "/logger-advanced"
+@rendermode InteractiveServer
+
+@using Serilog
+@using Serilog.Events
+@using Serilog.Context
+@inject ILogger<AdvanceLogger> Logger
+@inject IHttpContextAccessor HttpContextAccessor
+
+<h3>Blazor Advanced Logger Demo</h3>
+
+<div class="mb-3">
+    <button class="btn btn-primary me-2" @onclick="LogInfo">Info</button>
+    <button class="btn btn-secondary me-2" @onclick="LogDebug">Debug</button>
+    <button class="btn btn-warning me-2" @onclick="LogWarning">Warning</button>
+    <button class="btn btn-danger me-2" @onclick="LogError">Error</button>
+    <button class="btn btn-dark me-2" @onclick="LogFatal">Fatal</button>
+    <button class="btn btn-info me-2" @onclick="LogVerbose">Verbose</button>
+    <button class="btn btn-secondary me-2" @onclick="LogTrace">Trace</button>
+</div>
+
+<div class="mb-3">
+    <button class="btn btn-outline-primary me-2" @onclick="LogStructured">Structured Log</button>
+    <button class="btn btn-outline-secondary me-2" @onclick="LogWithParams">Log with Params</button>
+    <button class="btn btn-outline-success me-2" @onclick="LogWithPushProperty">PushProperty Log</button>
+    <button class="btn btn-outline-warning me-2" @onclick="LogWithLogContext">LogContext Scoped Log</button>
+    <button class="btn btn-outline-danger me-2" @onclick="LogWithILogger">ILogger Log</button>
+</div>
+
+<div class="mb-3">
+    <button class="btn btn-info me-2" @onclick="SimulateApiRequestLog">API Req/Res Log</button>
+    <button class="btn btn-dark me-2" @onclick="LogAsync">Async Log</button>
+</div>
+
+<hr />
+
+<h4>Live Log Output</h4>
+
+<div class="mb-2">
+    <input class="form-control" placeholder="Search logs..." @bind="SearchText" @oninput="FilterLogs" />
+</div>
+
+<div class="form-check mb-3">
+    <input type="checkbox" class="form-check-input" @bind="AutoRefresh" />
+    <label class="form-check-label">Auto-refresh every 2 seconds</label>
+</div>
+
+<div style="height: 400px; overflow-y: scroll; background: #1e1e1e; color: white; padding: 10px; border-radius: 8px;">
+    @foreach (var line in FilteredLogs)
+    {
+        <div style="@ColorFor(line)">
+            @line
+        </div>
+    }
+</div>
+
+@code {
+    private string LogDir => Path.Combine(AppContext.BaseDirectory, "Logs");
+    private string LogFile => Directory.GetFiles(LogDir).OrderByDescending(f => f).FirstOrDefault();
+
+    private List<string> AllLogs = new();
+    private List<string> FilteredLogs = new();
+    private string SearchText = "";
+    private bool AutoRefresh = true;
+
+    string UserIp => HttpContextAccessor.HttpContext?.Connection.RemoteIpAddress?.ToString() ?? "Unknown";
+    string TraceId => HttpContextAccessor.HttpContext?.TraceIdentifier ?? Guid.NewGuid().ToString();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadLogs();
+        _ = AutoRefreshLoop();
+    }
+
+    private async Task AutoRefreshLoop()
+    {
+        while (true)
+        {
+            if (AutoRefresh)
+                await LoadLogs();
+            await Task.Delay(2000);
+        }
+    }
+
+    private async Task LoadLogs()
+    {
+        if (LogFile != null)
+        {
+            AllLogs = (await File.ReadAllLinesAsync(LogFile)).ToList();
+            FilterLogs();
+        }
+        StateHasChanged();
+    }
+
+    private void FilterLogs()
+    {
+        FilteredLogs = string.IsNullOrWhiteSpace(SearchText)
+            ? AllLogs.ToList()
+            : AllLogs.Where(l => l.Contains(SearchText, StringComparison.OrdinalIgnoreCase)).ToList();
+    }
+
+    private string ColorFor(string line)
+    {
+        if (line.Contains("Information")) return "color: lightgreen";
+        if (line.Contains("Debug")) return "color: skyblue";
+        if (line.Contains("Warning")) return "color: gold";
+        if (line.Contains("Error")) return "color: #ff4d4d";
+        if (line.Contains("Fatal")) return "color: red";
+        if (line.Contains("Trace")) return "color: violet";
+        if (line.Contains("Verbose")) return "color: gray";
+        return "color: white";
+    }
+
+    // ---------------------------------------------------------------------------------------
+    // SERILOG STATIC LOGGING
+    // ---------------------------------------------------------------------------------------
+    void LogInfo() => Log.Information("Info log triggered at {Time}", DateTime.Now);
+    void LogDebug() => Log.Debug("Debug log triggered at {Time}", DateTime.Now);
+    void LogWarning() => Log.Warning("Warning log triggered at {Time}", DateTime.Now);
+    void LogVerbose() => Log.Verbose("Verbose log detailed info at {Time}", DateTime.Now);
+    void LogTrace() => Log.Logger.Write(LogEventLevel.Verbose, "Trace log at {Time}", DateTime.Now);
+    void LogError()
+    {
+        try { throw new Exception("Test exception for Error logging"); }
+        catch (Exception ex) { Log.Error(ex, "Error log caught at {Time}", DateTime.Now); }
+    }
+    void LogFatal() => Log.Fatal("Fatal log triggered at {Time}", DateTime.Now);
+
+    // ---------------------------------------------------------------------------------------
+    // STRUCTURED LOGGING
+    // ---------------------------------------------------------------------------------------
+    void LogStructured()
+    {
+        Log.Information("Structured log: {@User}", new { Id = 101, Name = "Kamran", Role = "Admin", Time = DateTime.UtcNow });
+    }
+
+    void LogWithParams()
+    {
+        Log.Information("User {UserId} performed {Action} at {Time}", 1001, "FileUpload", DateTime.Now);
+    }
+
+    void LogExceptionWithMoreDetails()
+    {
+        try
+        {
+            throw new InvalidOperationException("Invalid operation performed!");
+        }
+        catch (Exception ex)
+        {
+            Log.Error(ex, "Advanced exception log. User={User}, IP={IP}", "Kamran", UserIp);
+        }
+    }
+
+    // ---------------------------------------------------------------------------------------
+    // PUSHPROPERTY
+    // ---------------------------------------------------------------------------------------
+    void LogWithPushProperty()
+    {
+        using (LogContext.PushProperty("RequestId", Guid.NewGuid()))
+        using (LogContext.PushProperty("Scope", "BlazorLoggerDemo"))
+        {
+            Log.Information("PushProperty log with scoped properties applied");
+        }
+    }
+
+    // ---------------------------------------------------------------------------------------
+    // LOGCONTEXT
+    // ---------------------------------------------------------------------------------------
+    void LogWithLogContext()
+    {
+        using (LogContext.PushProperty("TraceId", TraceId))
+        using (LogContext.PushProperty("UserIp", UserIp))
+        {
+            Log.Information("LogContext scoped log started");
+            Log.Debug("Debug log inside LogContext scope");
+            Log.Warning("Warning log inside LogContext scope");
+        }
+    }
+
+    // ---------------------------------------------------------------------------------------
+    // ILogger<T> example
+    // ---------------------------------------------------------------------------------------
+    void LogWithILogger()
+    {
+        Logger.LogInformation("ILogger<T> Info log. TraceId={TraceId}, IP={Ip}", TraceId, UserIp);
+        Logger.LogWarning("ILogger<T> Warning log");
+        Logger.LogError("ILogger<T> Error log");
+    }
+
+    // ---------------------------------------------------------------------------------------
+    // Simulate API Request / Response
+    // ---------------------------------------------------------------------------------------
+    void SimulateApiRequestLog()
+    {
+        var request = new { Id = 1, Name = "Test Product", Price = 50 };
+        var response = new { Success = true, Message = "OK", Code = 200 };
+        Log.Information("API Request/Response {@Request} {@Response}", request, response);
+    }
+
+    // ---------------------------------------------------------------------------------------
+    // Async log test
+    // ---------------------------------------------------------------------------------------
+    async Task LogAsync()
+    {
+        await Task.Delay(200);
+        Log.Information("Async log completed at {Time}", DateTime.UtcNow);
+    }
+}

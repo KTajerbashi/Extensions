@@ -1,108 +1,177 @@
 ﻿@page "/logger"
-@using LoggerApp.Extensions
-@using Serilog
-@using Serilog.Context
-@using global::Extensions.Logger.Abstractions
 @rendermode InteractiveServer
 
-@* @inject IAppLogger<LoggerPage> _logger *@
-@inject ILogger<LoggerPage> _logger
+@using Serilog
+@using Serilog.Events
+@inject ILoggerFactory LoggerFactory
 
-<PageTitle>Logger Demo</PageTitle>
+<h3 class="mb-3">Blazor – Full Logging Test Panel</h3>
 
-<h2 class="mb-3">Logger Demo</h2>
+<div class="mb-3">
+    <button class="btn btn-primary me-2" @onclick="LogInfo">Info</button>
+    <button class="btn btn-secondary me-2" @onclick="LogDebug">Debug</button>
+    <button class="btn btn-warning me-2" @onclick="LogWarning">Warning</button>
+    <button class="btn btn-danger me-2" @onclick="LogError">Error</button>
+    <button class="btn btn-dark me-2" @onclick="LogFatal">Fatal</button>
+</div>
 
-<div class="card shadow p-4">
+<div class="mb-3">
+    <button class="btn btn-outline-primary me-2" @onclick="LogTrace">Trace</button>
+    <button class="btn btn-outline-secondary me-2" @onclick="LogVerbose">Verbose</button>
+    <button class="btn btn-outline-warning me-2" @onclick="LogWithParams">With Parameters</button>
+    <button class="btn btn-outline-danger me-2" @onclick="LogExceptionWithMoreDetails">Exception + Details</button>
+    <button class="btn btn-outline-success me-2" @onclick="LogStructured">Structured Log</button>
+</div>
 
-    <div class="row">
-        <div class="col-md-4">
-            <label class="form-label fw-bold">Select Log Event</label>
-            <select class="form-select" @bind="selectedEventId">
-                @foreach (var evt in eventOptions)
-                {
-                    <option value="@evt.Value">@evt.Title (@evt.Value)</option>
-                }
-            </select>
+<div class="mb-3">
+    <button class="btn btn-info me-2" @onclick="LogUserActivity">User Activity Log</button>
+    <button class="btn btn-success me-2" @onclick="SimulateApiRequestLog">Simulate Request/Response Log</button>
+    <button class="btn btn-outline-dark me-2" @onclick="LogAsync">Async Log</button>
+</div>
+
+<hr />
+
+<h4>Live Log Output</h4>
+
+<div class="mb-2">
+    <input class="form-control" placeholder="Search logs..." @bind="SearchText" @oninput="FilterLogs" />
+</div>
+
+<div class="form-check mb-3">
+    <input type="checkbox" class="form-check-input" @bind="AutoRefresh" />
+    <label class="form-check-label">Auto-refresh every 2 seconds</label>
+</div>
+
+<div style="height: 400px; overflow-y: scroll; background: #1e1e1e; color: white; padding: 10px; border-radius: 8px;">
+    @foreach (var line in FilteredLogs)
+    {
+        <div style="@ColorFor(line)">
+            @line
         </div>
-    </div>
-
-    <hr />
-
-    <div class="d-flex flex-wrap gap-2">
-        <button class="btn btn-primary" @onclick="LogInfo">Log Information</button>
-        <button class="btn btn-warning" @onclick="LogWarning">Log Warning</button>
-        <button class="btn btn-danger" @onclick="LogError">Log Error</button>
-        <button class="btn btn-secondary" @onclick="LogDebug">Log Debug</button>
-        <button class="btn btn-dark" @onclick="LogTrace">Log Trace</button>
-    </div>
-
-    <hr />
-
-    <h5>Last Log Message:</h5>
-    <div class="alert alert-info">
-        @lastLog
-    </div>
-
+    }
 </div>
 
 @code {
-    private string lastLog = "No logs yet.";
-    private int selectedEventId;
+    // log file path
+    private string LogDir => Path.Combine(AppContext.BaseDirectory, "Logs");
+    private string LogFile => Directory.GetFiles(LogDir)?.OrderByDescending(f => f).FirstOrDefault();
 
-    // Event ID dropdown data
-    private readonly List<ConstItem> eventOptions = typeof(AppLogEventId).GetConstFields();
+    private List<string> AllLogs = new();
+    private List<string> FilteredLogs = new();
+    private string SearchText = "";
+    private bool AutoRefresh = true;
 
-    protected override void OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
-        // Set default event ID
-        selectedEventId = AppLogEventId.WebAppInfo;
+        await LoadLogs();
+        _ = AutoRefreshLoop();
     }
 
-    private void LogInfo()
+    private async Task AutoRefreshLoop()
     {
-        // Example log inside a controller/action
-        using (LogContext.PushProperty("Controller", "HomeController"))
-        using (LogContext.PushProperty("Action", "Index"))
-        using (LogContext.PushProperty("UserId", "123"))
+        while (true)
         {
-            Log.Information("User accessed the home page.");
+            if (AutoRefresh)
+                await LoadLogs();
+
+            await Task.Delay(2000);
         }
-        _logger.LogInformation("Information log executed.", selectedEventId);
-        lastLog = $"INFO logged (EventId: {selectedEventId})";
     }
 
-    private void LogWarning()
+    private async Task LoadLogs()
     {
-        _logger.LogWarning("Warning log executed.", selectedEventId);
-        lastLog = $"WARNING logged (EventId: {selectedEventId})";
+        if (LogFile != null)
+        {
+            AllLogs = (await File.ReadAllLinesAsync(LogFile)).ToList();
+            FilterLogs();
+        }
+        StateHasChanged();
     }
 
-    private void LogError()
+    private void FilterLogs()
+    {
+        if (string.IsNullOrWhiteSpace(SearchText))
+            FilteredLogs = AllLogs.ToList();
+        else
+            FilteredLogs = AllLogs
+                .Where(x => x.Contains(SearchText, StringComparison.OrdinalIgnoreCase))
+                .ToList();
+    }
+
+    private string ColorFor(string line)
+    {
+        if (line.Contains("Information")) return "color: lightgreen";
+        if (line.Contains("Debug")) return "color: skyblue";
+        if (line.Contains("Warning")) return "color: gold";
+        if (line.Contains("Error")) return "color: #ff4d4d";
+        if (line.Contains("Fatal")) return "color: red";
+        if (line.Contains("Trace")) return "color: violet";
+        if (line.Contains("Verbose")) return "color: gray";
+        return "color: white";
+    }
+
+    // region — logging tests
+    void LogInfo() => Log.Information("Info log triggered.");
+    void LogDebug() => Log.Debug("Debug log triggered.");
+    void LogWarning() => Log.Warning("Warning log triggered.");
+    void LogTrace() => Log.Logger.Write(LogEventLevel.Verbose, "Trace level log triggered.");
+    void LogVerbose() => Log.Verbose("Verbose log with detailed internal info.");
+
+    void LogError()
+    {
+        try { throw new Exception("Sample error!"); }
+        catch (Exception ex) { Log.Error(ex, "An error occurred while testing logging."); }
+    }
+
+    void LogFatal() => Log.Fatal("Fatal log triggered.");
+
+    void LogWithParams()
+    {
+        Log.Information("User {UserId} performed {Action} at {Time}",
+            1001, "FileUpload", DateTime.Now);
+    }
+
+    void LogExceptionWithMoreDetails()
     {
         try
         {
-            throw new InvalidOperationException("Sample error.");
+            throw new InvalidOperationException("Invalid operation performed!");
         }
         catch (Exception ex)
         {
-            _logger.LogError("Error occurred.", ex, selectedEventId);
+            Log.Error(ex, "Advanced exception log. User={User}, IP={IP}",
+                "Kamran", "192.168.1.11");
         }
-
-        lastLog = $"ERROR logged (EventId: {selectedEventId})";
     }
 
-    private void LogDebug()
+    void LogStructured()
     {
-        _logger.LogDebug("Debug log executed.", selectedEventId);
-        lastLog = $"DEBUG logged (EventId: {selectedEventId})";
+        Log.Information("Structured log: {@User}", new
+        {
+            Id = 101,
+            Name = "Kamran",
+            Role = "Admin",
+            Time = DateTime.UtcNow
+        });
     }
 
-    private void LogTrace()
+    void LogUserActivity()
     {
-        _logger.LogTrace("Trace log executed.", selectedEventId);
-        lastLog = $"TRACE logged (EventId: {selectedEventId})";
+        Log.Information("User Activity: UserId={UserId}, Action={Action}, Browser={Browser}",
+            "Kamran", "Visited Dashboard", "Chrome");
     }
 
-    // This is used for the generic logger injection
-    private class LoggerPage { }
+    void SimulateApiRequestLog()
+    {
+        var request = new { Id = 1, Name = "Test Product", Price = 50 };
+        var response = new { Success = true, Message = "OK", Code = 200 };
+
+        Log.Information("API Request/Response {@Req} {@Res}", request, response);
+    }
+
+    async Task LogAsync()
+    {
+        await Task.Delay(300);
+        Log.Information("Async log completed at {Time}.", DateTime.UtcNow);
+    }
 }
