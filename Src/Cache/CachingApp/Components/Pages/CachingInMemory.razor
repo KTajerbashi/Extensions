@@ -1,0 +1,499 @@
+﻿@page "/caching-in-memory"
+@rendermode InteractiveServer
+
+@using Extensions.Caching.Abstractions
+@inject ICacheAdapter Cache
+@inject ILogger<CachingInMemory> Logger
+
+<PageTitle>Caching In-Memory</PageTitle>
+
+<h2 class="mb-4 fw-bold">In-Memory Cache Manager (Pro)</h2>
+
+@if (!string.IsNullOrEmpty(NotificationMessage))
+{
+    <div class="alert @NotificationCss">
+        @NotificationMessage
+    </div>
+}
+
+<div class="card shadow p-3 mb-4 border-success">
+    <h5 class="fw-bold">Search Items</h5>
+
+    <div class="row g-2">
+        <div class="col-10">
+            <input class="form-control"
+                   placeholder="Search by name..."
+                   @bind="SearchText"
+                   @oninput="OnSearchInput" />
+        </div>
+
+        <div class="col-2">
+            <button class="btn btn-secondary w-100" @onclick="ClearSearch">
+                Clear
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="card shadow p-3 mb-4 border-primary">
+    <h5 class="fw-bold">Get Cache Item and Use</h5>
+    <div class="row g-2 mt-2">
+        <div class="col-6">
+            <input class="form-control"
+                   placeholder="Name"
+                   @bind="FindName" />
+        </div>
+
+        <div class="col-2">
+            <button class="btn btn-outline-primary w-100" @onclick="GetItem">
+                Get
+            </button>
+        </div>
+
+        <div class="col-4">
+            <button class="btn btn-outline-danger w-100" @onclick="RefreshFromCache">
+                Refresh All (reload cache)
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="card shadow p-3 mb-4 border-primary">
+    <h5 class="fw-bold">Add or Update Cache Item</h5>
+
+    <EditForm Model="NewItem" OnValidSubmit="AddOrUpdateItem">
+        <div class="row g-2 mt-2">
+            <div class="col-md-3">
+                <InputText class="form-control" @bind-Value="NewItem.Name" placeholder="Name" />
+            </div>
+
+            <div class="col-md-3">
+                <InputText class="form-control" @bind-Value="NewItem.Value" placeholder="Value" />
+            </div>
+
+            <div class="col-md-3">
+                <InputNumber class="form-control" @bind-Value="AbsoluteSeconds" placeholder="Absolute Exp (seconds)" />
+            </div>
+
+            <div class="col-md-3">
+                <InputNumber class="form-control" @bind-Value="SlidingSeconds" placeholder="Sliding Exp (seconds)" />
+            </div>
+        </div>
+
+        <div class="mt-3">
+            <button class="btn btn-primary me-2" type="submit">@(IsEdit ? "Update" : "Add")</button>
+            <button class="btn btn-secondary" type="button" @onclick="CancelEdit">Cancel</button>
+        </div>
+    </EditForm>
+</div>
+
+@if (FilteredItems.Count == 0)
+{
+    <p class="text-muted fst-italic">No items found.</p>
+}
+else
+{
+    <table class="table table-bordered table-striped shadow-sm">
+        <thead class="table-dark">
+            <tr>
+                <th style="width: 50px">Sel</th>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Value</th>
+                <th>Absolute Expiration (UTC)</th>
+                <th>Sliding Expiration</th>
+                <th style="width: 160px">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in FilteredItems)
+            {
+                <tr class="@(SelectedItem?.Id == item.Id ? "table-info" : "")">
+                    <td class="text-center">
+                        <input type="radio"
+                               name="selectedItem"
+                               checked="@(SelectedItem?.Id == item.Id)"
+                               @onclick="() => SelectItem(item)" />
+                    </td>
+
+                    <td>@item.Id</td>
+                    <td>@item.Name</td>
+                    <td>@item.Value</td>
+
+                    <td>@(item.AbsoluteExpiration?.ToString("yyyy-MM-dd HH:mm:ss") ?? "-")</td>
+
+                    <td>@(item.SlidingExpiration?.ToString() ?? "-")</td>
+
+                    <td class="text-center">
+                        <button class="btn btn-sm btn-secondary me-1" @onclick="() => EditItem(item)">Edit</button>
+                        <button class="btn btn-sm btn-danger" @onclick="() => RemoveItem(item.Id)">Remove</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+
+    // ==========================================
+    // Models
+    // ==========================================
+    public class CachedItem
+    {
+        public string Id { get; set; } = Guid.NewGuid().ToString();
+        public string Name { get; set; } = string.Empty;
+        public string Value { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Absolute expiration stored as UTC.
+        /// When null -> no absolute expiration configured.
+        /// </summary>
+        public DateTime? AbsoluteExpiration { get; set; }
+
+        /// <summary>
+        /// Sliding expiration duration (TimeSpan). When null -> no sliding expiration configured.
+        /// </summary>
+        public TimeSpan? SlidingExpiration { get; set; }
+    }
+
+    // ==========================================
+    // Constants and fields
+    // ==========================================
+    private const string CACHE_INDEX_KEY = "CACHE_ITEMS_INDEX";
+    private const string CACHE_ITEM_PREFIX = "CACHE_ITEM_";
+
+    private List<CachedItem> Items = new();
+    private List<CachedItem> FilteredItems = new();
+
+    private CachedItem NewItem = new();
+    private CachedItem? SelectedItem;
+
+    private int? AbsoluteSeconds;
+    private int? SlidingSeconds;
+
+    private string SearchText = string.Empty;
+    private string FindName = string.Empty;
+
+    private bool IsEdit => SelectedItem is not null;
+    private string NotificationMessage = string.Empty;
+    private string NotificationCss = "alert-info";
+
+    // ==========================================
+    // Lifecycle
+    // ==========================================
+    protected override void OnInitialized()
+    {
+        // synchronous initialization OK because cache adapter is sync.
+        RefreshFromCache();
+    }
+
+    // ==========================================
+    // Core cache handling (index + per-item entries)
+    // ==========================================
+
+    /// <summary>
+    /// Load items from cache:
+    ///  - Read index (list of ids)
+    ///  - For each id try to load the item (if expired it won't be returned by cache)
+    ///  - Rebuild index and persist if some ids were missing (clean-up)
+    /// </summary>
+    private void RefreshFromCache()
+    {
+        try
+        {
+            var index = Cache.Get<List<string>>(CACHE_INDEX_KEY) ?? new List<string>();
+            var loaded = new List<CachedItem>();
+            var rewrittenIndex = new List<string>();
+
+            foreach (var id in index)
+            {
+                var key = CacheKeyFor(id);
+                var item = Cache.Get<CachedItem>(key);
+                if (item != null)
+                {
+                    loaded.Add(item);
+                    rewrittenIndex.Add(id);
+                }
+                else
+                {
+                    Logger.LogDebug("Cache item with id {Id} missing/expired and will be removed from index.", id);
+                }
+            }
+
+            Items = loaded;
+            SaveIndex(rewrittenIndex); // persist cleaned index
+            ApplySearchFilter();
+
+            Notify("Cache refreshed", "alert-info");
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, "Failed to refresh cache");
+            Notify("Failed to refresh cache. See logs.", "alert-danger");
+        }
+    }
+
+    /// <summary>
+    /// Persist item's cache entry and ensure index contains its id.
+    /// Each item is stored under its own key so per-item expirations are supported.
+    /// </summary>
+    private void SaveItemToCache(CachedItem item)
+    {
+        try
+        {
+            var key = CacheKeyFor(item.Id);
+
+            // compute absoluteExpiration param for adapter (null or UTC DateTime)
+            DateTime? abs = item.AbsoluteExpiration?.ToUniversalTime();
+            TimeSpan? sliding = item.SlidingExpiration;
+
+            Cache.Add(key, item, abs, sliding);
+
+            // ensure index contains id
+            var index = Cache.Get<List<string>>(CACHE_INDEX_KEY) ?? new List<string>();
+            if (!index.Contains(item.Id))
+            {
+                index.Add(item.Id);
+                SaveIndex(index);
+            }
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, "Error saving item {Id} to cache", item.Id);
+            throw;
+        }
+    }
+
+    /// <summary>
+    /// Save the index (list of ids) into cache.
+    /// Index typically stored without expiration, adjust if necessary.
+    /// </summary>
+    private void SaveIndex(List<string> index)
+    {
+        Cache.Add(CACHE_INDEX_KEY, index, null, null);
+    }
+
+    /// <summary>
+    /// Remove item both from its cache key and from index.
+    /// </summary>
+    private void RemoveFromCacheById(string id)
+    {
+        try
+        {
+            Cache.RemoveCache(CacheKeyFor(id));
+
+            // update index
+            var index = Cache.Get<List<string>>(CACHE_INDEX_KEY) ?? new List<string>();
+            if (index.Remove(id))
+            {
+                SaveIndex(index);
+            }
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, "Failed to fully remove item {Id}", id);
+            Notify("Failed to remove item. See logs.", "alert-danger");
+        }
+    }
+
+    private string CacheKeyFor(string id) => $"{CACHE_ITEM_PREFIX}{id}";
+
+    // ==========================================
+    // CRUD ops bound to UI
+    // ==========================================
+
+    private void AddOrUpdateItem()
+    {
+        try
+        {
+            if (string.IsNullOrWhiteSpace(NewItem.Name))
+            {
+                Notify("Name is required", "alert-warning");
+                return;
+            }
+
+            // If editing an existing item -> update it.
+            if (IsEdit && SelectedItem != null)
+            {
+                SelectedItem.Name = NewItem.Name;
+                SelectedItem.Value = NewItem.Value;
+                SelectedItem.AbsoluteExpiration = AbsoluteSeconds is > 0 ? DateTime.Now.AddSeconds(AbsoluteSeconds.Value) : null;
+                SelectedItem.SlidingExpiration = SlidingSeconds is > 0 ? TimeSpan.FromSeconds(SlidingSeconds.Value) : null;
+
+                SaveItemToCache(SelectedItem);
+
+                // update in memory list
+                var idx = Items.FindIndex(i => i.Id == SelectedItem.Id);
+                if (idx >= 0) Items[idx] = SelectedItem;
+                Notify("Item updated", "alert-success");
+                Logger.LogInformation("Item updated {@Item}", SelectedItem);
+            }
+            else
+            {
+                var item = new CachedItem
+                {
+                    Name = NewItem.Name.Trim(),
+                    Value = NewItem.Value ?? string.Empty,
+                    AbsoluteExpiration = AbsoluteSeconds is > 0 ? DateTime.Now.AddSeconds(AbsoluteSeconds.Value) : null,
+                    SlidingExpiration = SlidingSeconds is > 0 ? TimeSpan.FromSeconds(SlidingSeconds.Value) : null
+                };
+
+                SaveItemToCache(item);
+                Items.Add(item);
+                Notify("Item added to cache", "alert-success");
+                Logger.LogInformation("Item added {@Item}", item);
+            }
+
+            ApplySearchFilter();
+            ResetForm();
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, "AddOrUpdateItem failed");
+            Notify("Operation failed. See logs.", "alert-danger");
+        }
+    }
+
+    private void EditItem(CachedItem item)
+    {
+        SelectItem(item);
+    }
+
+    private void SelectItem(CachedItem item)
+    {
+        SelectedItem = item;
+        NewItem = new CachedItem
+        {
+            Id = item.Id,
+            Name = item.Name,
+            Value = item.Value,
+            AbsoluteExpiration = item.AbsoluteExpiration,
+            SlidingExpiration = item.SlidingExpiration
+        };
+
+        AbsoluteSeconds = item.AbsoluteExpiration.HasValue ? (int?)Math.Max(0, (int)(item.AbsoluteExpiration.Value - DateTime.Now).TotalSeconds) : null;
+        SlidingSeconds = item.SlidingExpiration.HasValue ? (int?)item.SlidingExpiration.Value.TotalSeconds : null;
+    }
+
+    private void CancelEdit()
+    {
+        ResetForm();
+    }
+
+    private void RemoveItem(string id)
+    {
+        var item = Items.FirstOrDefault(x => x.Id == id);
+        if (item == null)
+        {
+            Notify("Item not found", "alert-warning");
+            return;
+        }
+
+        Items.Remove(item);
+        RemoveFromCacheById(id);
+        ApplySearchFilter();
+
+        Logger.LogWarning("Item removed {Id}", id);
+        Notify("Item removed", "alert-warning");
+    }
+
+    /// <summary>
+    /// Try to retrieve a single item by Name (first match). If item has sliding expiration,
+    /// we reload it into cache to simulate 'touch' (so sliding expiration resets in IMemoryCache).
+    /// </summary>
+    private void GetItem()
+    {
+        try
+        {
+            if (string.IsNullOrWhiteSpace(FindName))
+            {
+                Notify("Provide name to find", "alert-warning");
+                return;
+            }
+
+            var found = Items.FirstOrDefault(x => x.Name.Equals(FindName, StringComparison.OrdinalIgnoreCase));
+            if (found == null)
+            {
+                Notify("Item not found in index", "alert-info");
+                return;
+            }
+
+            // Try to fetch from cache by id to ensure it's still present (might have been evicted)
+            var cached = Cache.Get<CachedItem>(CacheKeyFor(found.Id));
+            if (cached == null)
+            {
+                // item expired/evicted — remove from index and UI
+                Items.Remove(found);
+                var idx = Cache.Get<List<string>>(CACHE_INDEX_KEY) ?? new List<string>();
+                idx.Remove(found.Id);
+                SaveIndex(idx);
+                ApplySearchFilter();
+
+                Notify("Item has expired or been evicted", "alert-warning");
+                return;
+            }
+
+            // If sliding expiration exists, re-set it to refresh sliding window
+            if (cached.SlidingExpiration.HasValue)
+            {
+                // re-save to reset sliding expiry in IMemoryCache
+                SaveItemToCache(cached);
+            }
+
+            // Use the item for something — here we just show a notification and set selected
+            SelectItem(cached);
+            Notify($"Item retrieved: {cached.Name}", "alert-success");
+            Logger.LogInformation("Item retrieved {@Item}", cached);
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, "GetItem failed");
+            Notify("Failed to get item. See logs.", "alert-danger");
+        }
+    }
+
+    // ==========================================
+    // Search & helpers
+    // ==========================================
+    private void OnSearchInput(ChangeEventArgs e)
+    {
+        SearchText = e.Value?.ToString() ?? string.Empty;
+        ApplySearchFilter();
+    }
+
+    private void ClearSearch()
+    {
+        SearchText = string.Empty;
+        ApplySearchFilter();
+    }
+
+    private void ApplySearchFilter()
+    {
+        if (string.IsNullOrWhiteSpace(SearchText))
+            FilteredItems = Items.ToList();
+        else
+            FilteredItems = Items.Where(x => x.Name.Contains(SearchText, StringComparison.OrdinalIgnoreCase)).ToList();
+    }
+
+    private void ResetForm()
+    {
+        NewItem = new CachedItem();
+        SelectedItem = null;
+        AbsoluteSeconds = null;
+        SlidingSeconds = null;
+    }
+
+    private void Notify(string message, string css = "alert-info")
+    {
+        NotificationMessage = message;
+        NotificationCss = css;
+
+        // hide notification after short time (UI-only, won't keep server timer)
+        _ = Task.Delay(3500).ContinueWith(_ =>
+        {
+            NotificationMessage = string.Empty;
+            InvokeAsync(StateHasChanged);
+        });
+    }
+}
