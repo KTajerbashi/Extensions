@@ -1,34 +1,38 @@
 ﻿@page "/caching-in-sql"
 @rendermode InteractiveServer
 
+@using CachingApp.Models
+@using CachingApp.Repository
 @using Extensions.Caching.Abstractions
+
 @inject ICacheAdapter Cache
 @inject ILogger<CachingInSQL> Logger
+@inject ICacheInspector Inspector
 
 <h3 class="mb-3">SQL Distributed Caching Demo</h3>
 
+<!-- Add to Cache -->
 <div class="card p-3 shadow-sm">
 
     <h5>Add Item to Cache</h5>
-
     <div class="mb-2">
         <label>Key:</label>
-        <input class="form-control" @bind="CacheKey" placeholder="example: user:1" />
+        <input class="form-control" @bind="CacheKey" />
     </div>
 
     <div class="mb-2">
-        <label>Value (JSON or text):</label>
+        <label>Value:</label>
         <textarea class="form-control" rows="3" @bind="CacheValue"></textarea>
     </div>
 
     <div class="row">
         <div class="col">
             <label>Absolute Expiration (minutes)</label>
-            <input type="number" min="1" class="form-control" @bind="AbsoluteExpirationMinutes" />
+            <input type="number" class="form-control" @bind="AbsoluteExpirationMinutes" />
         </div>
         <div class="col">
             <label>Sliding Expiration (minutes)</label>
-            <input type="number" min="1" class="form-control" @bind="SlidingExpirationMinutes" />
+            <input type="number" class="form-control" @bind="SlidingExpirationMinutes" />
         </div>
     </div>
 
@@ -42,131 +46,132 @@
 
 <hr />
 
-<div class="card p-3 shadow-sm mt-4">
-    <h5>Get Cache Item</h5>
-    <div class="input-group">
-        <input class="form-control" @bind="LookupKey" placeholder="Enter key to retrieve" />
-        <button class="btn btn-success" @onclick="GetCacheItem">Get</button>
+<!-- CACHE TABLE -->
+<div class="card shadow-sm p-3 mt-4">
+    <div class="d-flex justify-content-between align-items-center">
+        <h5>Cache Records</h5>
+
+        <div>
+            <button class="btn btn-outline-secondary btn-sm" @onclick="LoadAllCache">Refresh</button>
+        </div>
     </div>
 
-    @if (RetrievedValue != null)
-    {
-        <div class="alert alert-secondary mt-3">
-            <strong>Value:</strong>
-            <pre>@RetrievedValue</pre>
-        </div>
-    }
+    <div class="my-3">
+        <button class="btn btn-sm @(Filter == "all" ? "btn-primary" : "btn-outline-primary")" @onclick="@(() => ChangeFilter("all"))">All</button>
+        <button class="btn btn-sm ms-2 @(Filter == "active" ? "btn-success" : "btn-outline-success")" @onclick="@(() => ChangeFilter("active"))">Active</button>
+        <button class="btn btn-sm ms-2 @(Filter == "expired" ? "btn-danger" : "btn-outline-danger")" @onclick="@(() => ChangeFilter("expired"))">Expired</button>
+    </div>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Key</th>
+                <th>Value</th>
+                <th>ExpiresAtTime</th>
+                <th>Sliding</th>
+                <th>Absolute</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (FilteredCache?.Count == 0)
+            {
+                <tr><td colspan="6" class="text-center text-muted">No data found.</td></tr>
+            }
+            else
+            {
+                @foreach (var item in FilteredCache)
+                {
+                    <tr>
+                        <td>@item.Key</td>
+                        <td><pre>@item.Value</pre></td>
+                        <td>@item.ExpiresAtTime</td>
+                        <td>@item.SlidingExpirationInSeconds</td>
+                        <td>@item.AbsoluteExpiration</td>
+                        <td>
+                            @if (item.IsActive)
+                            {
+                                <span class="badge bg-success">Active</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-danger">Expired</span>
+                            }
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
 </div>
 
 <hr />
 
+<!-- REMOVE -->
 <div class="card p-3 shadow-sm mt-4">
     <h5>Remove Cache Item</h5>
     <div class="input-group">
-        <input class="form-control" @bind="RemoveKey" placeholder="Key to remove" />
+        <input class="form-control" @bind="RemoveKey" />
         <button class="btn btn-danger" @onclick="RemoveFromCache">Remove</button>
     </div>
 </div>
 
 @code {
 
-    // Bindings
     private string CacheKey { get; set; }
     private string CacheValue { get; set; }
-
     private int? AbsoluteExpirationMinutes { get; set; }
     private int? SlidingExpirationMinutes { get; set; }
 
-    private string LookupKey { get; set; }
     private string RemoveKey { get; set; }
-
-    // UI feedback
     private string Message { get; set; }
 
-    // Display retrieved value
-    private string RetrievedValue { get; set; }
+    private List<CacheRecord> AllCache = new();
+    private List<CacheRecord> FilteredCache = new();
+    private string Filter = "all";
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadAllCache();
+    }
+
+    private void ChangeFilter(string value)
+    {
+        Filter = value;
+        ApplyFilter();
+    }
+
+    private async Task LoadAllCache()
+    {
+        AllCache = Inspector.GetAll();
+        ApplyFilter();
+    }
+
+    private void ApplyFilter()
+    {
+        FilteredCache = Filter switch
+        {
+            "active" => AllCache.Where(x => x.IsActive).ToList(),
+            "expired" => AllCache.Where(x => !x.IsActive).ToList(),
+            _ => AllCache
+        };
+    }
 
     private async Task AddToCache()
     {
-        try
-        {
-            if (string.IsNullOrWhiteSpace(CacheKey))
-            {
-                Message = "Cache key is required.";
-                return;
-            }
+        DateTime? abs = AbsoluteExpirationMinutes.HasValue ? DateTime.Now.AddMinutes(AbsoluteExpirationMinutes.Value) : null;
+        TimeSpan? sliding = SlidingExpirationMinutes.HasValue ? TimeSpan.FromMinutes(SlidingExpirationMinutes.Value) : null;
 
-            // Save raw string as cache object
-            DateTime? abs = AbsoluteExpirationMinutes.HasValue
-                ? DateTime.UtcNow.AddMinutes(AbsoluteExpirationMinutes.Value)
-                : null;
+        Cache.Add(CacheKey, CacheValue, abs, sliding);
 
-            TimeSpan? sliding = SlidingExpirationMinutes.HasValue
-                ? TimeSpan.FromMinutes(SlidingExpirationMinutes.Value)
-                : null;
-
-            Cache.Add(CacheKey, CacheValue, abs, sliding);
-
-            Message = $"Successfully cached value under key '{CacheKey}'.";
-            Logger.LogInformation("Added key '{key}' to cache.", CacheKey);
-        }
-        catch (Exception ex)
-        {
-            Logger.LogError(ex, "Error adding cache");
-            Message = "Error: " + ex.Message;
-        }
-    }
-
-    private async Task GetCacheItem()
-    {
-        try
-        {
-            if (string.IsNullOrWhiteSpace(LookupKey))
-            {
-                Message = "Please enter a key to retrieve.";
-                return;
-            }
-
-            var result = Cache.Get<string>(LookupKey);
-
-            if (result == null)
-            {
-                RetrievedValue = null;
-                Message = $"No cache found for key '{LookupKey}'.";
-            }
-            else
-            {
-                RetrievedValue = result;
-                Message = $"Retrieved value for '{LookupKey}'.";
-            }
-
-            Logger.LogInformation("Cache lookup for key '{key}'.", LookupKey);
-        }
-        catch (Exception ex)
-        {
-            Logger.LogError(ex, "Error retrieving cache");
-            Message = "Error: " + ex.Message;
-        }
+        Message = $"Key '{CacheKey}' added.";
+        await LoadAllCache();
     }
 
     private async Task RemoveFromCache()
     {
-        try
-        {
-            if (string.IsNullOrWhiteSpace(RemoveKey))
-            {
-                Message = "Please enter a key to remove.";
-                return;
-            }
-
-            Cache.RemoveCache(RemoveKey);
-            Message = $"Removed cache item with key '{RemoveKey}'.";
-            Logger.LogInformation("Removed key '{key}' from cache.", RemoveKey);
-        }
-        catch (Exception ex)
-        {
-            Logger.LogError(ex, "Error removing cache");
-            Message = "Error: " + ex.Message;
-        }
+        Cache.RemoveCache(RemoveKey);
+        Message = $"Key '{RemoveKey}' removed.";
+        await LoadAllCache();
     }
 }

@@ -80,27 +80,42 @@ public static class DependencyInjections
     {
         var sql = $@"
 IF NOT EXISTS (
-    SELECT * FROM INFORMATION_SCHEMA.TABLES
-    WHERE TABLE_SCHEMA = '{options.SchemaName}' 
-      AND TABLE_NAME = '{options.TableName}'
+    SELECT * 
+    FROM sys.schemas 
+    WHERE name = @SchemaName
 )
 BEGIN
-    CREATE TABLE [{options.SchemaName}].[{options.TableName}](
-        [Id] NVARCHAR(449) COLLATE SQL_Latin1_General_CP1_CS_AS NOT NULL,
-        [Value] VARBINARY(MAX) NOT NULL,
-        [ExpiresAtTime] DATETIMEOFFSET(7) NOT NULL,
-        [SlidingExpirationInSeconds] BIGINT NULL,
-        [AbsoluteExpiration] DATETIMEOFFSET(7) NULL,
-        CONSTRAINT PK_{options.TableName} PRIMARY KEY CLUSTERED ([Id]),
-        INDEX IX_{options.TableName}_ExpiresAtTime NONCLUSTERED(ExpiresAtTime)
-    )
+    EXEC('CREATE SCHEMA [' + @SchemaName + '] AUTHORIZATION dbo');
+END
+
+IF NOT EXISTS (
+    SELECT * FROM INFORMATION_SCHEMA.TABLES
+    WHERE TABLE_SCHEMA = @SchemaName
+      AND TABLE_NAME = @TableName
+)
+BEGIN
+    EXEC('
+        CREATE TABLE [' + @SchemaName + '].[' + @TableName + '](
+            [Id] NVARCHAR(449) COLLATE SQL_Latin1_General_CP1_CS_AS NOT NULL,
+            [Value] VARBINARY(MAX) NOT NULL,
+            [ExpiresAtTime] DATETIMEOFFSET(7) NOT NULL,
+            [SlidingExpirationInSeconds] BIGINT NULL,
+            [AbsoluteExpiration] DATETIMEOFFSET(7) NULL,
+            CONSTRAINT PK_' + @TableName + ' PRIMARY KEY CLUSTERED ([Id]),
+            INDEX IX_' + @TableName + '_ExpiresAtTime NONCLUSTERED([ExpiresAtTime])
+        )
+    ');
 END
 ";
 
         using var connection = new SqlConnection(options.ConnectionString);
         using var command = new SqlCommand(sql, connection);
 
+        command.Parameters.AddWithValue("@SchemaName", options.SchemaName);
+        command.Parameters.AddWithValue("@TableName", options.TableName);
+
         connection.Open();
         command.ExecuteNonQuery();
     }
+
 }

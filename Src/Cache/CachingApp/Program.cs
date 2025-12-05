@@ -1,4 +1,6 @@
 using CachingApp.Components;
+using CachingApp.Repository;
+using CachingApp.Service;
 using Extensions.Caching.Distributed.Sql;
 using Extensions.Serializers.Microsoft;
 
@@ -14,8 +16,10 @@ builder.Services.AddRazorComponents()
 #endregion
 
 #region SQL Cache Config
-//builder.Services.AddSqlDistributedCache(configuration, "Cache");
-//builder.Services.AddMicrosoftSerializers();
+builder.Services.AddScoped<ICacheInspector, SqlCacheInspector>();
+
+builder.Services.AddSqlDistributedCache(configuration, "Cache");
+builder.Services.AddMicrosoftSerializers();
 #endregion
 
 var app = builder.Build();

@@ -1,1 +1,30 @@
-<Solution />
+<Solution>
+  <Folder Name="/Src/" />
+  <Folder Name="/Src/Cache/">
+    <Project Path="Src/Cache/CachingApp/CachingApp.csproj" />
+    <Project Path="Src/Cache/Extensions.Caching.Abstractions/Extensions.Caching.Abstractions.csproj" />
+    <Project Path="Src/Cache/Extensions.Caching.Distributed.Redis/Extensions.Caching.Distributed.Redis.csproj" />
+    <Project Path="Src/Cache/Extensions.Caching.Distributed.Sql/Extensions.Caching.Distributed.Sql.csproj" />
+    <Project Path="Src/Cache/Extensions.Caching.InMemory/Extensions.Caching.InMemory.csproj" />
+  </Folder>
+  <Folder Name="/Src/Logger/">
+    <Project Path="Src/Logger/Extensions.Logger.Abstractions/Extensions.Logger.Abstractions.csproj" />
+    <Project Path="Src/Logger/Extensions.Logger/Extensions.Logger.csproj" />
+    <Project Path="Src/Logger/LoggerApp/LoggerApp.csproj" />
+  </Folder>
+  <Folder Name="/Src/ObjectMapper/">
+    <Project Path="Src/ObjectMapper/Extensions.ObjectMappers.Abstractions/Extensions.ObjectMappers.Abstractions.csproj" />
+    <Project Path="Src/ObjectMapper/Extensions.ObjectMappers/Extensions.ObjectMappers.csproj" />
+    <Project Path="Src/ObjectMapper/ObjectMappersApp/ObjectMappersApp.csproj" />
+  </Folder>
+  <Folder Name="/Src/Sample/">
+    <Project Path="Src/Sample/Sample.WebApi/Sample.WebApi.csproj" />
+  </Folder>
+  <Folder Name="/Src/Serializers/">
+    <Project Path="Src/Serializers/Extensions.Serializers.Abstractions/Extensions.Serializers.Abstractions.csproj" />
+    <Project Path="Src/Serializers/Extensions.Serializers.EPPlus/Extensions.Serializers.EPPlus.csproj" />
+    <Project Path="Src/Serializers/Extensions.Serializers.Microsoft/Extensions.Serializers.Microsoft.csproj" />
+    <Project Path="Src/Serializers/Extensions.Serializers.NewtonSoft/Extensions.Serializers.NewtonSoft.csproj" />
+    <Project Path="Src/Serializers/SerializersApp/SerializersApp.csproj" />
+  </Folder>
+</Solution>
