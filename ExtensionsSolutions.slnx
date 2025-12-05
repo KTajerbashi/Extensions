@@ -1,5 +1,12 @@
 <Solution>
   <Folder Name="/Src/" />
+  <Folder Name="/Src/Cache/">
+    <Project Path="Src/Cache/CachingApp/CachingApp.csproj" Id="5866f439-43eb-438d-b5ce-19432475d339" />
+    <Project Path="Src/Cache/Extensions.Caching.Abstractions/Extensions.Caching.Abstractions.csproj" Id="0d8381f0-fa5a-4df0-8f8d-8591e53d0617" />
+    <Project Path="Src/Cache/Extensions.Caching.Distributed.Redis/Extensions.Caching.Distributed.Redis.csproj" Id="514f4eab-8b8b-4766-b0b1-b6a481e32c34" />
+    <Project Path="Src/Cache/Extensions.Caching.Distributed.Sql/Extensions.Caching.Distributed.Sql.csproj" Id="f46e6bf0-8e2c-4d0d-8800-02b14e5d6f53" />
+    <Project Path="Src/Cache/Extensions.Caching.InMemory/Extensions.Caching.InMemory.csproj" Id="3278754e-e5e2-41f9-a84c-7430fa821e55" />
+  </Folder>
   <Folder Name="/Src/Logger/">
     <Project Path="Src/Logger/Extensions.Logger.Abstractions/Extensions.Logger.Abstractions.csproj" Id="bd1fb50f-c9d5-4830-8563-001e557f7bc2" />
     <Project Path="Src/Logger/Extensions.Logger/Extensions.Logger.csproj" Id="ec6107a8-2214-44d3-9a60-e58bc7e43660" />

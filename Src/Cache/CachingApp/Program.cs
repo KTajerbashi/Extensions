@@ -1,14 +1,23 @@
 using CachingApp.Components;
-using Extensions.Caching.InMemory;
+using Extensions.Caching.Distributed.Sql;
 using Extensions.Serializers.Microsoft;
 
 var builder = WebApplication.CreateBuilder(args);
-
+IConfiguration configuration = builder.Configuration;
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
-builder.Services.AddInMemoryCacheAdapter();
-builder.Services.AddMicrosoftSerializers();
+
+#region InMemory Cache Config
+//builder.Services.AddInMemoryCacheAdapter();
+//builder.Services.AddMicrosoftSerializers();
+#endregion
+
+#region SQL Cache Config
+//builder.Services.AddSqlDistributedCache(configuration, "Cache");
+//builder.Services.AddMicrosoftSerializers();
+#endregion
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

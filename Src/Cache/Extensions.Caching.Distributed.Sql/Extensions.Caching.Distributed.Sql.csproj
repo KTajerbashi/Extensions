@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<TargetFramework>net10.0</TargetFramework>
 		<!-- Required -->
-		<Version>10.0.0</Version>
+		<Version>10.0.1</Version>
 		<Authors>Kamran Tajerbashi</Authors>
 		<Description>Collection of useful extensions for .NET 10</Description>
 		<!-- Required -->
@@ -16,12 +16,14 @@
 
 	<ItemGroup>
 		<PackageReference Include="Extensions.Caching.Abstractions" Version="10.0.1" />
-		<PackageReference Include="Extensions.Serializers.Abstractions" Version="10.1.0" />
-		<PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="10.0.0" />
+		<PackageReference Include="Extensions.Serializers.Microsoft" Version="10.1.0" />
+		<PackageReference Include="Microsoft.Extensions.Caching.SqlServer" Version="10.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.0" />
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="10.0.0" />
 	</ItemGroup>
-
+	
 	<ItemGroup>
 		<None Update="icon.png">
 			<Pack>true</Pack>
@@ -30,6 +32,5 @@
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</None>
 	</ItemGroup>
-
 
 </Project>

@@ -1,0 +1,172 @@
+﻿@page "/caching-in-sql"
+@rendermode InteractiveServer
+
+@using Extensions.Caching.Abstractions
+@inject ICacheAdapter Cache
+@inject ILogger<CachingInSQL> Logger
+
+<h3 class="mb-3">SQL Distributed Caching Demo</h3>
+
+<div class="card p-3 shadow-sm">
+
+    <h5>Add Item to Cache</h5>
+
+    <div class="mb-2">
+        <label>Key:</label>
+        <input class="form-control" @bind="CacheKey" placeholder="example: user:1" />
+    </div>
+
+    <div class="mb-2">
+        <label>Value (JSON or text):</label>
+        <textarea class="form-control" rows="3" @bind="CacheValue"></textarea>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <label>Absolute Expiration (minutes)</label>
+            <input type="number" min="1" class="form-control" @bind="AbsoluteExpirationMinutes" />
+        </div>
+        <div class="col">
+            <label>Sliding Expiration (minutes)</label>
+            <input type="number" min="1" class="form-control" @bind="SlidingExpirationMinutes" />
+        </div>
+    </div>
+
+    <button class="btn btn-primary mt-3" @onclick="AddToCache">Add to Cache</button>
+</div>
+
+@if (!string.IsNullOrWhiteSpace(Message))
+{
+    <div class="alert alert-info mt-3">@Message</div>
+}
+
+<hr />
+
+<div class="card p-3 shadow-sm mt-4">
+    <h5>Get Cache Item</h5>
+    <div class="input-group">
+        <input class="form-control" @bind="LookupKey" placeholder="Enter key to retrieve" />
+        <button class="btn btn-success" @onclick="GetCacheItem">Get</button>
+    </div>
+
+    @if (RetrievedValue != null)
+    {
+        <div class="alert alert-secondary mt-3">
+            <strong>Value:</strong>
+            <pre>@RetrievedValue</pre>
+        </div>
+    }
+</div>
+
+<hr />
+
+<div class="card p-3 shadow-sm mt-4">
+    <h5>Remove Cache Item</h5>
+    <div class="input-group">
+        <input class="form-control" @bind="RemoveKey" placeholder="Key to remove" />
+        <button class="btn btn-danger" @onclick="RemoveFromCache">Remove</button>
+    </div>
+</div>
+
+@code {
+
+    // Bindings
+    private string CacheKey { get; set; }
+    private string CacheValue { get; set; }
+
+    private int? AbsoluteExpirationMinutes { get; set; }
+    private int? SlidingExpirationMinutes { get; set; }
+
+    private string LookupKey { get; set; }
+    private string RemoveKey { get; set; }
+
+    // UI feedback
+    private string Message { get; set; }
+
+    // Display retrieved value
+    private string RetrievedValue { get; set; }
+
+    private async Task AddToCache()
+    {
+        try
+        {
+            if (string.IsNullOrWhiteSpace(CacheKey))
+            {
+                Message = "Cache key is required.";
+                return;
+            }
+
+            // Save raw string as cache object
+            DateTime? abs = AbsoluteExpirationMinutes.HasValue
+                ? DateTime.UtcNow.AddMinutes(AbsoluteExpirationMinutes.Value)
+                : null;
+
+            TimeSpan? sliding = SlidingExpirationMinutes.HasValue
+                ? TimeSpan.FromMinutes(SlidingExpirationMinutes.Value)
+                : null;
+
+            Cache.Add(CacheKey, CacheValue, abs, sliding);
+
+            Message = $"Successfully cached value under key '{CacheKey}'.";
+            Logger.LogInformation("Added key '{key}' to cache.", CacheKey);
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, "Error adding cache");
+            Message = "Error: " + ex.Message;
+        }
+    }
+
+    private async Task GetCacheItem()
+    {
+        try
+        {
+            if (string.IsNullOrWhiteSpace(LookupKey))
+            {
+                Message = "Please enter a key to retrieve.";
+                return;
+            }
+
+            var result = Cache.Get<string>(LookupKey);
+
+            if (result == null)
+            {
+                RetrievedValue = null;
+                Message = $"No cache found for key '{LookupKey}'.";
+            }
+            else
+            {
+                RetrievedValue = result;
+                Message = $"Retrieved value for '{LookupKey}'.";
+            }
+
+            Logger.LogInformation("Cache lookup for key '{key}'.", LookupKey);
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, "Error retrieving cache");
+            Message = "Error: " + ex.Message;
+        }
+    }
+
+    private async Task RemoveFromCache()
+    {
+        try
+        {
+            if (string.IsNullOrWhiteSpace(RemoveKey))
+            {
+                Message = "Please enter a key to remove.";
+                return;
+            }
+
+            Cache.RemoveCache(RemoveKey);
+            Message = $"Removed cache item with key '{RemoveKey}'.";
+            Logger.LogInformation("Removed key '{key}' from cache.", RemoveKey);
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, "Error removing cache");
+            Message = "Error: " + ex.Message;
+        }
+    }
+}
