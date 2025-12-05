@@ -15,9 +15,8 @@ builder.Services.AddRazorComponents()
 //builder.Services.AddMicrosoftSerializers();
 #endregion
 
-#region SQL Cache Config
+#region SQL Cache Config With Add appsetting.json => Cache : Section
 builder.Services.AddScoped<ICacheInspector, SqlCacheInspector>();
-
 builder.Services.AddSqlDistributedCache(configuration, "Cache");
 builder.Services.AddMicrosoftSerializers();
 #endregion

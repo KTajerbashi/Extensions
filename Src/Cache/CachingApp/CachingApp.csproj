@@ -8,12 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Extensions.Caching.Distributed.Sql" Version="10.0.0" />
     <PackageReference Include="Extensions.Caching.InMemory" Version="10.0.0" />
     <PackageReference Include="Extensions.Serializers.Microsoft" Version="10.1.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Extensions.Caching.Distributed.Sql\Extensions.Caching.Distributed.Sql.csproj" />
   </ItemGroup>
 
 </Project>

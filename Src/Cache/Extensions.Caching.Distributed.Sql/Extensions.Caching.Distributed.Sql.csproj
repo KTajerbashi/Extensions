@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<TargetFramework>net10.0</TargetFramework>
 		<!-- Required -->
-		<Version>10.0.1</Version>
+		<Version>10.0.0</Version>
 		<Authors>Kamran Tajerbashi</Authors>
 		<Description>Collection of useful extensions for .NET 10</Description>
 		<!-- Required -->
