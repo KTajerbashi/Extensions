@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
@@ -8,9 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Extensions.Caching.Distributed.Sql" Version="10.0.0" />
-    <PackageReference Include="Extensions.Caching.InMemory" Version="10.0.0" />
+    <!--<PackageReference Include="Extensions.Caching.Distributed.Sql" Version="10.0.0" />-->
+    <!--<PackageReference Include="Extensions.Caching.InMemory" Version="10.0.0" />-->
     <PackageReference Include="Extensions.Serializers.Microsoft" Version="10.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Extensions.Caching.Distributed.Redis\Extensions.Caching.Distributed.Redis.csproj" />
   </ItemGroup>
 
 </Project>
