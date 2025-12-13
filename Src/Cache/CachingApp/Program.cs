@@ -1,6 +1,6 @@
 using CachingApp.Components;
-using CachingApp.Repository;
-using CachingApp.Service;
+//using CachingApp.Repository;
+//using CachingApp.Service;
 using Extensions.Caching.Distributed.Redis;
 using Extensions.Serializers.Microsoft;
 
