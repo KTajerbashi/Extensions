@@ -82,7 +82,7 @@ public static class DependencyInjection
 
         var masterConnection = configuration.GetConnectionString("master");
         var defaultConnection = configuration.GetConnectionString("default");
-        if (!masterConnection.IsNullOrEmpty())
+        if (!string.IsNullOrWhiteSpace(masterConnection))
         {
             //// --- Bootstrap Database and Table Creation ---
             //// 1. Ensure Database exists
@@ -95,7 +95,7 @@ public static class DependencyInjection
         services.AddRazorComponents().AddInteractiveServerComponents();
 
 
-       
+
 
         return services;
     }
