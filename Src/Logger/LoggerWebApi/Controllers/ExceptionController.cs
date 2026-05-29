@@ -1,5 +1,6 @@
 using LoggerWebApi.Exceptions;
 using Microsoft.AspNetCore.Mvc;
+using Serilog.Context;
 
 namespace LoggerWebApi.Controllers
 {
@@ -14,6 +15,12 @@ namespace LoggerWebApi.Controllers
             _logger = logger;
         }
 
+        [HttpGet("Ok-200")]
+        public IActionResult Index()
+        {
+            return Ok("Ok-200");
+        }
+
         /// <summary>
         /// Throws a domain exception.
         /// </summary>
@@ -22,6 +29,10 @@ namespace LoggerWebApi.Controllers
         {
             _logger.LogWarning("Throwing DomainException");
 
+            using (LogContext.PushProperty("UserId", 100))
+            {
+                _logger.LogInformation("User Updated");
+            }
             throw new DomainException(
                 "Business rule violated.");
         }

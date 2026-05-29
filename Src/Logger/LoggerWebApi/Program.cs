@@ -1,61 +1,78 @@
+using LoggerWebApi.Contexts;
 using LoggerWebApi.Middlewares.ExceptionHandler;
+using LoggerWebApi.Providers;
 using Serilog;
 
-namespace LoggerWebApi
+namespace LoggerWebApi;
+
+public class Program
 {
-    public class Program
+    public static void Main(string[] args)
     {
-        public static void Main(string[] args)
+        var builder = WebApplication.CreateBuilder(args);
+
+        try
         {
+            // Services
+
+            builder.Services.AddControllers();
+
+            builder.Services.AddEndpointsApiExplorer();
+
+            builder.Services.AddSwaggerGen();
+
+            builder.Services.AddHttpContextAccessor();
+
+            builder.Services.AddScoped<IUserContext, UserContext>();
+
+            builder.Services.AddScoped<RequestEnricher>();
+
+            builder.Services.AddScoped<UserEnricher>();
+
+
             // Configure Serilog
-            Log.Logger = new LoggerConfiguration()
-                .MinimumLevel.Debug()
-                .WriteTo.Console()
-                .WriteTo.File("")
-                .CreateLogger();
+            builder.CreateBuilderOnSerilog();
 
-            try
+
+            var app = builder.Build();
+
+
+            // Middlewares
+
+            app.UseExceptionMiddleware();
+
+            app.UseSerilogAddEnrichers();
+            //app.UseSerilogRequestLogging();
+            app.UseSerilogRequestLogging(options =>
             {
-                Log.Information("Starting Web API...");
+                options.MessageTemplate =
+                    "HTTP {RequestMethod} {RequestPath} " +
+                    "responded {StatusCode} in {Elapsed:0.0000} ms";
+            });
 
-                var builder = WebApplication.CreateBuilder(args);
-
-                // Use Serilog
-                builder.Host.UseSerilog();
-
-                // Add services
-                builder.Services.AddControllers();
-
-                builder.Services.AddEndpointsApiExplorer();
-                builder.Services.AddSwaggerGen();
-
-                var app = builder.Build();
-
-                // Middleware
-                app.UseExceptionMiddleware();
-
-                if (app.Environment.IsDevelopment())
-                {
-                    app.UseSwagger();
-                    app.UseSwaggerUI();
-                }
-
-                app.UseHttpsRedirection();
-
-                app.UseAuthorization();
-
-                app.MapControllers();
-
-                app.Run();
-            }
-            catch (Exception ex)
+            if (app.Environment.IsDevelopment())
             {
-                Log.Fatal(ex, "Application terminated unexpectedly");
+                app.UseSwagger();
+
+                app.UseSwaggerUI();
             }
-            finally
-            {
-                Log.CloseAndFlush();
-            }
+
+            app.UseHttpsRedirection();
+
+            app.UseAuthorization();
+
+            app.MapControllers();
+
+            app.Run();
+        }
+        catch (Exception ex)
+        {
+            Log.Fatal(ex,
+                "Application terminated unexpectedly");
+        }
+        finally
+        {
+            Log.CloseAndFlush();
         }
     }
 }
