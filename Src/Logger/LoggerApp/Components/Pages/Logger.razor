@@ -1,177 +1,38 @@
 ﻿@page "/logger"
+@using LoggerApp.Exceptions
 @rendermode InteractiveServer
 
-@using Serilog
-@using Serilog.Events
-@inject ILoggerFactory LoggerFactory
-
-<h3 class="mb-3">Blazor – Full Logging Test Panel</h3>
-
-<div class="mb-3">
-    <button class="btn btn-primary me-2" @onclick="LogInfo">Info</button>
-    <button class="btn btn-secondary me-2" @onclick="LogDebug">Debug</button>
-    <button class="btn btn-warning me-2" @onclick="LogWarning">Warning</button>
-    <button class="btn btn-danger me-2" @onclick="LogError">Error</button>
-    <button class="btn btn-dark me-2" @onclick="LogFatal">Fatal</button>
-</div>
-
-<div class="mb-3">
-    <button class="btn btn-outline-primary me-2" @onclick="LogTrace">Trace</button>
-    <button class="btn btn-outline-secondary me-2" @onclick="LogVerbose">Verbose</button>
-    <button class="btn btn-outline-warning me-2" @onclick="LogWithParams">With Parameters</button>
-    <button class="btn btn-outline-danger me-2" @onclick="LogExceptionWithMoreDetails">Exception + Details</button>
-    <button class="btn btn-outline-success me-2" @onclick="LogStructured">Structured Log</button>
-</div>
-
-<div class="mb-3">
-    <button class="btn btn-info me-2" @onclick="LogUserActivity">User Activity Log</button>
-    <button class="btn btn-success me-2" @onclick="SimulateApiRequestLog">Simulate Request/Response Log</button>
-    <button class="btn btn-outline-dark me-2" @onclick="LogAsync">Async Log</button>
-</div>
-
-<hr />
-
-<h4>Live Log Output</h4>
-
-<div class="mb-2">
-    <input class="form-control" placeholder="Search logs..." @bind="SearchText" @oninput="FilterLogs" />
-</div>
-
-<div class="form-check mb-3">
-    <input type="checkbox" class="form-check-input" @bind="AutoRefresh" />
-    <label class="form-check-label">Auto-refresh every 2 seconds</label>
-</div>
-
-<div style="height: 400px; overflow-y: scroll; background: #1e1e1e; color: white; padding: 10px; border-radius: 8px;">
-    @foreach (var line in FilteredLogs)
-    {
-        <div style="@ColorFor(line)">
-            @line
-        </div>
-    }
+<div class="card">
+    <div class="card-header text-center">Logs From Database</div>
+    <div class="card-body">
+    </div>
+    <div class="card-footer">
+        <button class="btn btn-danger mx-2" @onclick="throwDomainException">DomainException</button>
+        <button class="btn btn-danger mx-2" @onclick="throwAppException">AppException</button>
+        <button class="btn btn-danger mx-2" @onclick="throwDataBaseException">DataBaseException</button>
+        <button class="btn btn-danger mx-2" @onclick="throwApiException">ApiException</button>
+    </div>
 </div>
 
 @code {
-    // log file path
-    private string LogDir => Path.Combine(AppContext.BaseDirectory, "Logs");
-    private string LogFile => Directory.GetFiles(LogDir)?.OrderByDescending(f => f).FirstOrDefault();
 
-    private List<string> AllLogs = new();
-    private List<string> FilteredLogs = new();
-    private string SearchText = "";
-    private bool AutoRefresh = true;
-
-    protected override async Task OnInitializedAsync()
+    void throwDomainException()
     {
-        await LoadLogs();
-        _ = AutoRefreshLoop();
+        throw new DomainException("DomainException: Business rule violated.");
     }
 
-    private async Task AutoRefreshLoop()
+    void throwAppException()
     {
-        while (true)
-        {
-            if (AutoRefresh)
-                await LoadLogs();
-
-            await Task.Delay(2000);
-        }
+        throw new AppException("AppException: Application processing failed.");
     }
 
-    private async Task LoadLogs()
+    void throwDataBaseException()
     {
-        if (LogFile != null)
-        {
-            AllLogs = (await File.ReadAllLinesAsync(LogFile)).ToList();
-            FilterLogs();
-        }
-        StateHasChanged();
+        throw new DataBaseException("DataBaseException: Database operation failed.");
     }
 
-    private void FilterLogs()
+    void throwApiException()
     {
-        if (string.IsNullOrWhiteSpace(SearchText))
-            FilteredLogs = AllLogs.ToList();
-        else
-            FilteredLogs = AllLogs
-                .Where(x => x.Contains(SearchText, StringComparison.OrdinalIgnoreCase))
-                .ToList();
-    }
-
-    private string ColorFor(string line)
-    {
-        if (line.Contains("Information")) return "color: lightgreen";
-        if (line.Contains("Debug")) return "color: skyblue";
-        if (line.Contains("Warning")) return "color: gold";
-        if (line.Contains("Error")) return "color: #ff4d4d";
-        if (line.Contains("Fatal")) return "color: red";
-        if (line.Contains("Trace")) return "color: violet";
-        if (line.Contains("Verbose")) return "color: gray";
-        return "color: white";
-    }
-
-    // region — logging tests
-    void LogInfo() => Log.Information("Info log triggered.");
-    void LogDebug() => Log.Debug("Debug log triggered.");
-    void LogWarning() => Log.Warning("Warning log triggered.");
-    void LogTrace() => Log.Logger.Write(LogEventLevel.Verbose, "Trace level log triggered.");
-    void LogVerbose() => Log.Verbose("Verbose log with detailed internal info.");
-
-    void LogError()
-    {
-        try { throw new Exception("Sample error!"); }
-        catch (Exception ex) { Log.Error(ex, "An error occurred while testing logging."); }
-    }
-
-    void LogFatal() => Log.Fatal("Fatal log triggered.");
-
-    void LogWithParams()
-    {
-        Log.Information("User {UserId} performed {Action} at {Time}",
-            1001, "FileUpload", DateTime.Now);
-    }
-
-    void LogExceptionWithMoreDetails()
-    {
-        try
-        {
-            throw new InvalidOperationException("Invalid operation performed!");
-        }
-        catch (Exception ex)
-        {
-            Log.Error(ex, "Advanced exception log. User={User}, IP={IP}",
-                "Kamran", "192.168.1.11");
-        }
-    }
-
-    void LogStructured()
-    {
-        Log.Information("Structured log: {@User}", new
-        {
-            Id = 101,
-            Name = "Kamran",
-            Role = "Admin",
-            Time = DateTime.UtcNow
-        });
-    }
-
-    void LogUserActivity()
-    {
-        Log.Information("User Activity: UserId={UserId}, Action={Action}, Browser={Browser}",
-            "Kamran", "Visited Dashboard", "Chrome");
-    }
-
-    void SimulateApiRequestLog()
-    {
-        var request = new { Id = 1, Name = "Test Product", Price = 50 };
-        var response = new { Success = true, Message = "OK", Code = 200 };
-
-        Log.Information("API Request/Response {@Req} {@Res}", request, response);
-    }
-
-    async Task LogAsync()
-    {
-        await Task.Delay(300);
-        Log.Information("Async log completed at {Time}.", DateTime.UtcNow);
+        throw new ApiException("ApiException: External API call failed.");
     }
 }

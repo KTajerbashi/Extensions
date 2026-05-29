@@ -11,6 +11,7 @@
     <Project Path="Src/Logger/Extensions.Logger.Abstractions/Extensions.Logger.Abstractions.csproj" />
     <Project Path="Src/Logger/Extensions.Logger/Extensions.Logger.csproj" />
     <Project Path="Src/Logger/LoggerApp/LoggerApp.csproj" />
+    <Project Path="Src/Logger/LoggerWebApi/LoggerWebApi.csproj" Id="3db3aa45-4344-4299-8da2-1bb2a898bdff" />
   </Folder>
   <Folder Name="/Src/ObjectMapper/">
     <Project Path="Src/ObjectMapper/Extensions.ObjectMappers.Abstractions/Extensions.ObjectMappers.Abstractions.csproj" />
